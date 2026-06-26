@@ -79,28 +79,32 @@ class SearchView extends StatelessWidget {
       );
 
   Widget _tab(SearchState state, SearchBloc bloc, SearchTab tab, String label,
-          int count) =>
-      Expanded(
-        child: GestureDetector(
-          onTap: () => bloc.add(SearchTabChanged(tab)),
-          child: Container(
-            margin: const EdgeInsets.symmetric(horizontal: 6),
-            padding: const EdgeInsets.symmetric(vertical: 9),
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              color: state.tab == tab ? AppColors.surfaceAlt : null,
-              borderRadius: BorderRadius.circular(9),
+          int count) {
+    final active = state.tab == tab;
+    return Expanded(
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () => bloc.add(SearchTabChanged(tab)),
+        child: Container(
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            border: Border(
+              bottom: BorderSide(
+                color: active ? AppColors.gold : AppColors.border,
+                width: active ? 2 : 1,
+              ),
             ),
-            child: Text('$label  $count',
-                style: TextStyle(
-                    color: state.tab == tab
-                        ? AppColors.gold
-                        : AppColors.textMuted,
-                    fontSize: 13,
-                    fontWeight: FontWeight.w700)),
           ),
+          child: Text('$label  $count',
+              style: TextStyle(
+                  color: active ? AppColors.gold : AppColors.textMuted,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w700)),
         ),
-      );
+      ),
+    );
+  }
 
   Widget _regionList(BuildContext context, SearchState state) {
     final regions = state.regions();
@@ -203,7 +207,7 @@ class SearchView extends StatelessWidget {
         onTap: onTap,
         borderRadius: BorderRadius.circular(10),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 9),
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 13),
           child: Row(
             children: [
               leading,
@@ -219,7 +223,7 @@ class SearchView extends StatelessWidget {
                             color: AppColors.goldLight,
                             fontSize: 14,
                             fontWeight: FontWeight.w700)),
-                    const SizedBox(height: 1),
+                    const SizedBox(height: 5),
                     Text(subtitle,
                         style: const TextStyle(
                             color: AppColors.textMuted, fontSize: 11)),
