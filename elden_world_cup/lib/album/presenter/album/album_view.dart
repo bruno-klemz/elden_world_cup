@@ -117,8 +117,13 @@ class _AlbumViewState extends State<AlbumView> {
                 },
               ),
               if (regions.length > 1)
-                AlbumPageDots(
-                    count: regions.length, currentIndex: _currentPage),
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  child: AlbumPageDots(
+                      count: regions.length, currentIndex: _currentPage),
+                ),
             ],
           );
         },
