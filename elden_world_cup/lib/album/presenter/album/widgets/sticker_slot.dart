@@ -168,18 +168,49 @@ class _StickerSlotState extends State<StickerSlot>
         right: 4,
         child: GestureDetector(
           onTap: widget.onQuickDefeat,
-          child: Container(
+          child: CustomPaint(
             key: const Key('slot-quick-check'),
-            width: 26,
-            height: 26,
-            decoration: BoxDecoration(
-              color: AppColors.background.withValues(alpha: 0.7),
-              shape: BoxShape.circle,
-              border: Border.all(color: AppColors.gold, width: 1.5),
+            painter: _DashedCirclePainter(),
+            child: Container(
+              width: 28,
+              height: 28,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: AppColors.background.withValues(alpha: 0.55),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(Icons.add, size: 18, color: AppColors.goldLight),
             ),
-            child: const Icon(Icons.check,
-                size: 15, color: AppColors.goldLight),
           ),
         ),
       );
+}
+
+/// Draws a dashed gold ring — signals "empty, tap to fill" (an action), not a
+/// filled status badge.
+class _DashedCirclePainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()
+      ..color = AppColors.gold
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.5;
+    final center = size.center(Offset.zero);
+    final radius = size.shortestSide / 2 - 0.75;
+    const dashCount = 16;
+    const sweep = 2 * 3.1415926 / dashCount;
+    for (var i = 0; i < dashCount; i++) {
+      final start = i * sweep;
+      canvas.drawArc(
+        Rect.fromCircle(center: center, radius: radius),
+        start,
+        sweep * 0.55, // dash vs gap ratio
+        false,
+        paint,
+      );
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
