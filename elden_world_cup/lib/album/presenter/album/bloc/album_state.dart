@@ -29,6 +29,15 @@ class AlbumState extends Equatable {
   int defeatedIn(String regionId) =>
       progress.defeatedCountIn(bossesIn(regionId).map((b) => b.id));
 
+  /// Headline bosses of a region, ordered by mainOrder (left to right).
+  List<Boss> mainBossesIn(String regionId) =>
+      bossesIn(regionId).where((b) => b.isMainBoss).toList()
+        ..sort((a, b) => a.mainOrder.compareTo(b.mainOrder));
+
+  /// Non-headline bosses of a region, in their natural order.
+  List<Boss> otherBossesIn(String regionId) =>
+      bossesIn(regionId).where((b) => !b.isMainBoss).toList();
+
   bool isDefeated(String id) => progress.isDefeated(id);
 
   AlbumState copyWith({

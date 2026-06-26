@@ -18,6 +18,7 @@ class StickerSlot extends StatefulWidget {
     required this.boss,
     required this.defeated,
     required this.onTap,
+    this.isMain = false,
     this.animateReveal = false,
     this.onRevealDone,
     this.onQuickDefeat,
@@ -26,6 +27,11 @@ class StickerSlot extends StatefulWidget {
   final Boss boss;
   final bool defeated;
   final VoidCallback onTap;
+
+  /// Headline boss of its region. When defeated, gets a crown, a heavier gold
+  /// border and a steady "alive" pulse. While pending it looks like any other
+  /// pending slot (the reward only appears once defeated).
+  final bool isMain;
 
   /// When true, the slot cross-fades from the pending (blurred B&W) art to the
   /// colored art with a glow + sparkle. Only the freshly defeated slot gets this.
@@ -43,18 +49,23 @@ class StickerSlot extends StatefulWidget {
 class _StickerSlotState extends State<StickerSlot>
     with TickerProviderStateMixin {
   AnimationController? _fade;
+  AnimationController? _pulse;
   bool _playReveal = false;
+
+  bool get _showPulse => widget.isMain && widget.defeated;
 
   @override
   void initState() {
     super.initState();
     if (widget.animateReveal) _startReveal();
+    if (_showPulse) _startPulse();
   }
 
   @override
   void didUpdateWidget(StickerSlot old) {
     super.didUpdateWidget(old);
     if (widget.animateReveal && !old.animateReveal) _startReveal();
+    if (_showPulse && _pulse == null) _startPulse();
   }
 
   void _startReveal() {
@@ -64,43 +75,97 @@ class _StickerSlotState extends State<StickerSlot>
     setState(() => _playReveal = true);
   }
 
+  void _startPulse() {
+    _pulse = AnimationController(
+        vsync: this, duration: const Duration(milliseconds: 2200))
+      ..repeat(reverse: true);
+  }
+
   @override
   void dispose() {
     _fade?.dispose();
+    _pulse?.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     final showColored = widget.defeated;
+    final isMainDone = widget.isMain && showColored;
+    final borderColor = showColored ? AppColors.gold : AppColors.border;
+    final borderWidth = isMainDone
+        ? 2.5
+        : showColored
+            ? 2.0
+            : 1.0;
+
+    Widget card = ClipRRect(
+      borderRadius: BorderRadius.circular(10),
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          _artLayer(showColored),
+          _nameStrip(showColored),
+          if (isMainDone)
+            const Positioned(
+              top: 5,
+              left: 5,
+              child: Text('👑', style: TextStyle(fontSize: 15)),
+            ),
+          if (!showColored &&
+              !widget.animateReveal &&
+              widget.onQuickDefeat != null)
+            _quickCheckButton(),
+        ],
+      ),
+    );
+
     return GestureDetector(
       onTap: widget.onTap,
       child: AspectRatio(
         aspectRatio: 3 / 4,
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(10),
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(
-                color: showColored ? AppColors.gold : AppColors.border,
-                width: showColored ? 2 : 1,
+        child: _showPulse && _pulse != null
+            ? AnimatedBuilder(
+                animation: _pulse!,
+                builder: (context, child) => _frame(
+                  borderColor: borderColor,
+                  borderWidth: borderWidth,
+                  glow: _pulse!.value, // 0..1
+                  child: child!,
+                ),
+                child: card,
+              )
+            : _frame(
+                borderColor: borderColor,
+                borderWidth: borderWidth,
+                glow: 0,
+                child: card,
               ),
-            ),
-            child: Stack(
-              fit: StackFit.expand,
-              children: [
-                _artLayer(showColored),
-                _nameStrip(showColored),
-                if (!showColored &&
-                    !widget.animateReveal &&
-                    widget.onQuickDefeat != null)
-                  _quickCheckButton(),
-              ],
-            ),
-          ),
-        ),
       ),
+    );
+  }
+
+  Widget _frame({
+    required Color borderColor,
+    required double borderWidth,
+    required double glow,
+    required Widget child,
+  }) {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: borderColor, width: borderWidth),
+        boxShadow: glow > 0
+            ? [
+                BoxShadow(
+                  color: AppColors.goldLight.withValues(alpha: 0.15 + glow * 0.4),
+                  blurRadius: 6 + glow * 12,
+                  spreadRadius: glow * 2,
+                ),
+              ]
+            : null,
+      ),
+      child: child,
     );
   }
 

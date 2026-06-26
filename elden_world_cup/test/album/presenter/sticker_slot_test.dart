@@ -76,4 +76,16 @@ void main() {
     )));
     expect(find.byKey(const Key('slot-quick-check')), findsNothing);
   });
+
+  testWidgets('main boss shows a crown only when defeated', (tester) async {
+    // defeated main -> crown
+    await tester.pumpWidget(_host(
+        StickerSlot(boss: _boss, defeated: true, isMain: true, onTap: () {})));
+    expect(find.text('👑'), findsOneWidget);
+
+    // pending main -> no crown (no gold reward while locked)
+    await tester.pumpWidget(_host(
+        StickerSlot(boss: _boss, defeated: false, isMain: true, onTap: () {})));
+    expect(find.text('👑'), findsNothing);
+  });
 }

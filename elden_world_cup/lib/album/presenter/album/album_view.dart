@@ -101,8 +101,10 @@ class _AlbumViewState extends State<AlbumView> {
                   final region = regions[i];
                   return RegionPage(
                     region: region,
-                    bosses: state.bossesIn(region.id),
+                    mainBosses: state.mainBossesIn(region.id),
+                    otherBosses: state.otherBossesIn(region.id),
                     defeatedCount: state.defeatedIn(region.id),
+                    totalCount: state.countIn(region.id),
                     isDefeated: state.isDefeated,
                     revealBossId: state.justRevealedBossId,
                     slotKeyFor: _slotKeyFor,
