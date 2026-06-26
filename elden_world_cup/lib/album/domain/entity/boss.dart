@@ -16,6 +16,11 @@ class Boss extends Equatable {
   final List<LootItem> loot;
   final String lore;
 
+  /// Position among a region's headline bosses (1-based, left to right). 0 means
+  /// this is a regular (non-main) boss. Main bosses get their own section at the
+  /// top of the region page with a distinct treatment, ordered by this value.
+  final int mainOrder;
+
   const Boss({
     required this.id,
     required this.name,
@@ -28,7 +33,10 @@ class Boss extends Equatable {
     this.weakTo = const [],
     this.loot = const [],
     required this.lore,
+    this.mainOrder = 0,
   });
+
+  bool get isMainBoss => mainOrder > 0;
 
   factory Boss.fromJson(Map<String, dynamic> json) {
     List<DamageType> dmg(String key) => ((json[key] as List?) ?? const [])
@@ -48,6 +56,7 @@ class Boss extends Equatable {
           .map((e) => LootItem.fromJson(e as Map<String, dynamic>))
           .toList(),
       lore: json['lore'] as String,
+      mainOrder: json['mainOrder'] as int? ?? 0,
     );
   }
 
@@ -64,5 +73,6 @@ class Boss extends Equatable {
         weakTo,
         loot,
         lore,
+        mainOrder,
       ];
 }

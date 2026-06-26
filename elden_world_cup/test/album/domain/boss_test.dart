@@ -39,5 +39,17 @@ void main() {
     expect(boss.subtitle, isNull);
     expect(boss.strongVs, isEmpty);
     expect(boss.loot, isEmpty);
+    expect(boss.mainOrder, 0);
+    expect(boss.isMainBoss, isFalse);
+  });
+
+  test('mainOrder marks a main boss and is parsed', () {
+    final boss = Boss.fromJson({
+      'id': 'godrick', 'name': 'Godrick', 'region': 'limgrave',
+      'art': 'a.webp', 'locationName': 'loc',
+      'mapCoord': {'x': 0.0, 'y': 0.0}, 'lore': '', 'mainOrder': 2,
+    });
+    expect(boss.mainOrder, 2);
+    expect(boss.isMainBoss, isTrue);
   });
 }

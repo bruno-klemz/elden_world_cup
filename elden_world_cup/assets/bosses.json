@@ -2913,7 +2913,8 @@
           "name": "Lembrança do Enxertado"
         }
       ],
-      "lore": "Godrick, o Enxertado, é um descendente distante e muito diminuído de Godfrey, o Primeiro Lorde Anelar. Considerado o mais fraco dos semideuses e humilhado após ser expulso de Leyndell, ele se isolou no Castelo Stormveil e obsessivamente enxertou em si mesmo os membros e partes do corpo de soldados caídos, numa tentativa desesperada de recuperar forças e restaurar a glória de sua linhagem."
+      "lore": "Godrick, o Enxertado, é um descendente distante e muito diminuído de Godfrey, o Primeiro Lorde Anelar. Considerado o mais fraco dos semideuses e humilhado após ser expulso de Leyndell, ele se isolou no Castelo Stormveil e obsessivamente enxertou em si mesmo os membros e partes do corpo de soldados caídos, numa tentativa desesperada de recuperar forças e restaurar a glória de sua linhagem.",
+      "mainOrder": 1
     },
     {
       "id": "grafted_scion_limgrave_chapel_of_anticipation",
@@ -3240,7 +3241,8 @@
           "name": "Bolsa de Talismãs"
         }
       ],
-      "lore": "Margit é o protetor da Árvore Áurea, manifestado para eliminar os Maculados antes que se tornem fortes o suficiente para disputar o Elden Ring. Ele é uma forma espectral de Morgott, o Rei Presságio."
+      "lore": "Margit é o protetor da Árvore Áurea, manifestado para eliminar os Maculados antes que se tornem fortes o suficiente para disputar o Elden Ring. Ele é uma forma espectral de Morgott, o Rei Presságio.",
+      "mainOrder": 2
     },
     {
       "id": "margit_the_fell_omen_altus",
@@ -4010,7 +4012,8 @@
           "name": "Lágrima de Cristal de Jorro Carmesim"
         }
       ],
-      "lore": "Os Avatares da Árvore Áurea são grandes guardiões sem cabeça, semelhantes a tocos de árvore, que empunham cajados imensos para proteger as Árvores Áureas Menores, a prole da Árvore Áurea definhante. Surgiram na esteira da fragmentação do Elden Ring, determinados a defender os brotos da moribunda Árvore Áurea."
+      "lore": "Os Avatares da Árvore Áurea são grandes guardiões sem cabeça, semelhantes a tocos de árvore, que empunham cajados imensos para proteger as Árvores Áureas Menores, a prole da Árvore Áurea definhante. Surgiram na esteira da fragmentação do Elden Ring, determinados a defender os brotos da moribunda Árvore Áurea.",
+      "mainOrder": 2
     },
     {
       "id": "erdtree_avatar_liurnia_minor_erdtree_liurnia_southw",
@@ -4198,7 +4201,8 @@
           "name": "Espadão de Lâmina Enxertada"
         }
       ],
-      "lore": "Um malnascido selvagem de juba leonina que empunha a Espadagrande de Lâmina Enxertada no Castelo Morne. Os malnascidos são tratados como escravos e vistos como castigo pelo contato com o Crisol, e este participou da sangrenta revolta no castelo."
+      "lore": "Um malnascido selvagem de juba leonina que empunha a Espadagrande de Lâmina Enxertada no Castelo Morne. Os malnascidos são tratados como escravos e vistos como castigo pelo contato com o Crisol, e este participou da sangrenta revolta no castelo.",
+      "mainOrder": 1
     },
     {
       "id": "miranda_the_blighted_bloom",
@@ -4852,7 +4856,8 @@
           "name": "Pedra da Memória"
         }
       ],
-      "lore": "Um lobo carmesim gigante que empunha feitiçarias e guarda o Salão de Debates da Academia de Raya Lucaria. Associado a Radagon, foi deixado aos cuidados de Rennala na academia."
+      "lore": "Um lobo carmesim gigante que empunha feitiçarias e guarda o Salão de Debates da Academia de Raya Lucaria. Associado a Radagon, foi deixado aos cuidados de Rennala na academia.",
+      "mainOrder": 2
     },
     {
       "id": "rennala_queen_of_the_full_moon",
@@ -4891,7 +4896,8 @@
           "name": "Grande Runa do Nascituro"
         }
       ],
-      "lore": "Rennala foi uma astróloga proeminente que se tornou rainha da Família Real Carian e líder da Academia Raya Lucaria, casando-se com Radagon e gerando filhos semideuses, incluindo Ranni e Radahn. Depois que Radagon a abandonou para se tornar consorte da Rainha Marika, sua mente se quebrou e agora ela realiza obsessivamente rituais de renascimento em estudiosos usando um ovo de âmbar."
+      "lore": "Rennala foi uma astróloga proeminente que se tornou rainha da Família Real Carian e líder da Academia Raya Lucaria, casando-se com Radagon e gerando filhos semideuses, incluindo Ranni e Radahn. Depois que Radagon a abandonou para se tornar consorte da Rainha Marika, sua mente se quebrou e agora ela realiza obsessivamente rituais de renascimento em estudiosos usando um ovo de âmbar.",
+      "mainOrder": 1
     },
     {
       "id": "royal_knight_loretta",
@@ -5038,7 +5044,8 @@
           "name": "Agulha de Ouro Puro"
         }
       ],
-      "lore": "Um comandante humano que continua a brandir com orgulho seu estandarte de batalha apesar da fuga de seu senhor; é um veterano da catastrófica Batalha de Aeonia, onde lutou ao lado de Malenia."
+      "lore": "Um comandante humano que continua a brandir com orgulho seu estandarte de batalha apesar da fuga de seu senhor; é um veterano da catastrófica Batalha de Aeonia, onde lutou ao lado de Malenia.",
+      "mainOrder": 2
     },
     {
       "id": "crucible_knight_and_misbegotten_warrior",
@@ -5483,7 +5490,8 @@
           "name": "Grande Runa de Radahn"
         }
       ],
-      "lore": "Radahn era um poderoso general semideus que dominava a magia gravitacional para continuar montando seu amado pequeno corcel. Após combater até um impasse Malenia, afligida pela Podridão Escarlate, durante o Estilhaçamento, ele próprio contraiu a podridão, que o levou a um estado feral e enlouquecido, até que guerreiros se reúnam no Festival de Radahn para conceder-lhe uma morte honrosa."
+      "lore": "Radahn era um poderoso general semideus que dominava a magia gravitacional para continuar montando seu amado pequeno corcel. Após combater até um impasse Malenia, afligida pela Podridão Escarlate, durante o Estilhaçamento, ele próprio contraiu a podridão, que o levou a um estado feral e enlouquecido, até que guerreiros se reúnam no Festival de Radahn para conceder-lhe uma morte honrosa.",
+      "mainOrder": 1
     },
     {
       "id": "battlemage_hugues",
@@ -5612,7 +5620,8 @@
           "name": "Coração de Dragão"
         }
       ],
-      "lore": "O Dragão Voador Greyll é um dragão que faz seu ninho no planalto de Dragonbarrow, ao norte de Caelid, um dos dragões que escaparam da Podridão Escarlate. Nomeado na linhagem de Greyoll, a mãe de todos os dragões, ele guarda a área próxima à ponte que leva à Farum Azula em Ruínas."
+      "lore": "O Dragão Voador Greyll é um dragão que faz seu ninho no planalto de Dragonbarrow, ao norte de Caelid, um dos dragões que escaparam da Podridão Escarlate. Nomeado na linhagem de Greyoll, a mãe de todos os dragões, ele guarda a área próxima à ponte que leva à Farum Azula em Ruínas.",
+      "mainOrder": 1
     },
     {
       "id": "godskin_apostle_altus",
@@ -5646,7 +5655,8 @@
           "name": "Chama Negra Devastadora"
         }
       ],
-      "lore": "Os Apóstolos da Pele de Deus, ditos outrora servirem à Morte Destinada, são empunhadores da chama negra mata-deuses que antes serviram à Rainha de Olhos de Penumbra e vestiam as peles de deuses abatidos como trajes. Após sua derrota por Maliketh, a Lâmina Negra, a fonte de seu poder foi selada."
+      "lore": "Os Apóstolos da Pele de Deus, ditos outrora servirem à Morte Destinada, são empunhadores da chama negra mata-deuses que antes serviram à Rainha de Olhos de Penumbra e vestiam as peles de deuses abatidos como trajes. Após sua derrota por Maliketh, a Lâmina Negra, a fonte de seu poder foi selada.",
+      "mainOrder": 1
     },
     {
       "id": "godskin_apostle_caelid",
@@ -6112,7 +6122,8 @@
           "name": "Lágrima Endurecida Salpicada"
         }
       ],
-      "lore": "Cara de Verme é uma grande criatura humanoide encapuzada cuja cabeça é composta de vermes que se contorcem, uma entidade aberrante encontrada guardando várias Árvores Áureas e ruínas. Parece ser um ser deslocado ou corrompido, com variantes maiores sugerindo uma estrutura hierárquica dentro de sua espécie."
+      "lore": "Cara de Verme é uma grande criatura humanoide encapuzada cuja cabeça é composta de vermes que se contorcem, uma entidade aberrante encontrada guardando várias Árvores Áureas e ruínas. Parece ser um ser deslocado ou corrompido, com variantes maiores sugerindo uma estrutura hierárquica dentro de sua espécie.",
+      "mainOrder": 2
     },
     {
       "id": "wormface_gelmir",
@@ -6327,7 +6338,8 @@
           "name": "Lembrança do Blasfemo"
         }
       ],
-      "lore": "Rykard, um semideus filho da Rainha Rennala, buscou a imortalidade entregando-se a uma serpente gigante num ato de heresia contra a Árvore Áurea, tornando-se a Serpente Devoradora de Deuses. Seus seguidores, vendo isso como blasfêmia, o caçam com a arma Caça-Serpentes."
+      "lore": "Rykard, um semideus filho da Rainha Rennala, buscou a imortalidade entregando-se a uma serpente gigante num ato de heresia contra a Árvore Áurea, tornando-se a Serpente Devoradora de Deuses. Seus seguidores, vendo isso como blasfêmia, o caçam com a arma Caça-Serpentes.",
+      "mainOrder": 1
     },
     {
       "id": "godskin_noble_gelmir",
@@ -6365,7 +6377,8 @@
           "name": "Presença Nobre"
         }
       ],
-      "lore": "Os Nobres da Pele de Deus estão entre os mais antigos apóstolos da ordem da Pele de Deus, ditos terem assimilado uma fisiologia inumana, o que lhes confere uma forma grotescamente inchada. Servem à Rainha de Olhos de Penumbra e empunham a Chama Negra para abater até mesmo deuses."
+      "lore": "Os Nobres da Pele de Deus estão entre os mais antigos apóstolos da ordem da Pele de Deus, ditos terem assimilado uma fisiologia inumana, o que lhes confere uma forma grotescamente inchada. Servem à Rainha de Olhos de Penumbra e empunham a Chama Negra para abater até mesmo deuses.",
+      "mainOrder": 2
     },
     {
       "id": "godskin_noble_liurnia",
@@ -6663,7 +6676,8 @@
           "name": "Bolsa de Talismãs"
         }
       ],
-      "lore": "Uma espectral sombra dourada de Godfrey, o primeiro Lorde Prístino, enfrentada como chefe obrigatório em Leyndell, a Capital Real. Confrontar este eco de sua antiga glória marca um passo crucial no caminho rumo ao Trono Prístino."
+      "lore": "Uma espectral sombra dourada de Godfrey, o primeiro Lorde Prístino, enfrentada como chefe obrigatório em Leyndell, a Capital Real. Confrontar este eco de sua antiga glória marca um passo crucial no caminho rumo ao Trono Prístino.",
+      "mainOrder": 2
     },
     {
       "id": "mohg_the_omen_1",
@@ -6698,7 +6712,7 @@
       "id": "morgott_the_omen_king",
       "name": "Morgott, o Rei Presságio",
       "subtitle": "O Senhor Agraciado pela Graça",
-      "region": "altus",
+      "region": "capital",
       "art": "images/malenia.webp",
       "locationName": "Leyndell, Capital Real",
       "mapCoord": {
@@ -6724,7 +6738,8 @@
           "name": "Grande Runa de Morgott"
         }
       ],
-      "lore": "Morgott é a verdadeira identidade de Margit, o Presságio Cruel, um semideus Presságio filho de Godfrey e Marika que, apesar de renegado e aprisionado por sua amaldiçoada natureza de Presságio, permaneceu leal à Ordem Áurea e defendeu Leyndell como seu autoproclamado Último de Todos os Reis. Ele amou a Árvore Áurea, embora jamais tenha sido amado em troca."
+      "lore": "Morgott é a verdadeira identidade de Margit, o Presságio Cruel, um semideus Presságio filho de Godfrey e Marika que, apesar de renegado e aprisionado por sua amaldiçoada natureza de Presságio, permaneceu leal à Ordem Áurea e defendeu Leyndell como seu autoproclamado Último de Todos os Reis. Ele amou a Árvore Áurea, embora jamais tenha sido amado em troca.",
+      "mainOrder": 1
     },
     {
       "id": "borealis_the_freezing_fog",
@@ -7263,7 +7278,8 @@
           "name": "Cinzas do Seguidor Ancestral"
         }
       ],
-      "lore": "Os espíritos ancestrais existem como um fenômeno além do domínio da Árvore Áurea, encarnando o ciclo da vida que brota da morte. O Espírito Ancestral é uma entidade antiga e etérea, semelhante a um cervo, venerada pelos Seguidores Ancestrais e invocada nos Campos do Chifre Sagrado ao acender os obeliscos ao redor."
+      "lore": "Os espíritos ancestrais existem como um fenômeno além do domínio da Árvore Áurea, encarnando o ciclo da vida que brota da morte. O Espírito Ancestral é uma entidade antiga e etérea, semelhante a um cervo, venerada pelos Seguidores Ancestrais e invocada nos Campos do Chifre Sagrado ao acender os obeliscos ao redor.",
+      "mainOrder": 2
     },
     {
       "id": "dragonkin_soldier_siofra",
@@ -7420,7 +7436,8 @@
           "name": "Lembrança do Ancestral Régio"
         }
       ],
-      "lore": "A carcaça animada de uma criatura semelhante a um cervo que representa um fenômeno ancestral além do alcance da Árvore Áurea, encarnando o ciclo no qual a vida brota da morte assim como brota do nascimento. Ela guarda os Terrenos do Chifre Sagrado nas profundezas de Nokron, a Cidade Eterna."
+      "lore": "A carcaça animada de uma criatura semelhante a um cervo que representa um fenômeno ancestral além do alcance da Árvore Áurea, encarnando o ciclo no qual a vida brota da morte assim como brota do nascimento. Ela guarda os Terrenos do Chifre Sagrado nas profundezas de Nokron, a Cidade Eterna.",
+      "mainOrder": 1
     },
     {
       "id": "valiant_gargoyle_siofra",
@@ -7615,7 +7632,8 @@
           "name": "Grande Machado da Gárgula"
         }
       ],
-      "lore": "As Gárgulas Valentes são constructos guardiões de pedra descritos como uma colcha de retalhos de campeões, suas partes faltantes remendadas com cera cadavérica. Esses restos de guerreiros reaproveitados são presos em formas de pedra para servir como guardiões formidáveis no Entremundos."
+      "lore": "As Gárgulas Valentes são constructos guardiões de pedra descritos como uma colcha de retalhos de campeões, suas partes faltantes remendadas com cera cadavérica. Esses restos de guerreiros reaproveitados são presos em formas de pedra para servir como guardiões formidáveis no Entremundos.",
+      "mainOrder": 1
     },
     {
       "id": "valiant_gargoyle_twinblade_capital",
@@ -7837,7 +7855,7 @@
       "id": "godfrey_first_elden_lord_hoarah_loux",
       "name": "Godfrey, Primeiro Lorde Anelar (Hoarah Loux)",
       "subtitle": "Hoarah Loux, Guerreiro",
-      "region": "capital",
+      "region": "ashen_capital",
       "art": "images/malenia.webp",
       "locationName": "Leyndell, Capital das Cinzas",
       "mapCoord": {
@@ -7863,37 +7881,6 @@
         }
       ],
       "lore": "Godfrey foi o primeiro consorte da Rainha Marika e o Lorde Anelar original, outrora um feroz chefe das terras inóspitas chamado Hoarah Loux, que adotou o Regente Bestial Serosh para subjugar sua natureza violenta. Após o fim de sua utilidade, foi despojado da graça e exilado como o primeiro dos Maculados, retornando para desafiar o jogador como o guardião final da Árvore Áurea, libertando-se de Serosh para lutar como Hoarah Loux, o Guerreiro."
-    },
-    {
-      "id": "mohg_the_omen_2",
-      "name": "Mohg, o Presságio",
-      "subtitle": null,
-      "region": "capital",
-      "art": "images/malenia.webp",
-      "locationName": "Catedral dos Renegados (Solo Banido Subterrâneo)",
-      "mapCoord": {
-        "x": 0,
-        "y": 0
-      },
-      "strongVs": [
-        "fire"
-      ],
-      "weakTo": [
-        "standard",
-        "slash",
-        "strike",
-        "pierce"
-      ],
-      "loot": [
-        {
-          "name": "Runas",
-          "quantity": 100000
-        },
-        {
-          "name": "Garras da Chama de Sangue"
-        }
-      ],
-      "lore": "Mohg, o Presságio, é um chefe opcional encontrado na Catedral dos Renegados, nas profundezas das Terras de Banimento Subterrâneas, sob Leyndell. Ele é o irmão gêmeo de Morgott; um presságio renegado pela Ordem Áurea, comunga com o deus exterior conhecido como a Mãe da Verdade, prenunciando seu outro eu, Mohg, Senhor do Sangue."
     },
     {
       "id": "sir_gideon_ofnir_the_all_knowing",
@@ -7934,7 +7921,7 @@
       "id": "radagon_of_the_golden_order",
       "name": "Radagon da Ordem Áurea",
       "subtitle": null,
-      "region": "capital",
+      "region": "ashen_capital",
       "art": "images/malenia.webp",
       "locationName": "Plataforma de Pedra (Trono Élder, Leyndell, Capital Cinzenta)",
       "mapCoord": {
