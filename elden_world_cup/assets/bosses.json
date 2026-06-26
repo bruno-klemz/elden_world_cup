@@ -3,67 +3,67 @@
     {
       "id": "limgrave",
       "name": "Limgrave",
-      "order": 1
+      "order": 2
     },
     {
       "id": "liurnia",
       "name": "Liurnia",
-      "order": 2
+      "order": 3
     },
     {
       "id": "caelid",
       "name": "Caelid",
-      "order": 3
+      "order": 5
     },
     {
       "id": "altus",
       "name": "Planalto de Altus",
-      "order": 4
+      "order": 6
     },
     {
       "id": "mountaintops",
       "name": "Cumes dos Gigantes",
-      "order": 5
+      "order": 13
     },
     {
       "id": "haligtree",
       "name": "Haligtree",
-      "order": 6
+      "order": 19
     },
     {
       "id": "capital",
       "name": "Leyndell",
-      "order": 7
+      "order": 10
     },
     {
       "id": "weeping_peninsula",
       "name": "Península Lacrimosa",
-      "order": 8
+      "order": 1
     },
     {
       "id": "dragonbarrow",
       "name": "Dragonbarrow",
-      "order": 9
+      "order": 8
     },
     {
       "id": "gelmir",
       "name": "Monte Gelmir",
-      "order": 10
+      "order": 9
     },
     {
       "id": "siofra",
       "name": "Siofra / Nokron",
-      "order": 11
+      "order": 4
     },
     {
       "id": "forbidden_lands",
       "name": "Terras Proibidas",
-      "order": 12
+      "order": 14
     },
     {
       "id": "consecrated_snowfield",
       "name": "Campo Nevado Consagrado",
-      "order": 13
+      "order": 18
     },
     {
       "id": "farum_azula",
@@ -73,17 +73,17 @@
     {
       "id": "capital_outskirts",
       "name": "Arredores da Capital",
-      "order": 16
+      "order": 7
     },
     {
       "id": "deeproot_depths",
       "name": "Profundezas das Raízes",
-      "order": 17
+      "order": 11
     },
     {
       "id": "lake_of_rot",
       "name": "Lago da Podridão",
-      "order": 19
+      "order": 12
     },
     {
       "id": "mohgwyn",
@@ -93,52 +93,52 @@
     {
       "id": "ashen_capital",
       "name": "Leyndell Cinérea",
-      "order": 21
+      "order": 16
     },
     {
       "id": "elden_throne",
       "name": "Trono Élden",
-      "order": 22
+      "order": 17
     },
     {
       "id": "gravesite_plain",
       "name": "Planície Sepulcral (DLC)",
-      "order": 100
+      "order": 21
     },
     {
       "id": "scadu_altus",
       "name": "Scadu Altus (DLC)",
-      "order": 101
+      "order": 22
     },
     {
       "id": "rauh_base",
       "name": "Base de Rauh (DLC)",
-      "order": 102
+      "order": 23
     },
     {
       "id": "cerulean_coast",
       "name": "Costa Cerúlea (DLC)",
-      "order": 103
+      "order": 24
     },
     {
       "id": "charos_hidden_grave",
       "name": "Túmulo Oculto de Charo (DLC)",
-      "order": 104
+      "order": 25
     },
     {
       "id": "jagged_peak",
       "name": "Pico Dentado (DLC)",
-      "order": 105
+      "order": 26
     },
     {
       "id": "abyssal_woods",
       "name": "Bosque Abissal (DLC)",
-      "order": 106
+      "order": 27
     },
     {
       "id": "ancient_ruins_rauh",
       "name": "Ruínas Antigas de Rauh (DLC)",
-      "order": 108
+      "order": 28
     }
   ],
   "bosses": [
