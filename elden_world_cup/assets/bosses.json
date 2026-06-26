@@ -1,1 +1,210 @@
-{ "regions": [], "bosses": [] }
+{
+  "regions": [
+    { "id": "limgrave", "name": "Limgrave", "order": 1 },
+    { "id": "liurnia", "name": "Liurnia", "order": 2 },
+    { "id": "caelid", "name": "Caelid", "order": 3 },
+    { "id": "altus", "name": "Planalto de Altus", "order": 4 },
+    { "id": "mountaintops", "name": "Cumes dos Gigantes", "order": 5 },
+    { "id": "haligtree", "name": "Haligtree", "order": 6 },
+    { "id": "capital", "name": "Leyndell", "order": 7 }
+  ],
+  "bosses": [
+    {
+      "id": "margit",
+      "name": "Margit",
+      "subtitle": "O Caído Imundo",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Entrada do Castelo de Stormveil, Limgrave",
+      "mapCoord": { "x": 0.30, "y": 0.30 },
+      "strongVs": ["holy"],
+      "weakTo": ["bleed"],
+      "loot": [{ "name": "Talismã do Punho de Margit" }],
+      "lore": "Um espírito enviado para impedir os Imaculados de tomarem o Castelo de Stormveil. Empunha uma cajado de luz dourada e lâminas conjuradas."
+    },
+    {
+      "id": "godrick",
+      "name": "Godrick",
+      "subtitle": "O Enxertado",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Castelo de Stormveil, Limgrave",
+      "mapCoord": { "x": 0.27, "y": 0.22 },
+      "strongVs": ["magic"],
+      "weakTo": ["bleed", "frost"],
+      "loot": [
+        { "name": "Grande Runa de Godrick" },
+        { "name": "Lembrança do Enxertado" }
+      ],
+      "lore": "Descendente enfraquecido de Godfrey que enxerta membros de inimigos derrotados ao próprio corpo, na tentativa desesperada de recuperar o prestígio perdido."
+    },
+    {
+      "id": "agheel",
+      "name": "Dragão Agheel",
+      "subtitle": "Dragão Voador",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Lago Agheel, Limgrave",
+      "mapCoord": { "x": 0.39, "y": 0.34 },
+      "strongVs": ["fire"],
+      "weakTo": ["physical"],
+      "loot": [{ "name": "Coração de Dragão" }],
+      "lore": "Um dragão que aterrorizou a região do Lago Agheel, cuspindo fogo sobre as ruínas e tornando a área um ermo carbonizado."
+    },
+    {
+      "id": "rennala",
+      "name": "Rennala",
+      "subtitle": "Rainha da Lua Cheia",
+      "region": "liurnia",
+      "art": "images/malenia.webp",
+      "locationName": "Academia de Raya Lucaria, Liurnia",
+      "mapCoord": { "x": 0.22, "y": 0.46 },
+      "strongVs": ["magic"],
+      "weakTo": ["physical"],
+      "loot": [
+        { "name": "Grande Runa de Rennala" },
+        { "name": "Lembrança da Lua Cheia" }
+      ],
+      "lore": "Diretora da Academia de Raya Lucaria e outrora esposa de Radagon. Após ser abandonada, refugiou-se no poder do Ovo Áureo e na magia da lua."
+    },
+    {
+      "id": "royal_knight_loretta",
+      "name": "Loretta",
+      "subtitle": "Cavaleira Real",
+      "region": "liurnia",
+      "art": "images/malenia.webp",
+      "locationName": "Mansão Caria, Liurnia",
+      "mapCoord": { "x": 0.16, "y": 0.40 },
+      "strongVs": ["magic"],
+      "weakTo": ["bleed"],
+      "loot": [{ "name": "Magia: Grande Flecha de Loretta" }],
+      "lore": "Cavaleira leal à família Caria, ela guarda a Mansão Caria empunhando feitiços de gravidade e uma lança espectral."
+    },
+    {
+      "id": "radahn",
+      "name": "Radahn",
+      "subtitle": "Flagelo das Estrelas",
+      "region": "caelid",
+      "art": "images/malenia.webp",
+      "locationName": "Costa de Wailing Dunes, Caelid",
+      "mapCoord": { "x": 0.73, "y": 0.42 },
+      "strongVs": ["holy"],
+      "weakTo": ["bleed"],
+      "loot": [
+        { "name": "Grande Runa de Radahn" },
+        { "name": "Lembrança do Flagelo das Estrelas" }
+      ],
+      "lore": "O maior general de Caelid, que dominou a gravidade para segurar as estrelas no céu. Mesmo consumido pela Podridão Escarlate, mantém sua honra de guerreiro."
+    },
+    {
+      "id": "ekzykes",
+      "name": "Ekzykes",
+      "subtitle": "Dragão da Podridão",
+      "region": "caelid",
+      "art": "images/malenia.webp",
+      "locationName": "Caelid",
+      "mapCoord": { "x": 0.66, "y": 0.37 },
+      "strongVs": ["scarlet_rot"],
+      "weakTo": ["physical"],
+      "loot": [{ "name": "Coração de Dragão" }],
+      "lore": "Um antigo dragão consumido pela Escarlate Podridão, que agora dissemina a doença por toda a terra arrasada de Caelid."
+    },
+    {
+      "id": "godfrey_golden",
+      "name": "Godfrey (Sombra)",
+      "subtitle": "Primeiro Senhor Élden",
+      "region": "altus",
+      "art": "images/malenia.webp",
+      "locationName": "Capital Leyndell, Planalto de Altus",
+      "mapCoord": { "x": 0.45, "y": 0.20 },
+      "strongVs": ["holy"],
+      "weakTo": ["bleed"],
+      "loot": [{ "name": "Runas" }],
+      "lore": "Uma sombra ilusória do primeiro Senhor Élden e marido de Marika, postada como guardião do caminho para a capital."
+    },
+    {
+      "id": "draconic_tree_sentinel",
+      "name": "Sentinela Dracônica",
+      "subtitle": "Guardiã da Capital",
+      "region": "altus",
+      "art": "images/malenia.webp",
+      "locationName": "Portão de Leyndell, Planalto de Altus",
+      "mapCoord": { "x": 0.47, "y": 0.24 },
+      "strongVs": ["lightning"],
+      "weakTo": ["physical"],
+      "loot": [{ "name": "Halberd Dracônica" }],
+      "lore": "Um cavaleiro montado que protege a entrada da capital, empunhando uma alabarda imbuída de raio sagrado."
+    },
+    {
+      "id": "morgott",
+      "name": "Morgott",
+      "subtitle": "O Rei Maldito",
+      "region": "capital",
+      "art": "images/malenia.webp",
+      "locationName": "Capital Leyndell",
+      "mapCoord": { "x": 0.46, "y": 0.18 },
+      "strongVs": ["holy"],
+      "weakTo": ["bleed"],
+      "loot": [
+        { "name": "Grande Runa de Morgott" },
+        { "name": "Lembrança do Rei Maldito" }
+      ],
+      "lore": "O último rei de Leyndell, um Onifério amaldiçoado que defende a capital com a Espada Sagrada da Maldição, escondendo sua verdadeira natureza."
+    },
+    {
+      "id": "fire_giant",
+      "name": "Gigante de Fogo",
+      "subtitle": "Último dos Gigantes",
+      "region": "mountaintops",
+      "art": "images/malenia.webp",
+      "locationName": "Cumes dos Gigantes",
+      "mapCoord": { "x": 0.60, "y": 0.10 },
+      "strongVs": ["fire"],
+      "weakTo": ["physical"],
+      "loot": [{ "name": "Lembrança do Gigante de Fogo" }],
+      "lore": "O derradeiro sobrevivente dos Gigantes, condenado a guardar a Chama da Ruína por toda a eternidade após a guerra contra a Ordem Dourada."
+    },
+    {
+      "id": "malenia",
+      "name": "Malenia",
+      "subtitle": "Lâmina de Miquella",
+      "region": "haligtree",
+      "art": "images/malenia.webp",
+      "locationName": "Elphael, Braço da Haligtree",
+      "mapCoord": { "x": 0.62, "y": 0.44 },
+      "strongVs": ["holy", "poison", "scarlet_rot"],
+      "weakTo": ["fire", "bleed", "frost"],
+      "loot": [
+        { "name": "Grande Runa de Malenia" },
+        { "name": "Lembrança da Deusa da Podridão" }
+      ],
+      "lore": "Filha de Marika e irmã gêmea de Miquella. Nasceu amaldiçoada pela Escarlate Podridão e permaneceu invicta, salvo contra o próprio irmão. Aguarda em Elphael."
+    },
+    {
+      "id": "loretta_haligtree",
+      "name": "Loretta",
+      "subtitle": "Cavaleira da Haligtree",
+      "region": "haligtree",
+      "art": "images/malenia.webp",
+      "locationName": "Haligtree de Miquella",
+      "mapCoord": { "x": 0.58, "y": 0.40 },
+      "strongVs": ["magic"],
+      "weakTo": ["bleed"],
+      "loot": [{ "name": "Magia de Loretta" }],
+      "lore": "A mesma cavaleira da família Caria, agora postada como guardiã da Haligtree de Miquella, defendendo a árvore sagrada com seus feitiços."
+    },
+    {
+      "id": "ulcerated_tree_spirit",
+      "name": "Espírito da Árvore",
+      "subtitle": "Ulcerado",
+      "region": "haligtree",
+      "art": "images/malenia.webp",
+      "locationName": "Haligtree de Miquella",
+      "mapCoord": { "x": 0.60, "y": 0.48 },
+      "strongVs": ["holy"],
+      "weakTo": ["fire"],
+      "loot": [{ "name": "Runas" }],
+      "lore": "Uma manifestação serpentina e apodrecida do espírito da Árvore Áurea, que se ergue para proteger os locais sagrados das Terras Intermédias."
+    }
+  ]
+}
