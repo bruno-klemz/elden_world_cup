@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../boss/presenter/boss_details/boss_details_screen.dart';
 import '../../../theme/app_theme.dart';
 import '../../domain/entity/boss.dart';
+import '../search/search_result.dart';
+import '../search/search_screen.dart';
 import 'bloc/album_bloc.dart';
 import 'widgets/album_page_indicator.dart';
 import 'widgets/region_page.dart';
@@ -46,14 +48,7 @@ class _AlbumViewState extends State<AlbumView> {
   Future<void> _goToRevealedSlot(AlbumState state, String bossId) async {
     final regionId = state.data?.bossById(bossId).region;
     if (regionId == null) return;
-    final pageIndex = state.regions.indexWhere((r) => r.id == regionId);
-    if (pageIndex >= 0 && _pageController.hasClients) {
-      await _pageController.animateToPage(
-        pageIndex,
-        duration: const Duration(milliseconds: 350),
-        curve: Curves.easeInOut,
-      );
-    }
+    await _animateToRegion(state, regionId);
     if (mounted) _ensureSlotVisible(bossId);
   }
 
@@ -67,6 +62,29 @@ class _AlbumViewState extends State<AlbumView> {
       duration: const Duration(milliseconds: 400),
       alignment: 0.3,
     );
+  }
+
+  Future<void> _animateToRegion(AlbumState state, String regionId) async {
+    final pageIndex = state.regions.indexWhere((r) => r.id == regionId);
+    if (pageIndex >= 0 && _pageController.hasClients) {
+      await _pageController.animateToPage(
+        pageIndex,
+        duration: const Duration(milliseconds: 350),
+        curve: Curves.easeInOut,
+      );
+    }
+  }
+
+  Future<void> _openSearch(BuildContext context, AlbumState state) async {
+    final result = await SearchScreen.push(context);
+    if (result == null || !context.mounted) return;
+    switch (result) {
+      case RegionResult(:final regionId):
+        await _animateToRegion(state, regionId);
+      case BossResult(:final regionId, :final bossId):
+        await _animateToRegion(state, regionId);
+        if (mounted) _ensureSlotVisible(bossId);
+    }
   }
 
   @override
@@ -126,9 +144,49 @@ class _AlbumViewState extends State<AlbumView> {
                   child: AlbumPageIndicator(
                       count: regions.length, currentIndex: _currentPage),
                 ),
+              Positioned(
+                top: 0,
+                right: 0,
+                child: SafeArea(
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: _SearchButton(
+                        onTap: () => _openSearch(context, state)),
+                  ),
+                ),
+              ),
             ],
           );
         },
+      ),
+    );
+  }
+}
+
+class _SearchButton extends StatelessWidget {
+  const _SearchButton({required this.onTap});
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: 38,
+        height: 38,
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          color: AppColors.background.withValues(alpha: 0.8),
+          shape: BoxShape.circle,
+          border: Border.all(color: AppColors.border),
+          boxShadow: [
+            BoxShadow(
+                color: Colors.black.withValues(alpha: 0.5),
+                blurRadius: 8,
+                offset: const Offset(0, 2)),
+          ],
+        ),
+        child: const Icon(Icons.search, color: AppColors.goldLight, size: 19),
       ),
     );
   }
