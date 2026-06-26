@@ -7199,7 +7199,7 @@
       "id": "malenia_blade_of_miquella",
       "name": "Malenia, Lâmina de Miquella",
       "subtitle": "Deusa da Podridão",
-      "region": "mountaintops",
+      "region": "haligtree",
       "art": "images/malenia.webp",
       "locationName": "Elphael, Bastião da Árvore Sagrada",
       "mapCoord": {
