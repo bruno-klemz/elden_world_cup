@@ -56,6 +56,18 @@ void main() {
     expect(find.textContaining('Godrick'), findsOneWidget);
   });
 
+  testWidgets('pending main boss shows no crown in search', (tester) async {
+    final bloc = _makeBloc(); // empty progress -> Godrick pending
+    await tester.pumpWidget(MaterialApp(
+        home: BlocProvider.value(value: bloc, child: const SearchView())));
+    await tester.pumpAndSettle();
+    await tester.tap(find.textContaining('Bosses'));
+    await tester.pumpAndSettle();
+
+    expect(find.textContaining('Godrick'), findsOneWidget);
+    expect(find.textContaining('👑'), findsNothing); // crown only when defeated
+  });
+
   testWidgets('tapping a region pops with RegionResult', (tester) async {
     final bloc = _makeBloc();
     SearchResult? popped;

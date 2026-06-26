@@ -179,9 +179,10 @@ class SearchView extends StatelessWidget {
                 ),
         ),
       ),
-      title: boss.isMainBoss ? '${boss.name}  👑' : boss.name,
-      subtitle:
-          '${state.regionName(boss.region)} · ${defeated ? 'derrotado' : 'pendente'}',
+      // crown only once defeated (reward), name muted while pending
+      title: (boss.isMainBoss && defeated) ? '${boss.name}  👑' : boss.name,
+      titleColor: defeated ? AppColors.goldLight : const Color(0xFF9A8A66),
+      subtitle: state.regionName(boss.region),
       onTap: () => Navigator.of(context)
           .pop(BossResult(bossId: boss.id, regionId: boss.region)),
     );
@@ -202,6 +203,7 @@ class SearchView extends StatelessWidget {
     required String title,
     required String subtitle,
     required VoidCallback onTap,
+    Color titleColor = AppColors.goldLight,
   }) =>
       InkWell(
         onTap: onTap,
@@ -219,8 +221,8 @@ class SearchView extends StatelessWidget {
                     Text(title,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
-                            color: AppColors.goldLight,
+                        style: TextStyle(
+                            color: titleColor,
                             fontSize: 14,
                             fontWeight: FontWeight.w700)),
                     const SizedBox(height: 5),
