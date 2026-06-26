@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../domain/models/damage_type.dart';
-import '../../theme/app_theme.dart';
+import '../../../../album/domain/entity/damage_type.dart';
+import '../../../../theme/app_theme.dart';
 
 class CombatSection extends StatelessWidget {
   const CombatSection({super.key, required this.strongVs, required this.weakTo});

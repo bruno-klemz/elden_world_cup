@@ -1,11 +1,16 @@
+import 'package:elden_world_cup/album/data/repository/boss_repository_impl.dart';
+import 'package:elden_world_cup/album/domain/repository/boss_repository.dart';
+import 'package:elden_world_cup/album/domain/usecase/load_album_usecase.dart';
+import 'package:elden_world_cup/album/presenter/album/album_screen.dart';
+import 'package:elden_world_cup/boss/data/repository/progress_repository_impl.dart';
+import 'package:elden_world_cup/boss/domain/repository/progress_repository.dart';
+import 'package:elden_world_cup/boss/domain/usecase/load_progress_usecase.dart';
+import 'package:elden_world_cup/boss/domain/usecase/set_map_revealed_usecase.dart';
+import 'package:elden_world_cup/boss/domain/usecase/toggle_defeated_usecase.dart';
+import 'package:elden_world_cup/service_locator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:elden_world_cup/data/boss_repository.dart';
-import 'package:elden_world_cup/data/progress_store.dart';
-import 'package:elden_world_cup/state/album_controller.dart';
-import 'package:elden_world_cup/presentation/album/album_screen.dart';
 
 const _json = '''
 {"regions":[{"id":"limgrave","name":"Limgrave","order":1}],
@@ -14,19 +19,30 @@ const _json = '''
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
-  setUp(() => SharedPreferences.setMockInitialValues({}));
+
+  setUp(() {
+    SharedPreferences.setMockInitialValues({});
+    // Register the dependency graph with an in-memory boss repository.
+    locator.reset();
+    locator.registerLazySingleton<BossRepository>(
+        () => BossRepositoryImpl.withLoader((_) async => _json));
+    locator.registerLazySingleton<ProgressRepository>(
+        () => ProgressRepositoryImpl());
+    locator.registerFactory<LoadAlbumUsecase>(
+        () => LoadAlbumUsecaseImpl(repository: locator<BossRepository>()));
+    locator.registerFactory<LoadProgressUsecase>(() =>
+        LoadProgressUsecaseImpl(repository: locator<ProgressRepository>()));
+    locator.registerFactory<ToggleDefeatedUsecase>(() =>
+        ToggleDefeatedUsecaseImpl(repository: locator<ProgressRepository>()));
+    locator.registerFactory<SetMapRevealedUsecase>(() =>
+        SetMapRevealedUsecaseImpl(repository: locator<ProgressRepository>()));
+  });
+
+  tearDown(() => locator.reset());
 
   testWidgets('app boots into album with content', (tester) async {
-    final c = AlbumController(
-        repo: BossRepository.withLoader((_) async => _json),
-        store: ProgressStore());
-    await c.init();
-
-    await tester.pumpWidget(ChangeNotifierProvider.value(
-      value: c,
-      child: const MaterialApp(home: AlbumScreen()),
-    ));
-    await tester.pump();
+    await tester.pumpWidget(const MaterialApp(home: AlbumScreen()));
+    await tester.pumpAndSettle();
 
     expect(find.text('⚔️ Elden Album'), findsOneWidget);
     expect(find.text('MARGIT'), findsOneWidget);

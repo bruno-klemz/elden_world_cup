@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:elden_world_cup/domain/models/damage_type.dart';
-import 'package:elden_world_cup/domain/models/loot_item.dart';
-import 'package:elden_world_cup/presentation/boss/widgets/combat_section.dart';
-import 'package:elden_world_cup/presentation/boss/widgets/loot_section.dart';
+import 'package:elden_world_cup/album/domain/entity/damage_type.dart';
+import 'package:elden_world_cup/album/domain/entity/loot_item.dart';
+import 'package:elden_world_cup/boss/presenter/boss_details/widgets/combat_section.dart';
+import 'package:elden_world_cup/boss/presenter/boss_details/widgets/loot_section.dart';
 
 Widget _host(Widget c) => MaterialApp(home: Scaffold(body: c));
 

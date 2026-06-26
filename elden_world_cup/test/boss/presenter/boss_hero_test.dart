@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:elden_world_cup/domain/models/boss.dart';
-import 'package:elden_world_cup/domain/models/map_coord.dart';
-import 'package:elden_world_cup/presentation/boss/widgets/boss_hero.dart';
+import 'package:elden_world_cup/album/domain/entity/boss.dart';
+import 'package:elden_world_cup/album/domain/entity/map_coord.dart';
+import 'package:elden_world_cup/boss/presenter/boss_details/widgets/boss_hero.dart';
 
 const _boss = Boss(
   id: 'malenia', name: 'Malenia', subtitle: 'Boss opcional',

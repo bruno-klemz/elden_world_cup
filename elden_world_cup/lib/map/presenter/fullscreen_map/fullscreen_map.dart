@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../domain/models/boss.dart';
-import '../theme/app_theme.dart';
+import '../../../album/domain/entity/boss.dart';
+import '../../../theme/app_theme.dart';
 
 class FullscreenMap extends StatelessWidget {
   const FullscreenMap({super.key, required this.boss});

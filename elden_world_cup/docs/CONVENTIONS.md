@@ -10,29 +10,27 @@ Flutter, without importing monorepo/enterprise overhead we don't need.
 
 ## Architecture
 
-We already follow a layered structure. Keep it:
+Feature-based Clean Architecture, mirroring `jus-pra-voce-app`. Each feature is
+`lib/<feature>/{data,domain,presenter}`:
 
-- **`domain/`** — pure Dart, no Flutter framework deps in the core logic.
-  - `models/` — immutable entities (`Boss`, `Region`, `DamageType`, …).
-  - `progress.dart` — value object + pure transitions.
-- **`data/`** — data access. `boss_repository.dart` (parse asset), `progress_store.dart` (persistence).
-- **`presentation/`** — UI: screens + widgets, grouped by feature (`album/`, `boss/`, `map/`).
-- **`state/`** — `AlbumController` (`ChangeNotifier`) is our state holder.
+- **`domain/`** — pure Dart, no Flutter deps.
+  - `entity/` — immutable entities (`Boss`, `Region`, `DamageType`, `Progress`, …), using `Equatable`.
+  - `repository/` — repository **interfaces** (contracts only).
+  - `usecase/` — one class per operation (`abstract XUsecase` + `XUsecaseImpl`), depends on repositories.
+- **`data/`** — `repository/` holds the concrete `*Impl` (the only place that imports the external dep, e.g. `shared_preferences`, `rootBundle`).
+- **`presenter/<screen>/`** — `bloc/` (`*_bloc.dart` + `part` event/state), `*_screen.dart` (the **wire**: `BlocProvider` + `locator`), `*_view.dart` (pure UI consuming the bloc via `BlocBuilder`/`BlocConsumer`), `widgets/`.
 
-**Adopted from their Clean Architecture (scaled down):**
-- Repository pattern (single source of truth, easy to mock). ✅ done
-- Separation of layers with the dependency rule (UI → state → data → domain). ✅ done
-- Adapter rule: any external dependency (SDK/plugin) is wrapped, and that wrapper
-  is the only file importing it. (We currently only use `shared_preferences`,
-  isolated in `progress_store.dart` — keep new deps similarly isolated.)
+Features: **album** (grid), **boss** (full-screen details), **map** (fullscreen, presenter-only). **theme** is a simple domain (`lib/theme/app_theme.dart`, shared UI, no layers). `lib/service_locator.dart` registers repositories (singletons) and use cases (factories) with `get_it`; **BLoCs are never registered** — created in the wire.
 
-**Deliberately skipped (overkill for this app):**
-- Melos monorepo / workspace packages.
-- `get_it` service locator + `PresenterWire`/`Presenter` composition root —
-  `provider` + a single `ChangeNotifier` is enough at this size. Revisit if the
-  app grows multiple independent features.
-- Use-case classes per operation — our logic is small; methods on the controller
-  + the `Progress` value object cover it. Introduce use cases if logic grows.
+**Adopted (full fidelity to the team's pattern):**
+- `flutter_bloc` for state (business logic in BLoCs, constructor-injected use cases).
+- `get_it` service locator + wire/view composition root.
+- Repository interface in `domain/` + impl in `data/` (dependency inversion).
+- Use cases per operation.
+- Adapter rule: external deps isolated in their repository impl.
+
+**Deliberately skipped (monorepo overhead):**
+- Melos / workspace packages.
 - GraphQL structure — we're fully offline.
 
 ## Coding Standards (adopted)
@@ -41,9 +39,9 @@ We already follow a layered structure. Keep it:
 - **File names match the primary class** (snake_case file, PascalCase class).
 - **~200 line file limit.** Split widgets into their own files under `widgets/`.
   Avoid private `_Widget` classes embedded in another file — give them a file.
-- **A widget either takes all data via props OR reads state via the controller** —
-  don't mix. Our leaf widgets (`StickerSlot`, `CombatSection`, …) are prop-driven;
-  `AlbumScreen`/`BossSheet` read the controller.
+- **A widget either takes all data via props OR reads state via a BLoC** —
+  don't mix. Leaf widgets (`StickerSlot`, `CombatSection`, `RegionSection`, …) are
+  prop-driven; the `*_view.dart` files read the bloc via `BlocBuilder`/`BlocConsumer`.
 - **No nested ternaries** — extract to a variable or `if`/`else`.
 - **Cache repeated getters** as locals at the top of `build()`.
 - **Check `mounted`** before `setState` from async callbacks.

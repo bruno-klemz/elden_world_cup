@@ -1,7 +1,7 @@
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
-import '../../../domain/models/boss.dart';
-import '../../theme/app_theme.dart';
+import '../../../domain/entity/boss.dart';
+import '../../../../theme/app_theme.dart';
 
 // Standard luminance grayscale matrix for ColorFilter.matrix.
 const List<double> _grayscaleMatrix = <double>[

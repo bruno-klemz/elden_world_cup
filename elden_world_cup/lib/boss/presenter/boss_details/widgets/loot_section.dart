@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../domain/models/loot_item.dart';
-import '../../theme/app_theme.dart';
+import '../../../../album/domain/entity/loot_item.dart';
+import '../../../../theme/app_theme.dart';
 
 class LootSection extends StatelessWidget {
   const LootSection({super.key, required this.loot});

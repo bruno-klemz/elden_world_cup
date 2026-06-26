@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../../domain/models/boss.dart';
-import '../../../domain/models/region.dart';
-import '../../../state/album_controller.dart';
-import '../../theme/app_theme.dart';
+import '../../../../theme/app_theme.dart';
+import '../../../domain/entity/boss.dart';
+import '../../../domain/entity/region.dart';
 import 'sticker_slot.dart';
 
 class RegionSection extends StatelessWidget {
@@ -10,18 +9,19 @@ class RegionSection extends StatelessWidget {
     super.key,
     required this.region,
     required this.bosses,
-    required this.controller,
+    required this.defeatedCount,
+    required this.isDefeated,
     required this.onBossTap,
   });
 
   final Region region;
   final List<Boss> bosses;
-  final AlbumController controller;
+  final int defeatedCount;
+  final bool Function(String bossId) isDefeated;
   final void Function(Boss) onBossTap;
 
   @override
   Widget build(BuildContext context) {
-    final defeated = controller.defeatedIn(region.id);
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 6, 16, 16),
       child: Column(
@@ -34,7 +34,7 @@ class RegionSection extends StatelessWidget {
               const Expanded(
                   child: Divider(color: AppColors.border, height: 1)),
               const SizedBox(width: 8),
-              Text('$defeated/${bosses.length}',
+              Text('$defeatedCount/${bosses.length}',
                   style:
                       const TextStyle(color: Color(0xFF6B5D44), fontSize: 11)),
             ],
@@ -51,7 +51,7 @@ class RegionSection extends StatelessWidget {
               for (final boss in bosses)
                 StickerSlot(
                   boss: boss,
-                  defeated: controller.isDefeated(boss.id),
+                  defeated: isDefeated(boss.id),
                   onTap: () => onBossTap(boss),
                 ),
             ],
