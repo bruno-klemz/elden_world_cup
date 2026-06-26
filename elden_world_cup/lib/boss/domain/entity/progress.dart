@@ -1,4 +1,6 @@
-class Progress {
+import 'package:equatable/equatable.dart';
+
+class Progress extends Equatable {
   final Set<String> defeated;
   final Set<String> revealedMap;
 
@@ -23,4 +25,7 @@ class Progress {
 
   int defeatedCountIn(Iterable<String> bossIds) =>
       bossIds.where(defeated.contains).length;
+
+  @override
+  List<Object?> get props => [defeated, revealedMap];
 }

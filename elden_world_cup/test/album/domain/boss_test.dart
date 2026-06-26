@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:elden_world_cup/domain/models/boss.dart';
-import 'package:elden_world_cup/domain/models/damage_type.dart';
+import 'package:elden_world_cup/album/domain/entity/boss.dart';
+import 'package:elden_world_cup/album/domain/entity/damage_type.dart';
 
 void main() {
   test('Boss.fromJson parses all fields including snake_case damage keys', () {

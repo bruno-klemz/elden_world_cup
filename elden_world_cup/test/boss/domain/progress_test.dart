@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:elden_world_cup/domain/progress.dart';
+import 'package:elden_world_cup/boss/domain/entity/progress.dart';
 
 void main() {
   test('toggleDefeated adds then removes immutably', () {

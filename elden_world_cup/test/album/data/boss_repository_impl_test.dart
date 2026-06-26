@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:elden_world_cup/data/boss_repository.dart';
+import 'package:elden_world_cup/album/data/repository/boss_repository_impl.dart';
 
 void main() {
   test('load parses regions and bosses from injected JSON', () async {
@@ -8,7 +8,7 @@ void main() {
      "bosses":[{"id":"margit","name":"Margit","region":"limgrave",
        "art":"a.webp","locationName":"loc","mapCoord":{"x":0.1,"y":0.2},
        "lore":"l"}]}''';
-    final repo = BossRepository.withLoader((_) async => json);
+    final repo = BossRepositoryImpl.withLoader((_) async => json);
 
     final data = await repo.load();
 
@@ -22,7 +22,7 @@ void main() {
        {"id":"b","name":"B","order":2},
        {"id":"a","name":"A","order":1}],
      "bosses":[]}''';
-    final repo = BossRepository.withLoader((_) async => json);
+    final repo = BossRepositoryImpl.withLoader((_) async => json);
 
     final data = await repo.load();
 

@@ -1,8 +1,9 @@
+import 'package:equatable/equatable.dart';
 import 'damage_type.dart';
 import 'loot_item.dart';
 import 'map_coord.dart';
 
-class Boss {
+class Boss extends Equatable {
   final String id;
   final String name;
   final String? subtitle;
@@ -49,4 +50,19 @@ class Boss {
       lore: json['lore'] as String,
     );
   }
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        subtitle,
+        region,
+        art,
+        locationName,
+        mapCoord,
+        strongVs,
+        weakTo,
+        loot,
+        lore,
+      ];
 }

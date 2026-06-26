@@ -1,4 +1,6 @@
-class Region {
+import 'package:equatable/equatable.dart';
+
+class Region extends Equatable {
   final String id;
   final String name;
   final int order;
@@ -9,4 +11,7 @@ class Region {
         name: json['name'] as String,
         order: json['order'] as int,
       );
+
+  @override
+  List<Object?> get props => [id, name, order];
 }
