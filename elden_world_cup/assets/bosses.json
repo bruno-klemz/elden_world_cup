@@ -270,7 +270,8 @@
           "name": "Cabeça de Besta Divina"
         }
       ],
-      "lore": "Uma besta divina reverenciada como mensageira dos céus, cuja fúria reflete o tumulto dos firmamentos; durante a invasão da torre por Messmer, seu ritual cerimonial de dança do leão foi reaproveitado como uma forma devastadora de combate."
+      "lore": "Uma besta divina reverenciada como mensageira dos céus, cuja fúria reflete o tumulto dos firmamentos; durante a invasão da torre por Messmer, seu ritual cerimonial de dança do leão foi reaproveitado como uma forma devastadora de combate.",
+      "mainOrder": 1
     },
     {
       "id": "divine_beast_dancing_lion_scadu_altus",
@@ -433,7 +434,8 @@
           "name": "Lembrança do Cavaleiro das Luas Gêmeas"
         }
       ],
-      "lore": "Rellana foi outrora uma princesa Carian e irmã mais nova de Rennala que renunciou ao seu direito de nascença para ficar ao lado de Messmer, tornando-se a Espada de Messmer. Ela empunha lâminas gêmeas encantadas imbuídas tanto de magia de pedra-cintilante quanto de chama."
+      "lore": "Rellana foi outrora uma princesa Carian e irmã mais nova de Rennala que renunciou ao seu direito de nascença para ficar ao lado de Messmer, tornando-se a Espada de Messmer. Ela empunha lâminas gêmeas encantadas imbuídas tanto de magia de pedra-cintilante quanto de chama.",
+      "mainOrder": 2
     },
     {
       "id": "red_bear",
@@ -801,39 +803,6 @@
       "lore": "O Hipopótamo Dourado é um Aspecto do Crisol que se manifestou em hipopótamos dourados, fazendo crescer uma massa eriçada de pelos semelhantes a espinhos. Encarna a antiga vitalidade do Crisol de antes de a terra ser ensombrada, e seus restos podem ser vistos por todas as antigas ruínas da Terra das Sombras."
     },
     {
-      "id": "messmer_the_impaler_1",
-      "name": "Messmer, o Empalador",
-      "subtitle": null,
-      "region": "gravesite_plain",
-      "art": "images/malenia.webp",
-      "locationName": "Fortaleza das Sombras",
-      "mapCoord": {
-        "x": 0,
-        "y": 0
-      },
-      "strongVs": [
-        "fire"
-      ],
-      "weakTo": [
-        "slash",
-        "holy",
-        "frost"
-      ],
-      "loot": [
-        {
-          "name": "Runas",
-          "quantity": 400000
-        },
-        {
-          "name": "Lembrança do Empalador"
-        },
-        {
-          "name": "Brasa de Messmer"
-        }
-      ],
-      "lore": "Messmer, o Empalador, é o filho abandonado da Rainha Marika, secretamente confinado à Terra das Sombras depois que ela selou uma serpente malévola dentro dele. Por ordem de Marika, ele liderou uma cruzada devastadora contra os Chifrudos, queimando seus assentamentos e bestas divinas."
-    },
-    {
       "id": "messmer_the_impaler_2",
       "name": "Messmer, o Empalador",
       "subtitle": "O Empalador",
@@ -864,7 +833,8 @@
           "name": "Brasa de Messmer"
         }
       ],
-      "lore": "Messmer é o filho abandonado da Rainha Marika, amaldiçoado desde o nascimento com uma serpente abissal selada por trás de seu olho, que se tornou uma ferramenta de conquista religiosa, queimando civilizações inteiras na Terra das Sombras. A forma da Serpente Vil é sua transformação de segunda fase, enfrentada e derrotada pelo Maculado."
+      "lore": "Messmer é o filho abandonado da Rainha Marika, amaldiçoado desde o nascimento com uma serpente abissal selada por trás de seu olho, que se tornou uma ferramenta de conquista religiosa, queimando civilizações inteiras na Terra das Sombras. A forma da Serpente Vil é sua transformação de segunda fase, enfrentada e derrotada pelo Maculado.",
+      "mainOrder": 2
     },
     {
       "id": "metyr_mother_of_fingers",
@@ -1073,7 +1043,8 @@
           "name": "Espada Estrelada"
         }
       ],
-      "lore": "Uma rainha semi-humana semelhante a um chacal que empunha um cajado e lidera os seus pela região costeira da Terra da Sombra. Ela concede a Espada Estrelada a seus espadachins, que juram encontrar a verdade que jaz no fim da procissão das estrelas, insinuando uma inclinação celestial na cultura semi-humana."
+      "lore": "Uma rainha semi-humana semelhante a um chacal que empunha um cajado e lidera os seus pela região costeira da Terra da Sombra. Ela concede a Espada Estrelada a seus espadachins, que juram encontrar a verdade que jaz no fim da procissão das estrelas, insinuando uma inclinação celestial na cultura semi-humana.",
+      "mainOrder": 1
     },
     {
       "id": "putrescent_knight",
@@ -1284,7 +1255,8 @@
           "name": "Máscara do Lamentador"
         }
       ],
-      "lore": "O Lamentador é um ser cuja expressão incomum transmite uma sensação de contentamento, dita representar o estado de um habitante do paraíso. Foi negado e ocultado do mundo pelo povo da torre, que via a verdadeira felicidade com profundo temor."
+      "lore": "O Lamentador é um ser cuja expressão incomum transmite uma sensação de contentamento, dita representar o estado de um habitante do paraíso. Foi negado e ocultado do mundo pelo povo da torre, que via a verdadeira felicidade com profundo temor.",
+      "mainOrder": 1
     },
     {
       "id": "tibia_mariner_limgrave",
@@ -1538,7 +1510,8 @@
           "name": "Coração de Bayle"
         }
       ],
-      "lore": "Bayle é o progenitor dos dracos que certa vez desafiou o Senhor dos Dragões Placidusax, uma batalha que deixou ambos gravemente feridos. Ele é o inimigo jurado dos dragões antigos e o alvo da vingança de uma vida inteira do guerreiro draco Igon."
+      "lore": "Bayle é o progenitor dos dracos que certa vez desafiou o Senhor dos Dragões Placidusax, uma batalha que deixou ambos gravemente feridos. Ele é o inimigo jurado dos dragões antigos e o alvo da vingança de uma vida inteira do guerreiro draco Igon.",
+      "mainOrder": 1
     },
     {
       "id": "jagged_peak_drake_jagged_peak_jagged_peak_foothills",
@@ -1626,7 +1599,8 @@
           "name": "Lembrança do Senhor da Chama Frenética"
         }
       ],
-      "lore": "Midra foi um sábio que tentou resistir à atração da Chama Frenética, mas acabou consumido por ela, tornando-se seu Senhor nas profundezas de sua mansão na Floresta Abissal. Ele suportou imenso sofrimento e loucura, sua ambição considerada fraca demais para verdadeiramente dominar a chama."
+      "lore": "Midra foi um sábio que tentou resistir à atração da Chama Frenética, mas acabou consumido por ela, tornando-se seu Senhor nas profundezas de sua mansão na Floresta Abissal. Ele suportou imenso sofrimento e loucura, sua ambição considerada fraca demais para verdadeiramente dominar a chama.",
+      "mainOrder": 1
     },
     {
       "id": "fallingstar_beast_caelid",
@@ -1938,7 +1912,8 @@
           "name": "Lembrança da Santa do Broto"
         }
       ],
-      "lore": "Outrora uma santa cuja igreja foi incendiada durante a cruzada de Messmer, Romina abraçou um elemento divino corrompido entrelaçado à Podridão Escarlate, transformando-se em uma criatura híbrida tomada pela podridão que empunha um broto sagrado como uma lâmina de haste mortal. Ela é uma chefe de Lembrança encontrada no Reino das Sombras."
+      "lore": "Outrora uma santa cuja igreja foi incendiada durante a cruzada de Messmer, Romina abraçou um elemento divino corrompido entrelaçado à Podridão Escarlate, transformando-se em uma criatura híbrida tomada pela podridão que empunha um broto sagrado como uma lâmina de haste mortal. Ela é uma chefe de Lembrança encontrada no Reino das Sombras.",
+      "mainOrder": 1
     },
     {
       "id": "leda_and_allies",
@@ -1998,7 +1973,8 @@
           "name": "Lembrança de um Deus e um Lorde"
         }
       ],
-      "lore": "Miquella reviveu a alma do General Radahn ao prendê-la ao cadáver de Mohg, cumprindo uma promessa de infância de que Radahn se tornaria seu consorte. Como o chefe final de Shadow of the Erdtree, ele se ergue como o divino rei consorte de Miquella no plano de forjar uma nova era de compaixão."
+      "lore": "Miquella reviveu a alma do General Radahn ao prendê-la ao cadáver de Mohg, cumprindo uma promessa de infância de que Radahn se tornaria seu consorte. Como o chefe final de Shadow of the Erdtree, ele se ergue como o divino rei consorte de Miquella no plano de forjar uma nova era de compaixão.",
+      "mainOrder": 1
     },
     {
       "id": "promised_consort_radahn_2",
@@ -7060,7 +7036,8 @@
           "name": "Meteorito de Astel"
         }
       ],
-      "lore": "Astel é uma criatura insetoide de origem cósmica, descrita como uma estrela malformada nascida no distante vazio sem voo. Essa entidade um dia destruiu uma Cidade Eterna e roubou seu céu, sendo vista como uma estrela cadente de mau agouro."
+      "lore": "Astel é uma criatura insetoide de origem cósmica, descrita como uma estrela malformada nascida no distante vazio sem voo. Essa entidade um dia destruiu uma Cidade Eterna e roubou seu céu, sendo vista como uma estrela cadente de mau agouro.",
+      "mainOrder": 1
     },
     {
       "id": "great_wyrm_theodorix",
@@ -7092,7 +7069,8 @@
           "name": "Coração de Dragão"
         }
       ],
-      "lore": "Theodorix foi outrora um guerreiro troll que lutou na Guerra Contra os Gigantes, mas passou pela comunhão dracônica e foi transformado em um grande verme, amaldiçoado a rastejar pela terra como uma sombra do que um dia foi."
+      "lore": "Theodorix foi outrora um guerreiro troll que lutou na Guerra Contra os Gigantes, mas passou pela comunhão dracônica e foi transformado em um grande verme, amaldiçoado a rastejar pela terra como uma sombra do que um dia foi.",
+      "mainOrder": 2
     },
     {
       "id": "misbegotten_crusader_consecrated_snowfield",
@@ -7213,7 +7191,8 @@
           "name": "Foice de Guerra de Loretta"
         }
       ],
-      "lore": "Loretta foi uma cavaleira real de Caria que buscou refúgio para os Albináuricos perseguidos e o encontrou na Árvore Sacra, entrando ao serviço de Miquella como sua guardiã. Em juramento de sua lealdade, ela substituiu a pedra cintilante azul de sua arma por ouro puro."
+      "lore": "Loretta foi uma cavaleira real de Caria que buscou refúgio para os Albináuricos perseguidos e o encontrou na Árvore Sacra, entrando ao serviço de Miquella como sua guardiã. Em juramento de sua lealdade, ela substituiu a pedra cintilante azul de sua arma por ouro puro.",
+      "mainOrder": 2
     },
     {
       "id": "malenia_blade_of_miquella",
@@ -7248,7 +7227,8 @@
           "name": "Grande Runa de Malenia"
         }
       ],
-      "lore": "Malenia é uma semideusa Empírea e irmã gêmea de Miquella, amaldiçoada com a podridão escarlate desde o nascimento. Lendária por seu duelo contra Radahn, o Flagelo das Estrelas, durante a Fragmentação, ela desencadeou a Podridão Escarlate que devastou Caelid, e agora aguarda o retorno de seu irmão nas profundezas da Árvore Sacra em Elphael."
+      "lore": "Malenia é uma semideusa Empírea e irmã gêmea de Miquella, amaldiçoada com a podridão escarlate desde o nascimento. Lendária por seu duelo contra Radahn, o Flagelo das Estrelas, durante a Fragmentação, ela desencadeou a Podridão Escarlate que devastou Caelid, e agora aguarda o retorno de seu irmão nas profundezas da Árvore Sacra em Elphael.",
+      "mainOrder": 1
     },
     {
       "id": "ancestor_spirit",
@@ -7377,7 +7357,8 @@
           "name": "Lembrança do Senhor do Sangue"
         }
       ],
-      "lore": "Mohg é um Semideus que abraçou seu maldito sangue de Presságio após comungar com a Mãe Disforme, empunhando a chama de sangue em busca de sua ambição de elevar Miquella à divindade e reinar como seu consorte sobre a Dinastia Mohgwyn. Embora não seja ele próprio um Empíreo, sua obsessão pelo jovem Empíreo — que nunca correspondeu a seus afetos — guiou todos os seus planos."
+      "lore": "Mohg é um Semideus que abraçou seu maldito sangue de Presságio após comungar com a Mãe Disforme, empunhando a chama de sangue em busca de sua ambição de elevar Miquella à divindade e reinar como seu consorte sobre a Dinastia Mohgwyn. Embora não seja ele próprio um Empíreo, sua obsessão pelo jovem Empíreo — que nunca correspondeu a seus afetos — guiou todos os seus planos.",
+      "mainOrder": 1
     },
     {
       "id": "dragonkin_soldier_of_nokstella",
@@ -7824,40 +7805,6 @@
       ],
       "lore": "Astel é uma estrela malformada, um ser celestial nascido no vazio que caiu sobre a Cidade Eterna de Nokstella e a devastou, destruindo seu céu. Um horror cósmico que deve ser derrotado para avançar na missão de Ranni (no Grande Claustro) rumo ao final da Era das Estrelas.",
       "mainOrder": 1
-    },
-    {
-      "id": "astel_naturalborn_of_the_void_consecrated_snowfield",
-      "name": "Astel, Nascido Natural do Vazio",
-      "subtitle": "Nascido Natural do Vazio",
-      "region": "consecrated_snowfield",
-      "art": "images/malenia.webp",
-      "locationName": "Túnel de Yelough Anix",
-      "mapCoord": {
-        "x": 0,
-        "y": 0
-      },
-      "strongVs": [
-        "magic",
-        "fire",
-        "lightning",
-        "holy"
-      ],
-      "weakTo": [
-        "standard",
-        "slash",
-        "strike",
-        "pierce"
-      ],
-      "loot": [
-        {
-          "name": "Runas",
-          "quantity": 120000
-        },
-        {
-          "name": "Meteorito de Astel"
-        }
-      ],
-      "lore": "Astel é uma estrela malformada, um ser celestial nascido no vazio que caiu sobre a Cidade Eterna de Nokstella e a devastou, destruindo seu céu. Um horror cósmico que deve ser derrotado para avançar na missão de Ranni (no Grande Claustro) rumo ao final da Era das Estrelas."
     },
     {
       "id": "godfrey_first_elden_lord_hoarah_loux",
