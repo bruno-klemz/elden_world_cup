@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../domain/models/boss.dart';
 import '../../state/album_controller.dart';
+import '../boss/boss_sheet.dart';
 import '../theme/app_theme.dart';
 import 'widgets/progress_header.dart';
 import 'widgets/region_section.dart';
@@ -35,7 +36,9 @@ class AlbumScreen extends StatelessWidget {
                 region: region,
                 bosses: c.data.bossesIn(region.id),
                 controller: c,
-                onBossTap: (boss) => onBossTap?.call(context, boss),
+                onBossTap: (boss) =>
+                    (onBossTap ?? (ctx, b) => BossSheet.show(ctx, b))
+                        .call(context, boss),
               ),
             ),
         ],
