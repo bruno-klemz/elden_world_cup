@@ -5,6 +5,7 @@ import '../../domain/entity/boss.dart';
 import '../../domain/entity/region.dart';
 import 'bloc/search_bloc.dart';
 import 'search_result.dart';
+import 'widgets/progress_ring.dart';
 
 /// Pure UI for search. Reads [SearchBloc]; pops with a [SearchResult] on tap.
 class SearchView extends StatelessWidget {
@@ -120,15 +121,7 @@ class SearchView extends StatelessWidget {
     final defeated = state.defeatedIn(region.id);
     final total = state.data!.bossesIn(region.id).length;
     return _tile(
-      leading: Container(
-        width: 34,
-        height: 34,
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-            color: AppColors.surfaceAlt,
-            borderRadius: BorderRadius.circular(8)),
-        child: const Text('🗺️', style: TextStyle(fontSize: 16)),
-      ),
+      leading: ProgressRing(progress: total == 0 ? 0 : defeated / total),
       title: region.name,
       subtitle: '$defeated/$total derrotados',
       onTap: () => Navigator.of(context).pop(RegionResult(region.id)),
