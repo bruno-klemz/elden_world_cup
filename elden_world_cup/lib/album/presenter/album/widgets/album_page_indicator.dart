@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import '../../../../theme/app_theme.dart';
 
-/// Floating pill of dots indicating the current region page among [count],
+/// Floating pill showing the current region position as "current/total",
 /// sitting above a bottom scrim that fades the scrolling content into the
-/// scaffold background so nothing shows vividly behind it.
-class AlbumPageDots extends StatelessWidget {
-  const AlbumPageDots({
+/// scaffold background so nothing shows vividly behind it. Scales to any number
+/// of regions (unlike a row of dots).
+class AlbumPageIndicator extends StatelessWidget {
+  const AlbumPageIndicator({
     super.key,
     required this.count,
     required this.currentIndex,
@@ -43,7 +44,7 @@ class AlbumPageDots extends StatelessWidget {
   }
 
   Widget _pill() => Container(
-        padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 7),
         decoration: BoxDecoration(
           color: AppColors.surface,
           borderRadius: BorderRadius.circular(20),
@@ -56,23 +57,23 @@ class AlbumPageDots extends StatelessWidget {
             ),
           ],
         ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            for (var i = 0; i < count; i++)
-              AnimatedContainer(
-                duration: const Duration(milliseconds: 200),
-                margin: EdgeInsets.only(left: i == 0 ? 0 : 7),
-                width: i == currentIndex ? 20 : 7,
-                height: 7,
-                decoration: BoxDecoration(
-                  color: i == currentIndex
-                      ? AppColors.gold
-                      : const Color(0xFF5A4C34),
-                  borderRadius: BorderRadius.circular(4),
-                ),
-              ),
-          ],
+        child: Text.rich(
+          TextSpan(children: [
+            TextSpan(
+              text: '${currentIndex + 1}',
+              style: const TextStyle(
+                  color: AppColors.gold,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w800),
+            ),
+            TextSpan(
+              text: ' / $count',
+              style: const TextStyle(
+                  color: AppColors.textMuted,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w600),
+            ),
+          ]),
         ),
       );
 }

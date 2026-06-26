@@ -4,7 +4,7 @@ import '../../../boss/presenter/boss_details/boss_details_screen.dart';
 import '../../../theme/app_theme.dart';
 import '../../domain/entity/boss.dart';
 import 'bloc/album_bloc.dart';
-import 'widgets/album_page_dots.dart';
+import 'widgets/album_page_indicator.dart';
 import 'widgets/region_page.dart';
 
 /// Pure UI for the album. Reads [AlbumBloc] from context.
@@ -106,7 +106,7 @@ class _AlbumViewState extends State<AlbumView> {
                     isDefeated: state.isDefeated,
                     revealBossId: state.justRevealedBossId,
                     slotKeyFor: _slotKeyFor,
-                    bottomInset: AlbumPageDots.reservedHeight,
+                    bottomInset: AlbumPageIndicator.reservedHeight,
                     onRevealDone: () =>
                         context.read<AlbumBloc>().add(const AlbumRevealConsumed()),
                     onBossTap: (boss) => _openBoss(context, boss),
@@ -121,7 +121,7 @@ class _AlbumViewState extends State<AlbumView> {
                   left: 0,
                   right: 0,
                   bottom: 0,
-                  child: AlbumPageDots(
+                  child: AlbumPageIndicator(
                       count: regions.length, currentIndex: _currentPage),
                 ),
             ],
