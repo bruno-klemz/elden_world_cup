@@ -20,16 +20,6 @@ void main() {
     expect(find.text('MALENIA'), findsOneWidget);
   });
 
-  testWidgets('defeated shows check badge, pending does not', (tester) async {
-    await tester.pumpWidget(_host(
-        StickerSlot(boss: _boss, defeated: true, onTap: () {})));
-    expect(find.byKey(const Key('slot-check')), findsOneWidget);
-
-    await tester.pumpWidget(_host(
-        StickerSlot(boss: _boss, defeated: false, onTap: () {})));
-    expect(find.byKey(const Key('slot-check')), findsNothing);
-  });
-
   testWidgets('tap fires onTap', (tester) async {
     var tapped = false;
     await tester.pumpWidget(_host(

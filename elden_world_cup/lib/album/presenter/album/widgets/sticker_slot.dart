@@ -91,20 +91,6 @@ class _StickerSlotState extends State<StickerSlot>
               fit: StackFit.expand,
               children: [
                 _artLayer(showColored),
-                if (showColored)
-                  Positioned(
-                    top: 4,
-                    right: 4,
-                    child: Container(
-                      key: const Key('slot-check'),
-                      width: 16,
-                      height: 16,
-                      decoration: const BoxDecoration(
-                          color: AppColors.gold, shape: BoxShape.circle),
-                      child: const Icon(Icons.check,
-                          size: 11, color: AppColors.background),
-                    ),
-                  ),
                 _nameStrip(showColored),
                 if (!showColored &&
                     !widget.animateReveal &&
