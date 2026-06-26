@@ -77,4 +77,20 @@ void main() {
       isA<AlbumState>().having((s) => s.isDefeated('margit'), 'defeated', true),
     ],
   );
+
+  blocTest<AlbumBloc, AlbumState>(
+    'AlbumRevealRequested sets justRevealedBossId, Consumed clears it',
+    build: build,
+    seed: () =>
+        const AlbumState(status: AlbumStatus.loaded, progress: Progress()),
+    act: (bloc) {
+      bloc.add(const AlbumRevealRequested('margit'));
+      bloc.add(const AlbumRevealConsumed());
+    },
+    expect: () => [
+      isA<AlbumState>()
+          .having((s) => s.justRevealedBossId, 'revealId', 'margit'),
+      isA<AlbumState>().having((s) => s.justRevealedBossId, 'revealId', null),
+    ],
+  );
 }

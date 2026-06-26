@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:elden_world_cup/album/domain/entity/boss.dart';
 import 'package:elden_world_cup/album/domain/entity/map_coord.dart';
+import 'package:elden_world_cup/album/presenter/album/widgets/reveal_overlay.dart';
 import 'package:elden_world_cup/album/presenter/album/widgets/sticker_slot.dart';
 
 const _boss = Boss(
@@ -35,5 +36,29 @@ void main() {
         StickerSlot(boss: _boss, defeated: false, onTap: () => tapped = true)));
     await tester.tap(find.byType(StickerSlot));
     expect(tapped, isTrue);
+  });
+
+  testWidgets('animateReveal plays the reveal and calls onRevealDone',
+      (tester) async {
+    var done = false;
+    await tester.pumpWidget(_host(StickerSlot(
+      boss: _boss,
+      defeated: true,
+      animateReveal: true,
+      onTap: () {},
+      onRevealDone: () => done = true,
+    )));
+    // the reveal overlay is mounted while animating
+    expect(find.byType(RevealOverlay), findsOneWidget);
+    // animation finishes -> onRevealDone fires
+    await tester.pumpAndSettle();
+    expect(done, isTrue);
+  });
+
+  testWidgets('without animateReveal there is no reveal overlay',
+      (tester) async {
+    await tester.pumpWidget(_host(
+        StickerSlot(boss: _boss, defeated: true, onTap: () {})));
+    expect(find.byType(RevealOverlay), findsNothing);
   });
 }

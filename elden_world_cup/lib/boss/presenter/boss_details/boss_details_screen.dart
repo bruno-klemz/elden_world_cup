@@ -14,9 +14,10 @@ class BossDetailsScreen extends StatelessWidget {
 
   final Boss boss;
 
-  /// Pushes the boss details as a full screen route.
-  static Future<void> push(BuildContext context, Boss boss) {
-    return Navigator.of(context).push(MaterialPageRoute(
+  /// Pushes the boss details as a full screen route. Resolves to the boss id
+  /// if it was marked defeated here, or null if the user just went back.
+  static Future<String?> push(BuildContext context, Boss boss) {
+    return Navigator.of(context).push<String>(MaterialPageRoute(
       builder: (_) => BossDetailsScreen(boss: boss),
     ));
   }

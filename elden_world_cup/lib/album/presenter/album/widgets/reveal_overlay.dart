@@ -23,11 +23,19 @@ class _RevealOverlayState extends State<RevealOverlay>
       vsync: this, duration: const Duration(milliseconds: 700));
 
   @override
+  void initState() {
+    super.initState();
+    if (widget.play) _play();
+  }
+
+  @override
   void didUpdateWidget(RevealOverlay old) {
     super.didUpdateWidget(old);
-    if (widget.play && !old.play) {
-      _c.forward(from: 0).whenComplete(() => widget.onDone?.call());
-    }
+    if (widget.play && !old.play) _play();
+  }
+
+  void _play() {
+    _c.forward(from: 0).whenComplete(() => widget.onDone?.call());
   }
 
   @override

@@ -16,3 +16,17 @@ class AlbumStarted extends AlbumEvent {
 class AlbumProgressRefreshed extends AlbumEvent {
   const AlbumProgressRefreshed();
 }
+
+/// Requests the reveal animation for a freshly defeated boss's slot.
+class AlbumRevealRequested extends AlbumEvent {
+  final String bossId;
+  const AlbumRevealRequested(this.bossId);
+
+  @override
+  List<Object?> get props => [bossId];
+}
+
+/// Clears the pending reveal once the slot animation has played.
+class AlbumRevealConsumed extends AlbumEvent {
+  const AlbumRevealConsumed();
+}

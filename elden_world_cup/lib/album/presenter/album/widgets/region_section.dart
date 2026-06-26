@@ -12,6 +12,9 @@ class RegionSection extends StatelessWidget {
     required this.defeatedCount,
     required this.isDefeated,
     required this.onBossTap,
+    this.revealBossId,
+    this.onRevealDone,
+    this.slotKeyFor,
   });
 
   final Region region;
@@ -19,6 +22,14 @@ class RegionSection extends StatelessWidget {
   final int defeatedCount;
   final bool Function(String bossId) isDefeated;
   final void Function(Boss) onBossTap;
+
+  /// Id of the boss whose slot should play the reveal animation (if in this
+  /// region).
+  final String? revealBossId;
+  final VoidCallback? onRevealDone;
+
+  /// Provides a stable [GlobalKey] per boss id so the album can scroll to it.
+  final GlobalKey Function(String bossId)? slotKeyFor;
 
   @override
   Widget build(BuildContext context) {
@@ -50,8 +61,12 @@ class RegionSection extends StatelessWidget {
             children: [
               for (final boss in bosses)
                 StickerSlot(
+                  key: slotKeyFor?.call(boss.id),
                   boss: boss,
                   defeated: isDefeated(boss.id),
+                  animateReveal: boss.id == revealBossId,
+                  onRevealDone:
+                      boss.id == revealBossId ? onRevealDone : null,
                   onTap: () => onBossTap(boss),
                 ),
             ],

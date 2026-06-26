@@ -7,19 +7,14 @@ import 'widgets/boss_hero.dart';
 import 'widgets/combat_section.dart';
 import 'widgets/loot_section.dart';
 import 'widgets/map_section.dart';
-import 'widgets/reveal_overlay.dart';
 import 'widgets/section_label.dart';
 
 /// Full-screen boss details. Reads [BossDetailsBloc] from context.
-class BossDetailsView extends StatefulWidget {
+///
+/// Marking the boss as defeated pops the route returning the boss id, so the
+/// album (the registry UI) is the place that plays the reveal animation.
+class BossDetailsView extends StatelessWidget {
   const BossDetailsView({super.key});
-
-  @override
-  State<BossDetailsView> createState() => _BossDetailsViewState();
-}
-
-class _BossDetailsViewState extends State<BossDetailsView> {
-  bool _playReveal = false;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +22,8 @@ class _BossDetailsViewState extends State<BossDetailsView> {
       backgroundColor: AppColors.background,
       body: BlocConsumer<BossDetailsBloc, BossDetailsState>(
         listenWhen: (prev, curr) => curr.justRevealed && !prev.justRevealed,
-        listener: (context, state) => setState(() => _playReveal = true),
+        listener: (context, state) =>
+            Navigator.of(context).pop(state.boss.id),
         builder: (context, state) {
           final boss = state.boss;
           final bloc = context.read<BossDetailsBloc>();
@@ -54,12 +50,7 @@ class _BossDetailsViewState extends State<BossDetailsView> {
                                 fontSize: 16,
                                 fontWeight: FontWeight.w800)),
                       ),
-                      background: RevealOverlay(
-                        play: _playReveal,
-                        onDone: () => setState(() => _playReveal = false),
-                        child:
-                            BossHero(boss: boss, defeated: state.isDefeated),
-                      ),
+                      background: BossHero(boss: boss, defeated: state.isDefeated),
                     );
                   },
                 ),

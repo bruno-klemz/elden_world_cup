@@ -7,10 +7,15 @@ class AlbumState extends Equatable {
   final AlbumData? data;
   final Progress progress;
 
+  /// Id of a boss whose slot should play the reveal animation. Null once
+  /// consumed.
+  final String? justRevealedBossId;
+
   const AlbumState({
     this.status = AlbumStatus.initial,
     this.data,
     this.progress = const Progress(),
+    this.justRevealedBossId,
   });
 
   bool get isLoaded => status == AlbumStatus.loaded && data != null;
@@ -30,14 +35,18 @@ class AlbumState extends Equatable {
     AlbumStatus? status,
     AlbumData? data,
     Progress? progress,
+    String? justRevealedBossId,
+    bool clearReveal = false,
   }) {
     return AlbumState(
       status: status ?? this.status,
       data: data ?? this.data,
       progress: progress ?? this.progress,
+      justRevealedBossId:
+          clearReveal ? null : (justRevealedBossId ?? this.justRevealedBossId),
     );
   }
 
   @override
-  List<Object?> get props => [status, data, progress];
+  List<Object?> get props => [status, data, progress, justRevealedBossId];
 }

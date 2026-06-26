@@ -22,6 +22,8 @@ class AlbumBloc extends Bloc<AlbumEvent, AlbumState> {
         super(const AlbumState()) {
     on<AlbumStarted>(_onStarted);
     on<AlbumProgressRefreshed>(_onProgressRefreshed);
+    on<AlbumRevealRequested>(_onRevealRequested);
+    on<AlbumRevealConsumed>(_onRevealConsumed);
   }
 
   Future<void> _onStarted(AlbumStarted event, Emitter<AlbumState> emit) async {
@@ -39,5 +41,14 @@ class AlbumBloc extends Bloc<AlbumEvent, AlbumState> {
       AlbumProgressRefreshed event, Emitter<AlbumState> emit) async {
     final progress = await _loadProgress();
     emit(state.copyWith(progress: progress));
+  }
+
+  void _onRevealRequested(
+      AlbumRevealRequested event, Emitter<AlbumState> emit) {
+    emit(state.copyWith(justRevealedBossId: event.bossId));
+  }
+
+  void _onRevealConsumed(AlbumRevealConsumed event, Emitter<AlbumState> emit) {
+    emit(state.copyWith(clearReveal: true));
   }
 }
