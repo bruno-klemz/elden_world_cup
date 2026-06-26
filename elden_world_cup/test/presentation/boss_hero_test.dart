@@ -13,14 +13,16 @@ const _boss = Boss(
 Widget _host(Widget c) => MaterialApp(home: Scaffold(body: c));
 
 void main() {
-  testWidgets('pending shows "Derrote para revelar"', (tester) async {
+  testWidgets('shows boss name in both states', (tester) async {
     await tester.pumpWidget(_host(const BossHero(boss: _boss, defeated: false)));
-    expect(find.textContaining('Derrote para revelar'), findsOneWidget);
+    expect(find.text('Malenia'), findsOneWidget);
+
+    await tester.pumpWidget(_host(const BossHero(boss: _boss, defeated: true)));
     expect(find.text('Malenia'), findsOneWidget);
   });
 
-  testWidgets('defeated does not show the reveal hint', (tester) async {
-    await tester.pumpWidget(_host(const BossHero(boss: _boss, defeated: true)));
+  testWidgets('does not render a redundant reveal hint', (tester) async {
+    await tester.pumpWidget(_host(const BossHero(boss: _boss, defeated: false)));
     expect(find.textContaining('Derrote para revelar'), findsNothing);
   });
 }

@@ -55,17 +55,31 @@ class _BossSheetState extends State<BossSheet> {
           pinned: true,
           backgroundColor: AppColors.background,
           iconTheme: const IconThemeData(color: AppColors.goldLight),
-          title: Text(boss.name,
-              style: const TextStyle(
-                  color: AppColors.goldLight,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w800)),
-          flexibleSpace: FlexibleSpaceBar(
-            background: RevealOverlay(
-              play: _playReveal,
-              onDone: () => setState(() => _playReveal = false),
-              child: BossHero(boss: boss, defeated: defeated),
-            ),
+          flexibleSpace: LayoutBuilder(
+            builder: (context, constraints) {
+              // Show the title only once the bar is (near) collapsed, so the
+              // name isn't duplicated with the large name in the hero.
+              final top = constraints.biggest.height;
+              final collapsed =
+                  top <= kToolbarHeight + MediaQuery.of(context).padding.top + 8;
+              return FlexibleSpaceBar(
+                centerTitle: true,
+                title: AnimatedOpacity(
+                  duration: const Duration(milliseconds: 150),
+                  opacity: collapsed ? 1 : 0,
+                  child: Text(boss.name,
+                      style: const TextStyle(
+                          color: AppColors.goldLight,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w800)),
+                ),
+                background: RevealOverlay(
+                  play: _playReveal,
+                  onDone: () => setState(() => _playReveal = false),
+                  child: BossHero(boss: boss, defeated: defeated),
+                ),
+              );
+            },
           ),
         ),
         SliverSafeArea(

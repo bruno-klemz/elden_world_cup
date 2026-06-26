@@ -13,19 +13,6 @@ class BossHero extends StatelessWidget {
     return Stack(fit: StackFit.expand, children: [
       _art(),
       const _BottomFade(),
-      if (!defeated)
-        const Positioned(
-          top: 12,
-          left: 0,
-          right: 0,
-          child: Text('⚔️ Derrote para revelar',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  color: Color(0xFFB9A878),
-                  fontSize: 11,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: .5)),
-        ),
       Positioned(
         bottom: 12,
         left: 16,
