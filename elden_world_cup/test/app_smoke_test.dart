@@ -44,7 +44,8 @@ void main() {
     await tester.pumpWidget(const MaterialApp(home: AlbumScreen()));
     await tester.pumpAndSettle();
 
-    expect(find.text('⚔️ Elden Album'), findsOneWidget);
+    // first region page shows the region name and its bosses
+    expect(find.text('Limgrave'), findsOneWidget);
     expect(find.text('MARGIT'), findsOneWidget);
   });
 }

@@ -9,7 +9,13 @@ enum DamageType {
   frost('Congelamento', '❄️', Color(0xFF1F2C3A)),
   lightning('Raio', '⚡', Color(0xFF33301A)),
   magic('Mágico', '🔮', Color(0xFF231F3A)),
-  physical('Físico', '🗡️', Color(0xFF2A2420));
+  physical('Físico', '🗡️', Color(0xFF2A2420)),
+  standard('Padrão', '🗡️', Color(0xFF2A2420)),
+  slash('Cortante', '⚔️', Color(0xFF2A2420)),
+  strike('Contundente', '🔨', Color(0xFF2A2420)),
+  pierce('Perfurante', '🏹', Color(0xFF2A2420)),
+  sleep('Sono', '💤', Color(0xFF1F2C3A)),
+  madness('Loucura', '🤯', Color(0xFF3A2A18));
 
   const DamageType(this.label, this.emoji, this.color);
   final String label;
@@ -36,6 +42,18 @@ enum DamageType {
         return DamageType.magic;
       case 'physical':
         return DamageType.physical;
+      case 'standard':
+        return DamageType.standard;
+      case 'slash':
+        return DamageType.slash;
+      case 'strike':
+        return DamageType.strike;
+      case 'pierce':
+        return DamageType.pierce;
+      case 'sleep':
+        return DamageType.sleep;
+      case 'madness':
+        return DamageType.madness;
       default:
         throw ArgumentError('Unknown damage type: $key');
     }

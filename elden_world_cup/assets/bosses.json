@@ -1,12 +1,85 @@
 {
   "regions": [
-    { "id": "limgrave", "name": "Limgrave", "order": 1 },
-    { "id": "liurnia", "name": "Liurnia", "order": 2 },
-    { "id": "caelid", "name": "Caelid", "order": 3 },
-    { "id": "altus", "name": "Planalto de Altus", "order": 4 },
-    { "id": "mountaintops", "name": "Cumes dos Gigantes", "order": 5 },
-    { "id": "haligtree", "name": "Haligtree", "order": 6 },
-    { "id": "capital", "name": "Leyndell", "order": 7 }
+    {
+      "id": "limgrave",
+      "name": "Limgrave",
+      "order": 1
+    },
+    {
+      "id": "liurnia",
+      "name": "Liurnia",
+      "order": 2
+    },
+    {
+      "id": "caelid",
+      "name": "Caelid",
+      "order": 3
+    },
+    {
+      "id": "altus",
+      "name": "Planalto de Altus",
+      "order": 4
+    },
+    {
+      "id": "mountaintops",
+      "name": "Cumes dos Gigantes",
+      "order": 5
+    },
+    {
+      "id": "haligtree",
+      "name": "Haligtree",
+      "order": 6
+    },
+    {
+      "id": "capital",
+      "name": "Leyndell",
+      "order": 7
+    },
+    {
+      "id": "weeping_peninsula",
+      "name": "Península Lacrimosa",
+      "order": 8
+    },
+    {
+      "id": "dragonbarrow",
+      "name": "Dragonbarrow",
+      "order": 9
+    },
+    {
+      "id": "gelmir",
+      "name": "Monte Gelmir",
+      "order": 10
+    },
+    {
+      "id": "siofra",
+      "name": "Siofra / Nokron",
+      "order": 11
+    },
+    {
+      "id": "forbidden_lands",
+      "name": "Terras Proibidas",
+      "order": 12
+    },
+    {
+      "id": "consecrated_snowfield",
+      "name": "Campo Nevado Consagrado",
+      "order": 13
+    },
+    {
+      "id": "hinterland",
+      "name": "Interior",
+      "order": 14
+    },
+    {
+      "id": "farum_azula",
+      "name": "Farum Azula em Ruínas",
+      "order": 15
+    },
+    {
+      "id": "cerulean_coast",
+      "name": "Costa Cerúlea (DLC)",
+      "order": 100
+    }
   ],
   "bosses": [
     {
@@ -15,12 +88,27 @@
       "subtitle": "O Caído Imundo",
       "region": "limgrave",
       "art": "images/malenia.webp",
-      "locationName": "Entrada do Castelo de Stormveil, Limgrave",
-      "mapCoord": { "x": 0.30, "y": 0.30 },
-      "strongVs": ["holy"],
-      "weakTo": ["bleed"],
-      "loot": [{ "name": "Talismã do Punho de Margit" }],
-      "lore": "Um espírito enviado para impedir os Imaculados de tomarem o Castelo de Stormveil. Empunha uma cajado de luz dourada e lâminas conjuradas."
+      "locationName": "Stormhill, acesso ao Castelo de Stormveil, Limgrave",
+      "mapCoord": {
+        "x": 0.3,
+        "y": 0.3
+      },
+      "strongVs": [
+        "holy"
+      ],
+      "weakTo": [
+        "slash"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 12000
+        },
+        {
+          "name": "Bolsa de Talismãs"
+        }
+      ],
+      "lore": "Um espírito enviado para impedir os Imaculados de tomarem o Castelo de Stormveil. Empunha um cajado de luz dourada e lâminas conjuradas. Nascido amaldiçoado como Onifério, devotou-se a guardar a Ordem Dourada."
     },
     {
       "id": "godrick",
@@ -29,12 +117,30 @@
       "region": "limgrave",
       "art": "images/malenia.webp",
       "locationName": "Castelo de Stormveil, Limgrave",
-      "mapCoord": { "x": 0.27, "y": 0.22 },
-      "strongVs": ["magic"],
-      "weakTo": ["bleed", "frost"],
+      "mapCoord": {
+        "x": 0.27,
+        "y": 0.22
+      },
+      "strongVs": [
+        "holy"
+      ],
+      "weakTo": [
+        "standard",
+        "slash",
+        "strike",
+        "pierce"
+      ],
       "loot": [
-        { "name": "Grande Runa de Godrick" },
-        { "name": "Lembrança do Enxertado" }
+        {
+          "name": "Runas",
+          "quantity": 20000
+        },
+        {
+          "name": "Grande Runa de Godrick"
+        },
+        {
+          "name": "Lembrança do Enxertado"
+        }
       ],
       "lore": "Descendente enfraquecido de Godfrey que enxerta membros de inimigos derrotados ao próprio corpo, na tentativa desesperada de recuperar o prestígio perdido."
     },
@@ -44,12 +150,1599 @@
       "subtitle": "Dragão Voador",
       "region": "limgrave",
       "art": "images/malenia.webp",
-      "locationName": "Lago Agheel, Limgrave",
-      "mapCoord": { "x": 0.39, "y": 0.34 },
-      "strongVs": ["fire"],
-      "weakTo": ["physical"],
-      "loot": [{ "name": "Coração de Dragão" }],
+      "locationName": "Ruínas Calcinadas pelo Dragão, Lago Agheel, Limgrave",
+      "mapCoord": {
+        "x": 0.39,
+        "y": 0.34
+      },
+      "strongVs": [],
+      "weakTo": [
+        "pierce"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 5000
+        },
+        {
+          "name": "Coração de Dragão"
+        }
+      ],
       "lore": "Um dragão que aterrorizou a região do Lago Agheel, cuspindo fogo sobre as ruínas e tornando a área um ermo carbonizado."
+    },
+    {
+      "id": "beastman_of_farum_azula",
+      "name": "Homem-Fera de Farum Azula",
+      "subtitle": "Guardião das Cavernas",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Caverna Groveside / Caverna Dragonbarrow, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "lightning"
+      ],
+      "weakTo": [
+        "strike",
+        "fire",
+        "sleep"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 1000
+        },
+        {
+          "name": "Talismã do Dragão de Chamas"
+        }
+      ],
+      "lore": "Criaturas oriundas das ruínas flutuantes de Farum Azula, o mausoléu que consagra um antigo dragão. Dizem possuir conhecimento além da compreensão humana e atacam com ferocidade."
+    },
+    {
+      "id": "bell_bearing_hunter_limgrave",
+      "name": "Caçador de Sinos",
+      "subtitle": "Elemer da Roseira",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Cabana do Mestre de Guerra, Limgrave (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 2700
+        },
+        {
+          "name": "Sino do Vendedor de Ossos"
+        }
+      ],
+      "lore": "Na verdade Elemer da Roseira, um caçador de comerciantes que só aparece à noite. Assassinou inúmeros mercadores e instrutores, ganhando uma reputação temível por todas as Terras Intermédias."
+    },
+    {
+      "id": "bell_bearing_hunter_liurnia",
+      "name": "Caçador de Sinos",
+      "subtitle": "Elemer da Roseira",
+      "region": "liurnia",
+      "art": "images/malenia.webp",
+      "locationName": "Igreja dos Votos, Liurnia (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 6000
+        },
+        {
+          "name": "Sino do Vendedor de Carne"
+        }
+      ],
+      "lore": "Na verdade Elemer da Roseira, um caçador de comerciantes que só aparece à noite. Assassinou inúmeros mercadores e instrutores, ganhando uma reputação temível por todas as Terras Intermédias."
+    },
+    {
+      "id": "bell_bearing_hunter_capital",
+      "name": "Caçador de Sinos",
+      "subtitle": "Elemer da Roseira",
+      "region": "capital",
+      "art": "images/malenia.webp",
+      "locationName": "Cabana do Mercador Eremita, Arredores da Capital (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 20000
+        },
+        {
+          "name": "Sino do Vendedor de Remédios"
+        }
+      ],
+      "lore": "Na verdade Elemer da Roseira, um caçador de comerciantes que só aparece à noite. Assassinou inúmeros mercadores e instrutores, ganhando uma reputação temível por todas as Terras Intermédias."
+    },
+    {
+      "id": "bell_bearing_hunter_dragonbarrow",
+      "name": "Caçador de Sinos",
+      "subtitle": "Elemer da Roseira",
+      "region": "dragonbarrow",
+      "art": "images/malenia.webp",
+      "locationName": "Cabana do Mercador Isolado, Dragonbarrow (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 50000
+        },
+        {
+          "name": "Sino do Vendedor de Pedras de Gravidade"
+        }
+      ],
+      "lore": "Na verdade Elemer da Roseira, um caçador de comerciantes que só aparece à noite. Assassinou inúmeros mercadores e instrutores, ganhando uma reputação temível por todas as Terras Intermédias."
+    },
+    {
+      "id": "black_knife_assassin_limgrave",
+      "name": "Assassino da Faca Negra",
+      "subtitle": "Carrasco Numen",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Catacumbas do Toque da Morte, Stormhill, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "holy",
+        "pierce"
+      ],
+      "weakTo": [
+        "standard",
+        "slash",
+        "strike",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 1600
+        },
+        {
+          "name": "Adaga Carmesim do Assassino"
+        }
+      ],
+      "lore": "Assassinas Numen com laços próximos à Rainha Marika, executoras da Noite das Facas Negras, em que assassinaram Godwyn, o Dourado, com lâminas imbuídas de um fragmento roubado da Runa da Morte."
+    },
+    {
+      "id": "black_knife_assassin_liurnia",
+      "name": "Assassino da Faca Negra",
+      "subtitle": "Carrasco Numen",
+      "region": "liurnia",
+      "art": "images/malenia.webp",
+      "locationName": "Catacumbas da Faca Negra, Liurnia",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "holy",
+        "pierce"
+      ],
+      "weakTo": [
+        "standard",
+        "slash",
+        "strike",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 4200
+        },
+        {
+          "name": "Adaga Cerúlea do Assassino"
+        },
+        {
+          "name": "Impressão da Faca Negra"
+        }
+      ],
+      "lore": "Assassinas Numen com laços próximos à Rainha Marika, executoras da Noite das Facas Negras, em que assassinaram Godwyn, o Dourado, com lâminas imbuídas de um fragmento roubado da Runa da Morte."
+    },
+    {
+      "id": "black_knife_assassin_altus_sages_cave",
+      "name": "Assassino da Faca Negra",
+      "subtitle": "Carrasco Numen",
+      "region": "altus",
+      "art": "images/malenia.webp",
+      "locationName": "Caverna do Sábio, Planalto de Altus",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "holy",
+        "pierce"
+      ],
+      "weakTo": [
+        "standard",
+        "slash",
+        "strike",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 9000
+        },
+        {
+          "name": "Véu Ocultante"
+        }
+      ],
+      "lore": "Assassinas Numen com laços próximos à Rainha Marika, executoras da Noite das Facas Negras, em que assassinaram Godwyn, o Dourado, com lâminas imbuídas de um fragmento roubado da Runa da Morte."
+    },
+    {
+      "id": "black_knife_assassin_altus_sainted_hero",
+      "name": "Assassino da Faca Negra",
+      "subtitle": "Carrasco Numen",
+      "region": "altus",
+      "art": "images/malenia.webp",
+      "locationName": "Túmulo do Herói Santo, Planalto de Altus",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "holy",
+        "pierce"
+      ],
+      "weakTo": [
+        "standard",
+        "slash",
+        "strike",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 10800
+        },
+        {
+          "name": "Faca Negra"
+        }
+      ],
+      "lore": "Assassinas Numen com laços próximos à Rainha Marika, executoras da Noite das Facas Negras, em que assassinaram Godwyn, o Dourado, com lâminas imbuídas de um fragmento roubado da Runa da Morte."
+    },
+    {
+      "id": "bloodhound_knight_darriwil",
+      "name": "Cavaleiro Sabujo Darriwil",
+      "subtitle": "Sabujo sem Mestre",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Cárcere Eterno do Cão Abandonado, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "standard",
+        "slash",
+        "strike"
+      ],
+      "weakTo": [
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 1900
+        },
+        {
+          "name": "Presa do Sabujo"
+        }
+      ],
+      "lore": "Darriwil provavelmente foi um servo que traiu seu mestre e agora está aprisionado. Os Cavaleiros Sabujos são caçadores treinados, conhecidos por servir um único mestre com lealdade inabalável por toda a vida."
+    },
+    {
+      "id": "crucible_knight_limgrave_stormhill",
+      "name": "Cavaleiro do Crisol",
+      "subtitle": "Guardião do Evergaol",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Evergaol de Stormhill, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "poison",
+        "scarlet_rot",
+        "bleed",
+        "frost",
+        "sleep",
+        "madness"
+      ],
+      "weakTo": [
+        "fire",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 2100
+        },
+        {
+          "name": "Aspectos do Crisol: Cauda"
+        }
+      ],
+      "lore": "Guerreiros pesadamente blindados que serviram a Godfrey, o primeiro Senhor Élden, extraindo poder do Crisol primordial da vida. Com o tempo, sua força e aparência passaram a ser vistas como caóticas e dignas de desprezo."
+    },
+    {
+      "id": "crucible_knight_limgrave_stormveil",
+      "name": "Cavaleiro do Crisol",
+      "subtitle": "Guardião do Evergaol",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Castelo de Stormveil, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "poison",
+        "scarlet_rot",
+        "bleed",
+        "frost",
+        "sleep",
+        "madness"
+      ],
+      "weakTo": [
+        "fire",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 1613
+        },
+        {
+          "name": "Aspecto do Crisol: Chifres"
+        }
+      ],
+      "lore": "Guerreiros pesadamente blindados que serviram a Godfrey, o primeiro Senhor Élden, extraindo poder do Crisol primordial da vida. Com o tempo, sua força e aparência passaram a ser vistas como caóticas e dignas de desprezo."
+    },
+    {
+      "id": "crucible_knight_siofra_river",
+      "name": "Cavaleiro do Crisol",
+      "subtitle": "Guardião do Evergaol",
+      "region": "siofra",
+      "art": "images/malenia.webp",
+      "locationName": "Rio Siofra",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "poison",
+        "scarlet_rot",
+        "bleed",
+        "frost",
+        "sleep",
+        "madness"
+      ],
+      "weakTo": [
+        "fire",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 3080
+        }
+      ],
+      "lore": "Guerreiros pesadamente blindados que serviram a Godfrey, o primeiro Senhor Élden, extraindo poder do Crisol primordial da vida. Com o tempo, sua força e aparência passaram a ser vistas como caóticas e dignas de desprezo."
+    },
+    {
+      "id": "crucible_knight_siofra_aqueduct",
+      "name": "Cavaleiro do Crisol (Duo)",
+      "subtitle": "Guardiões do Aqueduto",
+      "region": "siofra",
+      "art": "images/malenia.webp",
+      "locationName": "Aqueduto de Siofra, Nokron",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "poison",
+        "scarlet_rot",
+        "bleed",
+        "frost",
+        "sleep",
+        "madness"
+      ],
+      "weakTo": [
+        "fire",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 3080
+        },
+        {
+          "name": "Escudo-Chifre do Crisol"
+        },
+        {
+          "name": "Pedra de Forja Sombria [6]"
+        }
+      ],
+      "lore": "Guerreiros pesadamente blindados que serviram a Godfrey, o primeiro Senhor Élden, extraindo poder do Crisol primordial da vida. Com o tempo, sua força e aparência passaram a ser vistas como caóticas e dignas de desprezo."
+    },
+    {
+      "id": "crucible_knight_capital",
+      "name": "Cavaleiro do Crisol",
+      "subtitle": "Guardião do Evergaol",
+      "region": "capital",
+      "art": "images/malenia.webp",
+      "locationName": "Leyndell, Capital Real",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "poison",
+        "scarlet_rot",
+        "bleed",
+        "frost",
+        "sleep",
+        "madness"
+      ],
+      "weakTo": [
+        "fire",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 3840
+        }
+      ],
+      "lore": "Guerreiros pesadamente blindados que serviram a Godfrey, o primeiro Senhor Élden, extraindo poder do Crisol primordial da vida. Com o tempo, sua força e aparência passaram a ser vistas como caóticas e dignas de desprezo."
+    },
+    {
+      "id": "crucible_knight_farum_azula",
+      "name": "Cavaleiro do Crisol",
+      "subtitle": "Guardião do Evergaol",
+      "region": "farum_azula",
+      "art": "images/malenia.webp",
+      "locationName": "Farum Azula em Ruínas",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "poison",
+        "scarlet_rot",
+        "bleed",
+        "frost",
+        "sleep",
+        "madness"
+      ],
+      "weakTo": [
+        "fire",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 7360
+        }
+      ],
+      "lore": "Guerreiros pesadamente blindados que serviram a Godfrey, o primeiro Senhor Élden, extraindo poder do Crisol primordial da vida. Com o tempo, sua força e aparência passaram a ser vistas como caóticas e dignas de desprezo."
+    },
+    {
+      "id": "deathbird",
+      "name": "Pássaro da Morte",
+      "subtitle": "Guardião dos Cemitérios",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Cabana do Mestre de Guerra, Limgrave (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "lightning",
+        "pierce"
+      ],
+      "weakTo": [
+        "strike",
+        "holy"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 2800
+        },
+        {
+          "name": "Espada-Ramo de Plumas Azuis"
+        }
+      ],
+      "lore": "Criaturas que servem como guardiãs do fogo dos cemitérios, recolhendo restos cinzentos das fornalhas funerárias. Descendem do Pássaro Gêmeo, dito ser enviado de um deus exterior."
+    },
+    {
+      "id": "demi_human_chief",
+      "name": "Chefes Semi-Humanos",
+      "subtitle": "Duo da Caverna Costeira",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Caverna Costeira, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [],
+      "weakTo": [
+        "slash",
+        "sleep"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 1200
+        },
+        {
+          "name": "Ferramentas de Alfaiataria"
+        }
+      ],
+      "lore": "Dois grandes semi-humanos que empunham adagas gêmeas e dependem da velocidade para compensar a fragilidade. Expulsaram o alfaiate Boc de sua caverna a pancadas."
+    },
+    {
+      "id": "erdtree_burial_watchdog",
+      "name": "Cão de Guarda da Cripta",
+      "subtitle": "Sentinela das Catacumbas",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Catacumbas de Stormfoot, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "poison",
+        "scarlet_rot",
+        "bleed",
+        "frost",
+        "sleep",
+        "madness"
+      ],
+      "weakTo": [
+        "strike"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 1300
+        },
+        {
+          "name": "Cinzas do Feiticeiro Nobre"
+        }
+      ],
+      "lore": "Sentinelas de pedra que guardam as catacumbas por todas as Terras Intermédias. Castigados e quebrados ao longo de seu longo mandato, governam as catacumbas e dizem até comandar os diabretes."
+    },
+    {
+      "id": "grafted_scion_limgrave_chapel",
+      "name": "Rebento Enxertado",
+      "subtitle": "Amálgama de Membros",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Capela da Antecipação, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "magic",
+        "fire",
+        "lightning",
+        "holy"
+      ],
+      "weakTo": [
+        "slash",
+        "bleed",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 3200
+        },
+        {
+          "name": "Espada Reta Ornamental"
+        },
+        {
+          "name": "Escudo da Crista da Besta Dourada"
+        }
+      ],
+      "lore": "Um amálgama amorfo de partes de corpos que empunha espadas gêmeas e um grande escudo. Provavelmente criação de Godrick, o Enxertado, encarnando a grotesca prática de fundir múltiplas formas."
+    },
+    {
+      "id": "grafted_scion_limgrave_fringefolk",
+      "name": "Rebento Enxertado",
+      "subtitle": "Amálgama de Membros",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Túmulo do Herói Forasteiro, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "magic",
+        "fire",
+        "lightning",
+        "holy"
+      ],
+      "weakTo": [
+        "slash",
+        "bleed",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 583
+        }
+      ],
+      "lore": "Um amálgama amorfo de partes de corpos que empunha espadas gêmeas e um grande escudo. Provavelmente criação de Godrick, o Enxertado, encarnando a grotesca prática de fundir múltiplas formas."
+    },
+    {
+      "id": "grafted_scion_limgrave_stormveil",
+      "name": "Rebento Enxertado",
+      "subtitle": "Amálgama de Membros",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Castelo de Stormveil, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "magic",
+        "fire",
+        "lightning",
+        "holy"
+      ],
+      "weakTo": [
+        "slash",
+        "bleed",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 1176
+        }
+      ],
+      "lore": "Um amálgama amorfo de partes de corpos que empunha espadas gêmeas e um grande escudo. Provavelmente criação de Godrick, o Enxertado, encarnando a grotesca prática de fundir múltiplas formas."
+    },
+    {
+      "id": "grafted_scion_liurnia",
+      "name": "Rebento Enxertado",
+      "subtitle": "Amálgama de Membros",
+      "region": "liurnia",
+      "art": "images/malenia.webp",
+      "locationName": "Liurnia dos Lagos",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "magic",
+        "fire",
+        "lightning",
+        "holy"
+      ],
+      "weakTo": [
+        "slash",
+        "bleed",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 1283
+        },
+        {
+          "name": "Lágrima Larval"
+        }
+      ],
+      "lore": "Um amálgama amorfo de partes de corpos que empunha espadas gêmeas e um grande escudo. Provavelmente criação de Godrick, o Enxertado, encarnando a grotesca prática de fundir múltiplas formas."
+    },
+    {
+      "id": "grafted_scion_gelmir",
+      "name": "Rebento Enxertado",
+      "subtitle": "Amálgama de Membros",
+      "region": "gelmir",
+      "art": "images/malenia.webp",
+      "locationName": "Monte Gelmir",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "magic",
+        "fire",
+        "lightning",
+        "holy"
+      ],
+      "weakTo": [
+        "slash",
+        "bleed",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 2313
+        }
+      ],
+      "lore": "Um amálgama amorfo de partes de corpos que empunha espadas gêmeas e um grande escudo. Provavelmente criação de Godrick, o Enxertado, encarnando a grotesca prática de fundir múltiplas formas."
+    },
+    {
+      "id": "grave_warden_duelist",
+      "name": "Duelista Guardião de Túmulos",
+      "subtitle": "Ex-Gladiador Exilado",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Catacumbas de Murkwater, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [],
+      "weakTo": [
+        "slash",
+        "bleed"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 1700
+        },
+        {
+          "name": "Cinzas do Cavaleiro Banido Engvall"
+        }
+      ],
+      "lore": "Duelistas exilados do coliseu. Lutam com martelos de batalha gêmeos em correntes e representam antigos gladiadores agora encarregados de guardar sepulturas pelas Terras Intermédias."
+    },
+    {
+      "id": "guardian_golem",
+      "name": "Golem Guardião",
+      "subtitle": "Construto Ancestral",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Caverna da Estrada Alta, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "fire",
+        "lightning",
+        "holy"
+      ],
+      "weakTo": [
+        "strike"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 1700
+        },
+        {
+          "name": "Amuleto da Dançarina Azul"
+        }
+      ],
+      "lore": "Um dos muitos construtos espalhados pelas Terras Intermédias. Este ser colossal empunha uma grande alabarda e cospe fogo sobre os inimigos abaixo. Foi forjado por uma civilização hoje perdida."
+    },
+    {
+      "id": "mad_pumpkin_head",
+      "name": "Cabeça de Abóbora Enlouquecida",
+      "subtitle": "Gladiador Quebrado",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Ruínas do Ponto de Passagem, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "strike"
+      ],
+      "weakTo": [
+        "slash",
+        "lightning",
+        "bleed",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 1100
+        }
+      ],
+      "lore": "Um soldado enlouquecido que confina o pânico nas trevas de seu elmo de abóbora, mas se descontrola quando agitado por derramamento de sangue ou pelo zumbido de insetos."
+    },
+    {
+      "id": "nights_cavalry_limgrave",
+      "name": "Cavalaria da Noite",
+      "subtitle": "Cavaleiros dos Corcéis Fúnebres",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Ponte sobre o rio, a sudeste do Lago Agheel, Limgrave (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 2400
+        },
+        {
+          "name": "Arte de Guerra: Estocada Repetida"
+        }
+      ],
+      "lore": "Guerreiros montados de armadura escura, outrora liderados pelo Caído Imundo, serviram como carrascos de grandes lutadores. Agora patrulham as estradas noturnas como caçadores espectrais."
+    },
+    {
+      "id": "nights_cavalry_weeping_peninsula",
+      "name": "Cavalaria da Noite",
+      "subtitle": "Cavaleiros dos Corcéis Fúnebres",
+      "region": "weeping_peninsula",
+      "art": "images/malenia.webp",
+      "locationName": "Península Lacrimosa (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 3400
+        },
+        {
+          "name": "Arte de Guerra: Escudo de Barricada"
+        },
+        {
+          "name": "Mangual do Cavaleiro Noturno"
+        }
+      ],
+      "lore": "Guerreiros montados de armadura escura, outrora liderados pelo Caído Imundo, serviram como carrascos de grandes lutadores. Agora patrulham as estradas noturnas como caçadores espectrais."
+    },
+    {
+      "id": "nights_cavalry_liurnia_south",
+      "name": "Cavalaria da Noite",
+      "subtitle": "Cavaleiros dos Corcéis Fúnebres",
+      "region": "liurnia",
+      "art": "images/malenia.webp",
+      "locationName": "Sul de Liurnia (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 5600
+        },
+        {
+          "name": "Arte de Guerra: Lança de Gelo"
+        }
+      ],
+      "lore": "Guerreiros montados de armadura escura, outrora liderados pelo Caído Imundo, serviram como carrascos de grandes lutadores. Agora patrulham as estradas noturnas como caçadores espectrais."
+    },
+    {
+      "id": "nights_cavalry_liurnia_north",
+      "name": "Cavalaria da Noite",
+      "subtitle": "Cavaleiros dos Corcéis Fúnebres",
+      "region": "liurnia",
+      "art": "images/malenia.webp",
+      "locationName": "Norte de Liurnia (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 5600
+        },
+        {
+          "name": "Arte de Guerra: Caça ao Gigante"
+        },
+        {
+          "name": "Glaive do Cavaleiro Noturno"
+        }
+      ],
+      "lore": "Guerreiros montados de armadura escura, outrora liderados pelo Caído Imundo, serviram como carrascos de grandes lutadores. Agora patrulham as estradas noturnas como caçadores espectrais."
+    },
+    {
+      "id": "nights_cavalry_caelid",
+      "name": "Cavalaria da Noite",
+      "subtitle": "Cavaleiros dos Corcéis Fúnebres",
+      "region": "caelid",
+      "art": "images/malenia.webp",
+      "locationName": "Caelid (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 8500
+        },
+        {
+          "name": "Arte de Guerra: Voo da Mariposa Venenosa"
+        }
+      ],
+      "lore": "Guerreiros montados de armadura escura, outrora liderados pelo Caído Imundo, serviram como carrascos de grandes lutadores. Agora patrulham as estradas noturnas como caçadores espectrais."
+    },
+    {
+      "id": "nights_cavalry_altus",
+      "name": "Cavalaria da Noite",
+      "subtitle": "Cavaleiros dos Corcéis Fúnebres",
+      "region": "altus",
+      "art": "images/malenia.webp",
+      "locationName": "Planalto de Altus (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 10000
+        },
+        {
+          "name": "Arte de Guerra: Ordem Compartilhada"
+        }
+      ],
+      "lore": "Guerreiros montados de armadura escura, outrora liderados pelo Caído Imundo, serviram como carrascos de grandes lutadores. Agora patrulham as estradas noturnas como caçadores espectrais."
+    },
+    {
+      "id": "nights_cavalry_forbidden_lands",
+      "name": "Cavalaria da Noite",
+      "subtitle": "Cavaleiros dos Corcéis Fúnebres",
+      "region": "forbidden_lands",
+      "art": "images/malenia.webp",
+      "locationName": "Terras Proibidas (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 36000
+        },
+        {
+          "name": "Arte de Guerra: Corte Fantasma"
+        }
+      ],
+      "lore": "Guerreiros montados de armadura escura, outrora liderados pelo Caído Imundo, serviram como carrascos de grandes lutadores. Agora patrulham as estradas noturnas como caçadores espectrais."
+    },
+    {
+      "id": "nights_cavalry_dragonbarrow",
+      "name": "Cavalaria da Noite",
+      "subtitle": "Cavaleiros dos Corcéis Fúnebres",
+      "region": "dragonbarrow",
+      "art": "images/malenia.webp",
+      "locationName": "Dragonbarrow (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 42000
+        },
+        {
+          "name": "Arte de Guerra: Passo do Sabujo"
+        }
+      ],
+      "lore": "Guerreiros montados de armadura escura, outrora liderados pelo Caído Imundo, serviram como carrascos de grandes lutadores. Agora patrulham as estradas noturnas como caçadores espectrais."
+    },
+    {
+      "id": "nights_cavalry_consecrated_snowfield",
+      "name": "Cavalaria da Noite (Duo)",
+      "subtitle": "Cavaleiros dos Corcéis Fúnebres",
+      "region": "consecrated_snowfield",
+      "art": "images/malenia.webp",
+      "locationName": "Campo Nevado Consagrado (à noite)",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 84000
+        },
+        {
+          "name": "Conjunto da Cavalaria da Noite"
+        },
+        {
+          "name": "Pedra de Forja do Dragão Ancião"
+        }
+      ],
+      "lore": "Guerreiros montados de armadura escura, outrora liderados pelo Caído Imundo, serviram como carrascos de grandes lutadores. Agora patrulham as estradas noturnas como caçadores espectrais."
+    },
+    {
+      "id": "patches_limgrave",
+      "name": "Patches",
+      "subtitle": "O Astuto",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Caverna de Murkwater, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [],
+      "weakTo": [],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 800
+        },
+        {
+          "name": "Spear de Patches"
+        }
+      ],
+      "lore": "Um mercador trapaceiro e covarde que arma emboscadas contra viajantes desavisados, mas se rende e implora por misericórdia quando dominado. Reaparece em vários pontos das Terras Intermédias."
+    },
+    {
+      "id": "soldier_of_godrick",
+      "name": "Soldado de Godrick",
+      "subtitle": "Tutorial",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Cemitério Encalhado, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "slash"
+      ],
+      "weakTo": [
+        "pierce",
+        "lightning",
+        "scarlet_rot",
+        "poison"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 400
+        }
+      ],
+      "lore": "Infantaria comum a serviço do Senhor Enxertado. Outrora forças organizadas da capital real, agora servem aos retorcidos experimentos de enxerto de Godrick."
+    },
+    {
+      "id": "stonedigger_troll",
+      "name": "Trol Escavador",
+      "subtitle": "Descendente dos Gigantes",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Túneis de Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "standard",
+        "slash",
+        "pierce",
+        "poison"
+      ],
+      "weakTo": [
+        "strike",
+        "magic",
+        "holy",
+        "sleep"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 1800
+        },
+        {
+          "name": "Medalhão do Rugido"
+        }
+      ],
+      "lore": "Os trols são descendentes dos Gigantes que lutaram pela Ordem Dourada na Guerra contra os Gigantes. Os martelos de pedra que carregam eram relíquias cerimoniais usadas na forja, ato outrora visto como divino."
+    },
+    {
+      "id": "tibia_mariner_limgrave",
+      "name": "Marinheiro Tíbia",
+      "subtitle": "Comandante dos Mortos",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Vila de Summonwater, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "pierce",
+        "lightning"
+      ],
+      "weakTo": [
+        "strike",
+        "holy"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 2400
+        },
+        {
+          "name": "Raiz da Morte"
+        },
+        {
+          "name": "Cinzas do Miliciano Esquelético"
+        }
+      ],
+      "lore": "Esqueletos curvados vestidos em rendas que pilotam barcos fantasmagóricos e comandam exércitos de mortos-vivos. Os mortos vagam há muito tempo; o que lhes falta é liderança."
+    },
+    {
+      "id": "tibia_mariner_liurnia",
+      "name": "Marinheiro Tíbia",
+      "subtitle": "Comandante dos Mortos",
+      "region": "liurnia",
+      "art": "images/malenia.webp",
+      "locationName": "Liurnia dos Lagos",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "pierce",
+        "lightning"
+      ],
+      "weakTo": [
+        "strike",
+        "holy"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 4700
+        },
+        {
+          "name": "Raiz da Morte"
+        },
+        {
+          "name": "Cinzas do Bandido Esquelético"
+        }
+      ],
+      "lore": "Esqueletos curvados vestidos em rendas que pilotam barcos fantasmagóricos e comandam exércitos de mortos-vivos. Os mortos vagam há muito tempo; o que lhes falta é liderança."
+    },
+    {
+      "id": "tibia_mariner_altus",
+      "name": "Marinheiro Tíbia",
+      "subtitle": "Comandante dos Mortos",
+      "region": "altus",
+      "art": "images/malenia.webp",
+      "locationName": "Ruínas de Wyndham, Planalto de Altus",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "pierce",
+        "lightning"
+      ],
+      "weakTo": [
+        "strike",
+        "holy"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 14000
+        },
+        {
+          "name": "Raiz da Morte"
+        },
+        {
+          "name": "Invocações de Tibia"
+        }
+      ],
+      "lore": "Esqueletos curvados vestidos em rendas que pilotam barcos fantasmagóricos e comandam exércitos de mortos-vivos. Os mortos vagam há muito tempo; o que lhes falta é liderança."
+    },
+    {
+      "id": "tibia_mariner_mountaintops",
+      "name": "Marinheiro Tíbia",
+      "subtitle": "Comandante dos Mortos",
+      "region": "mountaintops",
+      "art": "images/malenia.webp",
+      "locationName": "Cumes dos Gigantes",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "pierce",
+        "lightning"
+      ],
+      "weakTo": [
+        "strike",
+        "holy"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 4234
+        },
+        {
+          "name": "Raiz da Morte"
+        },
+        {
+          "name": "Campanário de Helphen"
+        }
+      ],
+      "lore": "Esqueletos curvados vestidos em rendas que pilotam barcos fantasmagóricos e comandam exércitos de mortos-vivos. Os mortos vagam há muito tempo; o que lhes falta é liderança."
+    },
+    {
+      "id": "tibia_mariner_cerulean_coast",
+      "name": "Marinheiro Tíbia",
+      "subtitle": "Comandante dos Mortos",
+      "region": "cerulean_coast",
+      "art": "images/malenia.webp",
+      "locationName": "Túmulo Oculto de Charo, Costa Cerúlea",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "pierce",
+        "lightning"
+      ],
+      "weakTo": [
+        "strike",
+        "holy"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 9959
+        },
+        {
+          "name": "Livro de Receitas de Tibia"
+        }
+      ],
+      "lore": "Esqueletos curvados vestidos em rendas que pilotam barcos fantasmagóricos e comandam exércitos de mortos-vivos. Os mortos vagam há muito tempo; o que lhes falta é liderança."
+    },
+    {
+      "id": "tree_sentinel_limgrave",
+      "name": "Sentinela da Árvore",
+      "subtitle": "Muralha Viva da Árvore Áurea",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Gramado próximo à Árvore Áurea, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "slash",
+        "fire",
+        "holy",
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 3200
+        },
+        {
+          "name": "Alabarda Dourada"
+        }
+      ],
+      "lore": "Cavaleiros pesadamente blindados que montam grandes corcéis e carregam poderosas alabardas como defensores da Árvore Áurea. Encarnam o padrão a que todos os protetores da Árvore aspiram."
+    },
+    {
+      "id": "tree_sentinel_altus",
+      "name": "Sentinela da Árvore (Duo)",
+      "subtitle": "Muralha Viva da Árvore Áurea",
+      "region": "altus",
+      "art": "images/malenia.webp",
+      "locationName": "Entrada do Planalto de Altus",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "slash",
+        "fire",
+        "holy",
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 20000
+        },
+        {
+          "name": "Grande Escudo da Árvore Áurea"
+        },
+        {
+          "name": "Runa do Herói [1]"
+        }
+      ],
+      "lore": "Cavaleiros pesadamente blindados que montam grandes corcéis e carregam poderosas alabardas como defensores da Árvore Áurea. Encarnam o padrão a que todos os protetores da Árvore aspiram."
+    },
+    {
+      "id": "tree_sentinel_hinterland",
+      "name": "Sentinela da Árvore (Duo)",
+      "subtitle": "Muralha Viva da Árvore Áurea",
+      "region": "hinterland",
+      "art": "images/malenia.webp",
+      "locationName": "Interior, a oeste de Leyndell",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "slash",
+        "fire",
+        "holy",
+        "bleed",
+        "frost"
+      ],
+      "weakTo": [
+        "lightning"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 120000
+        },
+        {
+          "name": "Bênção de Marika"
+        }
+      ],
+      "lore": "Cavaleiros pesadamente blindados que montam grandes corcéis e carregam poderosas alabardas como defensores da Árvore Áurea. Encarnam o padrão a que todos os protetores da Árvore aspiram."
+    },
+    {
+      "id": "ulcerated_tree_spirit_limgrave",
+      "name": "Espírito da Árvore Ulcerado",
+      "subtitle": "Manifestação Apodrecida",
+      "region": "limgrave",
+      "art": "images/malenia.webp",
+      "locationName": "Túmulo do Herói Forasteiro, Limgrave",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "holy",
+        "bleed",
+        "scarlet_rot",
+        "poison"
+      ],
+      "weakTo": [
+        "fire",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 15000
+        },
+        {
+          "name": "Semente Dourada"
+        },
+        {
+          "name": "Cinzas do Cavaleiro Banido Oleg"
+        }
+      ],
+      "lore": "Uma criatura serpentina com aparência de árvore, coberta de úlceras vermelhas inchadas. Manifestação malformada ligada à Árvore Áurea; com o estilhaçar do Anel Élden, sementes douradas se espalharam pelas Terras Intermédias."
+    },
+    {
+      "id": "ulcerated_tree_spirit_gelmir",
+      "name": "Espírito da Árvore Ulcerado",
+      "subtitle": "Manifestação Apodrecida",
+      "region": "gelmir",
+      "art": "images/malenia.webp",
+      "locationName": "Árvore Áurea Menor, Monte Gelmir",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "holy",
+        "bleed",
+        "scarlet_rot",
+        "poison"
+      ],
+      "weakTo": [
+        "fire",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 18000
+        },
+        {
+          "name": "Lágrima Endurecida de Chumbo"
+        },
+        {
+          "name": "Lágrima Oculta Cerúlea"
+        }
+      ],
+      "lore": "Uma criatura serpentina com aparência de árvore, coberta de úlceras vermelhas inchadas. Manifestação malformada ligada à Árvore Áurea; com o estilhaçar do Anel Élden, sementes douradas se espalharam pelas Terras Intermédias."
+    },
+    {
+      "id": "ulcerated_tree_spirit_mountaintops",
+      "name": "Espírito da Árvore Ulcerado",
+      "subtitle": "Manifestação Apodrecida",
+      "region": "mountaintops",
+      "art": "images/malenia.webp",
+      "locationName": "Catacumbas dos Cumes dos Gigantes",
+      "mapCoord": {
+        "x": 0,
+        "y": 0
+      },
+      "strongVs": [
+        "holy",
+        "bleed",
+        "scarlet_rot",
+        "poison"
+      ],
+      "weakTo": [
+        "fire",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 48000
+        },
+        {
+          "name": "Semente Dourada"
+        },
+        {
+          "name": "Sino do Coletor de Glovewort [2]"
+        }
+      ],
+      "lore": "Uma criatura serpentina com aparência de árvore, coberta de úlceras vermelhas inchadas. Manifestação malformada ligada à Árvore Áurea; com o estilhaçar do Anel Élden, sementes douradas se espalharam pelas Terras Intermédias."
     },
     {
       "id": "rennala",
@@ -58,12 +1751,23 @@
       "region": "liurnia",
       "art": "images/malenia.webp",
       "locationName": "Academia de Raya Lucaria, Liurnia",
-      "mapCoord": { "x": 0.22, "y": 0.46 },
-      "strongVs": ["magic"],
-      "weakTo": ["physical"],
+      "mapCoord": {
+        "x": 0.22,
+        "y": 0.46
+      },
+      "strongVs": [
+        "magic"
+      ],
+      "weakTo": [
+        "physical"
+      ],
       "loot": [
-        { "name": "Grande Runa de Rennala" },
-        { "name": "Lembrança da Lua Cheia" }
+        {
+          "name": "Grande Runa de Rennala"
+        },
+        {
+          "name": "Lembrança da Lua Cheia"
+        }
       ],
       "lore": "Diretora da Academia de Raya Lucaria e outrora esposa de Radagon. Após ser abandonada, refugiou-se no poder do Ovo Áureo e na magia da lua."
     },
@@ -74,10 +1778,21 @@
       "region": "liurnia",
       "art": "images/malenia.webp",
       "locationName": "Mansão Caria, Liurnia",
-      "mapCoord": { "x": 0.16, "y": 0.40 },
-      "strongVs": ["magic"],
-      "weakTo": ["bleed"],
-      "loot": [{ "name": "Magia: Grande Flecha de Loretta" }],
+      "mapCoord": {
+        "x": 0.16,
+        "y": 0.4
+      },
+      "strongVs": [
+        "magic"
+      ],
+      "weakTo": [
+        "bleed"
+      ],
+      "loot": [
+        {
+          "name": "Magia: Grande Flecha de Loretta"
+        }
+      ],
       "lore": "Cavaleira leal à família Caria, ela guarda a Mansão Caria empunhando feitiços de gravidade e uma lança espectral."
     },
     {
@@ -87,12 +1802,23 @@
       "region": "caelid",
       "art": "images/malenia.webp",
       "locationName": "Costa de Wailing Dunes, Caelid",
-      "mapCoord": { "x": 0.73, "y": 0.42 },
-      "strongVs": ["holy"],
-      "weakTo": ["bleed"],
+      "mapCoord": {
+        "x": 0.73,
+        "y": 0.42
+      },
+      "strongVs": [
+        "holy"
+      ],
+      "weakTo": [
+        "bleed"
+      ],
       "loot": [
-        { "name": "Grande Runa de Radahn" },
-        { "name": "Lembrança do Flagelo das Estrelas" }
+        {
+          "name": "Grande Runa de Radahn"
+        },
+        {
+          "name": "Lembrança do Flagelo das Estrelas"
+        }
       ],
       "lore": "O maior general de Caelid, que dominou a gravidade para segurar as estrelas no céu. Mesmo consumido pela Podridão Escarlate, mantém sua honra de guerreiro."
     },
@@ -103,24 +1829,48 @@
       "region": "caelid",
       "art": "images/malenia.webp",
       "locationName": "Caelid",
-      "mapCoord": { "x": 0.66, "y": 0.37 },
-      "strongVs": ["scarlet_rot"],
-      "weakTo": ["physical"],
-      "loot": [{ "name": "Coração de Dragão" }],
+      "mapCoord": {
+        "x": 0.66,
+        "y": 0.37
+      },
+      "strongVs": [
+        "scarlet_rot"
+      ],
+      "weakTo": [
+        "physical"
+      ],
+      "loot": [
+        {
+          "name": "Coração de Dragão"
+        }
+      ],
       "lore": "Um antigo dragão consumido pela Escarlate Podridão, que agora dissemina a doença por toda a terra arrasada de Caelid."
     },
     {
       "id": "godfrey_golden",
-      "name": "Godfrey (Sombra)",
+      "name": "Godfrey (Sombra Dourada)",
       "subtitle": "Primeiro Senhor Élden",
-      "region": "altus",
+      "region": "capital",
       "art": "images/malenia.webp",
-      "locationName": "Capital Leyndell, Planalto de Altus",
-      "mapCoord": { "x": 0.45, "y": 0.20 },
-      "strongVs": ["holy"],
-      "weakTo": ["bleed"],
-      "loot": [{ "name": "Runas" }],
-      "lore": "Uma sombra ilusória do primeiro Senhor Élden e marido de Marika, postada como guardião do caminho para a capital."
+      "locationName": "Leyndell, Capital Real",
+      "mapCoord": {
+        "x": 0.45,
+        "y": 0.2
+      },
+      "strongVs": [
+        "holy"
+      ],
+      "weakTo": [],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 80000
+        },
+        {
+          "name": "Bolsa de Talismãs"
+        }
+      ],
+      "lore": "Uma sombra ilusória do primeiro Senhor Élden e marido de Marika, postada como guardião do caminho para o trono na Capital Real."
     },
     {
       "id": "draconic_tree_sentinel",
@@ -129,10 +1879,21 @@
       "region": "altus",
       "art": "images/malenia.webp",
       "locationName": "Portão de Leyndell, Planalto de Altus",
-      "mapCoord": { "x": 0.47, "y": 0.24 },
-      "strongVs": ["lightning"],
-      "weakTo": ["physical"],
-      "loot": [{ "name": "Halberd Dracônica" }],
+      "mapCoord": {
+        "x": 0.47,
+        "y": 0.24
+      },
+      "strongVs": [
+        "lightning"
+      ],
+      "weakTo": [
+        "physical"
+      ],
+      "loot": [
+        {
+          "name": "Halberd Dracônica"
+        }
+      ],
       "lore": "Um cavaleiro montado que protege a entrada da capital, empunhando uma alabarda imbuída de raio sagrado."
     },
     {
@@ -142,14 +1903,93 @@
       "region": "capital",
       "art": "images/malenia.webp",
       "locationName": "Capital Leyndell",
-      "mapCoord": { "x": 0.46, "y": 0.18 },
-      "strongVs": ["holy"],
-      "weakTo": ["bleed"],
+      "mapCoord": {
+        "x": 0.46,
+        "y": 0.18
+      },
+      "strongVs": [
+        "holy",
+        "sleep"
+      ],
+      "weakTo": [
+        "slash"
+      ],
       "loot": [
-        { "name": "Grande Runa de Morgott" },
-        { "name": "Lembrança do Rei Maldito" }
+        {
+          "name": "Runas",
+          "quantity": 120000
+        },
+        {
+          "name": "Grande Runa de Morgott"
+        },
+        {
+          "name": "Lembrança do Rei Maldito"
+        }
       ],
       "lore": "O último rei de Leyndell, um Onifério amaldiçoado que defende a capital com a Espada Sagrada da Maldição, escondendo sua verdadeira natureza."
+    },
+    {
+      "id": "esgar_priest_of_blood",
+      "name": "Esgar",
+      "subtitle": "Sacerdote do Sangue",
+      "region": "capital",
+      "art": "images/malenia.webp",
+      "locationName": "Catacumbas de Leyndell",
+      "mapCoord": {
+        "x": 0.46,
+        "y": 0.18
+      },
+      "strongVs": [
+        "magic",
+        "fire",
+        "holy"
+      ],
+      "weakTo": [
+        "physical",
+        "bleed",
+        "frost"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 30000
+        },
+        {
+          "name": "Exultação do Senhor do Sangue"
+        }
+      ],
+      "lore": "Um humanoide altamente agressivo que empunha uma adaga e conjura encantamentos de sangue. É acompanhado por dois cães que também causam hemorragia, nas profundezas das Catacumbas de Leyndell."
+    },
+    {
+      "id": "mohg_the_omen",
+      "name": "Mohg",
+      "subtitle": "O Onifério",
+      "region": "capital",
+      "art": "images/malenia.webp",
+      "locationName": "Catedral dos Renegados, Subterrâneo do Banimento",
+      "mapCoord": {
+        "x": 0.46,
+        "y": 0.18
+      },
+      "strongVs": [
+        "fire"
+      ],
+      "weakTo": [
+        "standard",
+        "slash",
+        "strike",
+        "pierce"
+      ],
+      "loot": [
+        {
+          "name": "Runas",
+          "quantity": 100000
+        },
+        {
+          "name": "Garras de Chama de Sangue"
+        }
+      ],
+      "lore": "Um poderoso Onifério de sangue real que comunga com um deus exterior. Esta versão é uma ilusão, possivelmente criada por Morgott para proteger a área, distinta do renomado Mohg, Senhor do Sangue."
     },
     {
       "id": "fire_giant",
@@ -158,10 +1998,21 @@
       "region": "mountaintops",
       "art": "images/malenia.webp",
       "locationName": "Cumes dos Gigantes",
-      "mapCoord": { "x": 0.60, "y": 0.10 },
-      "strongVs": ["fire"],
-      "weakTo": ["physical"],
-      "loot": [{ "name": "Lembrança do Gigante de Fogo" }],
+      "mapCoord": {
+        "x": 0.6,
+        "y": 0.1
+      },
+      "strongVs": [
+        "fire"
+      ],
+      "weakTo": [
+        "physical"
+      ],
+      "loot": [
+        {
+          "name": "Lembrança do Gigante de Fogo"
+        }
+      ],
       "lore": "O derradeiro sobrevivente dos Gigantes, condenado a guardar a Chama da Ruína por toda a eternidade após a guerra contra a Ordem Dourada."
     },
     {
@@ -171,12 +2022,27 @@
       "region": "haligtree",
       "art": "images/malenia.webp",
       "locationName": "Elphael, Braço da Haligtree",
-      "mapCoord": { "x": 0.62, "y": 0.44 },
-      "strongVs": ["holy", "poison", "scarlet_rot"],
-      "weakTo": ["fire", "bleed", "frost"],
+      "mapCoord": {
+        "x": 0.62,
+        "y": 0.44
+      },
+      "strongVs": [
+        "holy",
+        "poison",
+        "scarlet_rot"
+      ],
+      "weakTo": [
+        "fire",
+        "bleed",
+        "frost"
+      ],
       "loot": [
-        { "name": "Grande Runa de Malenia" },
-        { "name": "Lembrança da Deusa da Podridão" }
+        {
+          "name": "Grande Runa de Malenia"
+        },
+        {
+          "name": "Lembrança da Deusa da Podridão"
+        }
       ],
       "lore": "Filha de Marika e irmã gêmea de Miquella. Nasceu amaldiçoada pela Escarlate Podridão e permaneceu invicta, salvo contra o próprio irmão. Aguarda em Elphael."
     },
@@ -187,10 +2053,21 @@
       "region": "haligtree",
       "art": "images/malenia.webp",
       "locationName": "Haligtree de Miquella",
-      "mapCoord": { "x": 0.58, "y": 0.40 },
-      "strongVs": ["magic"],
-      "weakTo": ["bleed"],
-      "loot": [{ "name": "Magia de Loretta" }],
+      "mapCoord": {
+        "x": 0.58,
+        "y": 0.4
+      },
+      "strongVs": [
+        "magic"
+      ],
+      "weakTo": [
+        "bleed"
+      ],
+      "loot": [
+        {
+          "name": "Magia de Loretta"
+        }
+      ],
       "lore": "A mesma cavaleira da família Caria, agora postada como guardiã da Haligtree de Miquella, defendendo a árvore sagrada com seus feitiços."
     },
     {
@@ -200,10 +2077,17 @@
       "region": "haligtree",
       "art": "images/malenia.webp",
       "locationName": "Haligtree de Miquella",
-      "mapCoord": { "x": 0.60, "y": 0.48 },
-      "strongVs": ["holy"],
-      "weakTo": ["fire"],
-      "loot": [{ "name": "Runas" }],
+      "mapCoord": {
+        "x": 0.6,
+        "y": 0.48
+      },
+      "strongVs": [
+        "holy"
+      ],
+      "weakTo": [
+        "fire"
+      ],
+      "loot": [],
       "lore": "Uma manifestação serpentina e apodrecida do espírito da Árvore Áurea, que se ergue para proteger os locais sagrados das Terras Intermédias."
     }
   ]

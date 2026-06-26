@@ -4,10 +4,12 @@ import '../../../boss/presenter/boss_details/boss_details_screen.dart';
 import '../../../theme/app_theme.dart';
 import '../../domain/entity/boss.dart';
 import 'bloc/album_bloc.dart';
-import 'widgets/progress_header.dart';
-import 'widgets/region_section.dart';
+import 'widgets/album_page_dots.dart';
+import 'widgets/region_page.dart';
 
 /// Pure UI for the album. Reads [AlbumBloc] from context.
+///
+/// Each region is a page; the user flips horizontally between them.
 class AlbumView extends StatefulWidget {
   const AlbumView({super.key});
 
@@ -16,15 +18,16 @@ class AlbumView extends StatefulWidget {
 }
 
 class _AlbumViewState extends State<AlbumView> {
-  final _scrollController = ScrollController();
+  final _pageController = PageController();
   final _slotKeys = <String, GlobalKey>{};
+  int _currentPage = 0;
 
   GlobalKey _slotKeyFor(String bossId) =>
       _slotKeys.putIfAbsent(bossId, () => GlobalKey());
 
   @override
   void dispose() {
-    _scrollController.dispose();
+    _pageController.dispose();
     super.dispose();
   }
 
@@ -38,16 +41,32 @@ class _AlbumViewState extends State<AlbumView> {
     }
   }
 
-  Future<void> _scrollToSlot(String bossId) async {
-    final key = _slotKeys[bossId];
-    final ctx = key?.currentContext;
-    if (ctx != null) {
-      await Scrollable.ensureVisible(
-        ctx,
-        duration: const Duration(milliseconds: 400),
-        alignment: 0.3,
+  /// Flips to the region of [bossId], then scrolls its slot into view so the
+  /// reveal animation is always seen.
+  Future<void> _goToRevealedSlot(AlbumState state, String bossId) async {
+    final regionId = state.data?.bossById(bossId).region;
+    if (regionId == null) return;
+    final pageIndex = state.regions.indexWhere((r) => r.id == regionId);
+    if (pageIndex >= 0 && _pageController.hasClients) {
+      await _pageController.animateToPage(
+        pageIndex,
+        duration: const Duration(milliseconds: 350),
+        curve: Curves.easeInOut,
       );
     }
+    if (mounted) _ensureSlotVisible(bossId);
+  }
+
+  /// Resolves the slot's context fresh (after any page change) and scrolls to
+  /// it. No await before the context use, so it's always current.
+  void _ensureSlotVisible(String bossId) {
+    final ctx = _slotKeys[bossId]?.currentContext;
+    if (ctx == null) return;
+    Scrollable.ensureVisible(
+      ctx,
+      duration: const Duration(milliseconds: 400),
+      alignment: 0.3,
+    );
   }
 
   @override
@@ -59,11 +78,10 @@ class _AlbumViewState extends State<AlbumView> {
             curr.justRevealedBossId != null &&
             curr.justRevealedBossId != prev.justRevealedBossId,
         listener: (context, state) {
-          // Scroll to the freshly defeated slot so its reveal is always seen.
           final id = state.justRevealedBossId;
           if (id != null) {
             WidgetsBinding.instance
-                .addPostFrameCallback((_) => _scrollToSlot(id));
+                .addPostFrameCallback((_) => _goToRevealedSlot(state, id));
           }
         },
         builder: (context, state) {
@@ -71,34 +89,37 @@ class _AlbumViewState extends State<AlbumView> {
             return const Center(
                 child: CircularProgressIndicator(color: AppColors.gold));
           }
-          return SafeArea(
-            bottom: false,
-            child: CustomScrollView(
-              controller: _scrollController,
-              slivers: [
-                SliverToBoxAdapter(
-                  child: ProgressHeader(
-                      defeated: state.totalDefeated, total: state.totalBosses),
-                ),
-                for (final region in state.regions)
-                  SliverToBoxAdapter(
-                    child: RegionSection(
-                      region: region,
-                      bosses: state.bossesIn(region.id),
-                      defeatedCount: state.defeatedIn(region.id),
-                      isDefeated: state.isDefeated,
-                      revealBossId: state.justRevealedBossId,
-                      slotKeyFor: _slotKeyFor,
-                      onRevealDone: () =>
-                          context.read<AlbumBloc>().add(const AlbumRevealConsumed()),
-                      onBossTap: (boss) => _openBoss(context, boss),
-                      onQuickDefeat: (boss) => context
-                          .read<AlbumBloc>()
-                          .add(AlbumBossQuickDefeated(boss.id)),
-                    ),
-                  ),
-              ],
-            ),
+          final regions = state.regions;
+          return Stack(
+            alignment: Alignment.bottomCenter,
+            children: [
+              PageView.builder(
+                controller: _pageController,
+                itemCount: regions.length,
+                onPageChanged: (i) => setState(() => _currentPage = i),
+                itemBuilder: (context, i) {
+                  final region = regions[i];
+                  return RegionPage(
+                    region: region,
+                    bosses: state.bossesIn(region.id),
+                    defeatedCount: state.defeatedIn(region.id),
+                    isDefeated: state.isDefeated,
+                    revealBossId: state.justRevealedBossId,
+                    slotKeyFor: _slotKeyFor,
+                    bottomInset: AlbumPageDots.reservedHeight,
+                    onRevealDone: () =>
+                        context.read<AlbumBloc>().add(const AlbumRevealConsumed()),
+                    onBossTap: (boss) => _openBoss(context, boss),
+                    onQuickDefeat: (boss) => context
+                        .read<AlbumBloc>()
+                        .add(AlbumBossQuickDefeated(boss.id)),
+                  );
+                },
+              ),
+              if (regions.length > 1)
+                AlbumPageDots(
+                    count: regions.length, currentIndex: _currentPage),
+            ],
           );
         },
       ),
