@@ -68,29 +68,32 @@ class _BossSheetState extends State<BossSheet> {
             ),
           ),
         ),
-        SliverToBoxAdapter(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(16, 4, 16, 24),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const SectionLabel('📍 Onde encontrar'),
-                MapSection(
-                  boss: boss,
-                  revealed: mapRevealed,
-                  onReveal: () => c.revealMap(boss.id),
-                  onHide: () => c.hideMap(boss.id),
-                  onOpenFullscreen: () => FullscreenMap.show(context, boss),
-                ),
-                const SectionLabel('⚔️ Combate'),
-                CombatSection(strongVs: boss.strongVs, weakTo: boss.weakTo),
-                const SectionLabel('💎 Loot'),
-                LootSection(loot: boss.loot),
-                const SectionLabel('📖 Lore'),
-                Text(boss.lore, style: AppText.lore),
-                const SizedBox(height: 20),
-                _actionButton(c, defeated),
-              ],
+        SliverSafeArea(
+          top: false,
+          sliver: SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 4, 16, 24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SectionLabel('📍 Onde encontrar'),
+                  MapSection(
+                    boss: boss,
+                    revealed: mapRevealed,
+                    onReveal: () => c.revealMap(boss.id),
+                    onHide: () => c.hideMap(boss.id),
+                    onOpenFullscreen: () => FullscreenMap.show(context, boss),
+                  ),
+                  const SectionLabel('⚔️ Combate'),
+                  CombatSection(strongVs: boss.strongVs, weakTo: boss.weakTo),
+                  const SectionLabel('💎 Loot'),
+                  LootSection(loot: boss.loot),
+                  const SectionLabel('📖 Lore'),
+                  Text(boss.lore, style: AppText.lore),
+                  const SizedBox(height: 20),
+                  _actionButton(c, defeated),
+                ],
+              ),
             ),
           ),
         ),
