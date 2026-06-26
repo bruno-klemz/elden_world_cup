@@ -24,24 +24,27 @@ class AlbumScreen extends StatelessWidget {
     }
     return Scaffold(
       backgroundColor: AppColors.background,
-      body: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(
-            child: ProgressHeader(
-                defeated: c.totalDefeated, total: c.totalBosses),
-          ),
-          for (final region in c.regions)
+      body: SafeArea(
+        bottom: false,
+        child: CustomScrollView(
+          slivers: [
             SliverToBoxAdapter(
-              child: RegionSection(
-                region: region,
-                bosses: c.data.bossesIn(region.id),
-                controller: c,
-                onBossTap: (boss) =>
-                    (onBossTap ?? (ctx, b) => BossSheet.show(ctx, b))
-                        .call(context, boss),
-              ),
+              child: ProgressHeader(
+                  defeated: c.totalDefeated, total: c.totalBosses),
             ),
-        ],
+            for (final region in c.regions)
+              SliverToBoxAdapter(
+                child: RegionSection(
+                  region: region,
+                  bosses: c.data.bossesIn(region.id),
+                  controller: c,
+                  onBossTap: (boss) =>
+                      (onBossTap ?? (ctx, b) => BossSheet.show(ctx, b))
+                          .call(context, boss),
+                ),
+              ),
+          ],
+        ),
       ),
     );
   }
