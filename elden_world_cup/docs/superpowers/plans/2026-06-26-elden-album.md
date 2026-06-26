@@ -101,12 +101,14 @@ flutter:
 Run: `flutter pub get`
 Expected: "Got dependencies!" with no version-solving errors.
 
-- [ ] **Step 3: Move the seed placeholder art into assets**
+- [ ] **Step 3: Confirm seed assets are present**
 
-The brainstorm captured a placeholder Malenia art. Copy it in (it is the seed placeholder used everywhere until real art arrives):
+The seed assets are already placed in the repo (done during planning):
+- `assets/images/malenia.webp` (2160×3840) — placeholder art used for every boss until real art arrives.
+- `assets/images/map/base_map.webp` (600×563) — placeholder base map (low-res; see delivery report — replace later with a clean high-res map without printed markers).
 
-Run: `mkdir -p assets/images/map assets/images/loot && cp .superpowers/brainstorm/*/content/malenia.webp assets/images/malenia.webp 2>/dev/null && touch assets/images/.gitkeep assets/images/map/.gitkeep assets/images/loot/.gitkeep && ls assets/images/`
-Expected: lists `malenia.webp` and `.gitkeep`. (If the brainstorm file is gone, create `assets/images/malenia.webp` from any portrait image and note it in the delivery report.)
+Run: `ls assets/images assets/images/map`
+Expected: lists `malenia.webp` and `base_map.webp`. (If missing, copy any portrait image to `assets/images/malenia.webp` and note it in the delivery report.)
 
 - [ ] **Step 4: Create the theme**
 
@@ -159,8 +161,12 @@ the project owner. Updated as tasks complete.
 - **Boss art:** all bosses currently render `assets/images/malenia.webp` as a
   placeholder except where real art is provided. Replace per boss by dropping
   the file in `assets/images/` and updating `art` in `assets/bosses.json`.
-- **Base map image:** `assets/images/map/base_map.webp` is a placeholder.
-- **Loot icons:** `assets/images/loot/*` are placeholders (emoji fallback).
+- **Base map image:** `assets/images/map/base_map.webp` is a low-res (600×563)
+  placeholder of the world map. It works, but: (1) low resolution → blurry when
+  zoomed in the fullscreen InteractiveViewer; (2) it has printed item markers
+  that compete visually with our own pins; (3) labels are in French. Replace
+  later with a clean, high-res (2000px+) map without printed markers.
+- **Loot icons:** `assets/images/loot/*` are placeholders (emoji 💎 fallback).
 
 ## What I need from you
 (See the final section of this report — kept current as implementation proceeds.)
