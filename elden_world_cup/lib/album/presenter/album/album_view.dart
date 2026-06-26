@@ -92,6 +92,9 @@ class _AlbumViewState extends State<AlbumView> {
                       onRevealDone: () =>
                           context.read<AlbumBloc>().add(const AlbumRevealConsumed()),
                       onBossTap: (boss) => _openBoss(context, boss),
+                      onQuickDefeat: (boss) => context
+                          .read<AlbumBloc>()
+                          .add(AlbumBossQuickDefeated(boss.id)),
                     ),
                   ),
               ],

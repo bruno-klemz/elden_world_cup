@@ -12,6 +12,7 @@ class RegionSection extends StatelessWidget {
     required this.defeatedCount,
     required this.isDefeated,
     required this.onBossTap,
+    required this.onQuickDefeat,
     this.revealBossId,
     this.onRevealDone,
     this.slotKeyFor,
@@ -22,6 +23,9 @@ class RegionSection extends StatelessWidget {
   final int defeatedCount;
   final bool Function(String bossId) isDefeated;
   final void Function(Boss) onBossTap;
+
+  /// Quick-check shortcut: marks a pending boss defeated from the album.
+  final void Function(Boss) onQuickDefeat;
 
   /// Id of the boss whose slot should play the reveal animation (if in this
   /// region).
@@ -68,6 +72,7 @@ class RegionSection extends StatelessWidget {
                   onRevealDone:
                       boss.id == revealBossId ? onRevealDone : null,
                   onTap: () => onBossTap(boss),
+                  onQuickDefeat: () => onQuickDefeat(boss),
                 ),
             ],
           ),

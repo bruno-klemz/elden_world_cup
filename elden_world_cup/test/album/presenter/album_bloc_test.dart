@@ -7,12 +7,15 @@ import 'package:elden_world_cup/album/domain/usecase/load_album_usecase.dart';
 import 'package:elden_world_cup/album/presenter/album/bloc/album_bloc.dart';
 import 'package:elden_world_cup/boss/domain/entity/progress.dart';
 import 'package:elden_world_cup/boss/domain/usecase/load_progress_usecase.dart';
+import 'package:elden_world_cup/boss/domain/usecase/toggle_defeated_usecase.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
 class _MockLoadAlbum extends Mock implements LoadAlbumUsecase {}
 
 class _MockLoadProgress extends Mock implements LoadProgressUsecase {}
+
+class _MockToggleDefeated extends Mock implements ToggleDefeatedUsecase {}
 
 final _album = AlbumData(
   regions: const [Region(id: 'limgrave', name: 'Limgrave', order: 1)],
@@ -31,14 +34,21 @@ final _album = AlbumData(
 void main() {
   late _MockLoadAlbum loadAlbum;
   late _MockLoadProgress loadProgress;
+  late _MockToggleDefeated toggleDefeated;
+
+  setUpAll(() => registerFallbackValue(const Progress()));
 
   setUp(() {
     loadAlbum = _MockLoadAlbum();
     loadProgress = _MockLoadProgress();
+    toggleDefeated = _MockToggleDefeated();
   });
 
-  AlbumBloc build() =>
-      AlbumBloc(loadAlbum: loadAlbum, loadProgress: loadProgress);
+  AlbumBloc build() => AlbumBloc(
+        loadAlbum: loadAlbum,
+        loadProgress: loadProgress,
+        toggleDefeated: toggleDefeated,
+      );
 
   blocTest<AlbumBloc, AlbumState>(
     'AlbumStarted loads data and progress -> loaded',
@@ -92,5 +102,32 @@ void main() {
           .having((s) => s.justRevealedBossId, 'revealId', 'margit'),
       isA<AlbumState>().having((s) => s.justRevealedBossId, 'revealId', null),
     ],
+  );
+
+  blocTest<AlbumBloc, AlbumState>(
+    'AlbumBossQuickDefeated marks defeated and requests reveal',
+    setUp: () {
+      when(() => toggleDefeated(any(), any()))
+          .thenAnswer((_) async => const Progress(defeated: {'margit'}));
+    },
+    build: build,
+    seed: () =>
+        const AlbumState(status: AlbumStatus.loaded, progress: Progress()),
+    act: (bloc) => bloc.add(const AlbumBossQuickDefeated('margit')),
+    expect: () => [
+      isA<AlbumState>()
+          .having((s) => s.isDefeated('margit'), 'defeated', true)
+          .having((s) => s.justRevealedBossId, 'revealId', 'margit'),
+    ],
+  );
+
+  blocTest<AlbumBloc, AlbumState>(
+    'AlbumBossQuickDefeated is a no-op when already defeated',
+    build: build,
+    seed: () => const AlbumState(
+        status: AlbumStatus.loaded, progress: Progress(defeated: {'margit'})),
+    act: (bloc) => bloc.add(const AlbumBossQuickDefeated('margit')),
+    expect: () => [],
+    verify: (_) => verifyNever(() => toggleDefeated(any(), any())),
   );
 }

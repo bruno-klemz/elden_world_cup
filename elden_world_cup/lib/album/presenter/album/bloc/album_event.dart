@@ -30,3 +30,13 @@ class AlbumRevealRequested extends AlbumEvent {
 class AlbumRevealConsumed extends AlbumEvent {
   const AlbumRevealConsumed();
 }
+
+/// Marks a boss defeated directly from the album (quick-check button) and
+/// triggers the reveal on its slot. No-op if already defeated.
+class AlbumBossQuickDefeated extends AlbumEvent {
+  final String bossId;
+  const AlbumBossQuickDefeated(this.bossId);
+
+  @override
+  List<Object?> get props => [bossId];
+}

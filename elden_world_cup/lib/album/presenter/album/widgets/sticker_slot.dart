@@ -20,6 +20,7 @@ class StickerSlot extends StatefulWidget {
     required this.onTap,
     this.animateReveal = false,
     this.onRevealDone,
+    this.onQuickDefeat,
   });
 
   final Boss boss;
@@ -30,6 +31,10 @@ class StickerSlot extends StatefulWidget {
   /// colored art with a glow + sparkle. Only the freshly defeated slot gets this.
   final bool animateReveal;
   final VoidCallback? onRevealDone;
+
+  /// Quick-check shortcut shown on pending slots; marks the boss defeated
+  /// without opening the details screen.
+  final VoidCallback? onQuickDefeat;
 
   @override
   State<StickerSlot> createState() => _StickerSlotState();
@@ -101,6 +106,10 @@ class _StickerSlotState extends State<StickerSlot>
                     ),
                   ),
                 _nameStrip(showColored),
+                if (!showColored &&
+                    !widget.animateReveal &&
+                    widget.onQuickDefeat != null)
+                  _quickCheckButton(),
               ],
             ),
           ),
@@ -165,6 +174,26 @@ class _StickerSlotState extends State<StickerSlot>
                   color: showColored
                       ? AppColors.goldLight
                       : const Color(0xFF9A8A66))),
+        ),
+      );
+
+  Widget _quickCheckButton() => Positioned(
+        top: 4,
+        right: 4,
+        child: GestureDetector(
+          onTap: widget.onQuickDefeat,
+          child: Container(
+            key: const Key('slot-quick-check'),
+            width: 26,
+            height: 26,
+            decoration: BoxDecoration(
+              color: AppColors.background.withValues(alpha: 0.7),
+              shape: BoxShape.circle,
+              border: Border.all(color: AppColors.gold, width: 1.5),
+            ),
+            child: const Icon(Icons.check,
+                size: 15, color: AppColors.goldLight),
+          ),
         ),
       );
 }

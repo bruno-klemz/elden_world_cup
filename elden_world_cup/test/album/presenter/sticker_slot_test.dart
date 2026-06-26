@@ -61,4 +61,29 @@ void main() {
         StickerSlot(boss: _boss, defeated: true, onTap: () {})));
     expect(find.byType(RevealOverlay), findsNothing);
   });
+
+  testWidgets('pending slot shows quick-check button that fires onQuickDefeat',
+      (tester) async {
+    var quick = false;
+    await tester.pumpWidget(_host(StickerSlot(
+      boss: _boss,
+      defeated: false,
+      onTap: () {},
+      onQuickDefeat: () => quick = true,
+    )));
+    final btn = find.byKey(const Key('slot-quick-check'));
+    expect(btn, findsOneWidget);
+    await tester.tap(btn);
+    expect(quick, isTrue);
+  });
+
+  testWidgets('defeated slot has no quick-check button', (tester) async {
+    await tester.pumpWidget(_host(StickerSlot(
+      boss: _boss,
+      defeated: true,
+      onTap: () {},
+      onQuickDefeat: () {},
+    )));
+    expect(find.byKey(const Key('slot-quick-check')), findsNothing);
+  });
 }
