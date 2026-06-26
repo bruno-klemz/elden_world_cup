@@ -5594,7 +5594,8 @@
           "name": "Lâminas Negras da Gárgula"
         }
       ],
-      "lore": "Os Parentes da Lâmina Negra são grandes gárgulas de pedra mantidas unidas por cera de cadáver enegrecida, sinal de sua lealdade a Maliketh, a Lâmina Negra. Um guarda Gurranq no Santuário Bestial, enquanto outro guarda o Grande Elevador de Rold que leva às Terras Proibidas."
+      "lore": "Os Parentes da Lâmina Negra são grandes gárgulas de pedra mantidas unidas por cera de cadáver enegrecida, sinal de sua lealdade a Maliketh, a Lâmina Negra. Um guarda Gurranq no Santuário Bestial, enquanto outro guarda o Grande Elevador de Rold que leva às Terras Proibidas.",
+      "mainOrder": 1
     },
     {
       "id": "flying_dragon_greyll",
@@ -6797,7 +6798,8 @@
           "name": "Prótese do Veterano"
         }
       ],
-      "lore": "Um comandante veterano que ofereceu sua prótese em troca das vidas de cavaleiros derrotados mantidos prisioneiros, e liderou esses soldados resgatados como uma força militar independente, leal a nenhuma nação."
+      "lore": "Um comandante veterano que ofereceu sua prótese em troca das vidas de cavaleiros derrotados mantidos prisioneiros, e liderou esses soldados resgatados como uma força militar independente, leal a nenhuma nação.",
+      "mainOrder": 2
     },
     {
       "id": "fire_giant",
@@ -6826,7 +6828,8 @@
           "name": "Lembrança do Gigante de Fogo"
         }
       ],
-      "lore": "O último sobrevivente conhecido da antiga guerra contra os gigantes, este humanoide colossal traz um rosto no peito. Depois que a eterna Chama da Ruína não pôde ser extinta, a Rainha Marika o amaldiçoou a cuidar da forja no alto dos Cumes dos Gigantes por toda a eternidade."
+      "lore": "O último sobrevivente conhecido da antiga guerra contra os gigantes, este humanoide colossal traz um rosto no peito. Depois que a eterna Chama da Ruína não pôde ser extinta, a Rainha Marika o amaldiçoou a cuidar da forja no alto dos Cumes dos Gigantes por toda a eternidade.",
+      "mainOrder": 1
     },
     {
       "id": "godskin_apostle_and_godskin_noble",
@@ -6925,7 +6928,8 @@
           "name": "Lembrança da Lâmina Negra"
         }
       ],
-      "lore": "Maliketh, a besta vinculada à sombra da Rainha Marika, foi incumbido de guardar a Runa da Morte, mas falhou quando assassinos a roubaram durante a Noite das Facas Negras. Para impedir roubos futuros, ele selou a Runa da Morte em sua própria carne, tornando-se a Lâmina Negra."
+      "lore": "Maliketh, a besta vinculada à sombra da Rainha Marika, foi incumbido de guardar a Runa da Morte, mas falhou quando assassinos a roubaram durante a Noite das Facas Negras. Para impedir roubos futuros, ele selou a Runa da Morte em sua própria carne, tornando-se a Lâmina Negra.",
+      "mainOrder": 1
     },
     {
       "id": "dragonlord_placidusax",
@@ -6958,7 +6962,8 @@
           "name": "Lembrança do Senhor dos Dragões"
         }
       ],
-      "lore": "O Senhor dos Dragões cujo trono jaz no coração da tempestade além do tempo é dito ter sido Senhor Prístino na era anterior à Árvore Áurea. Depois que seu deus fugiu, o senhor continuou a aguardar seu retorno."
+      "lore": "O Senhor dos Dragões cujo trono jaz no coração da tempestade além do tempo é dito ter sido Senhor Prístino na era anterior à Árvore Áurea. Depois que seu deus fugiu, o senhor continuou a aguardar seu retorno.",
+      "mainOrder": 2
     },
     {
       "id": "godskin_duo",
@@ -7752,7 +7757,8 @@
           "name": "Névoa de Fia"
         }
       ],
-      "lore": "Cinco espíritos Maculados invocados por Fia para protegê-la e ao corpo de Godwyn, o Dourado, nas Profundezas da Raiz Profunda, enfrentados ao longo de três fases consecutivas. O grupo inclui NPCs como o Feiticeiro Rogier e Lionel, o Coração de Leão, ao lado de campeões criados por jogadores entre aqueles que foram abraçados por Fia."
+      "lore": "Cinco espíritos Maculados invocados por Fia para protegê-la e ao corpo de Godwyn, o Dourado, nas Profundezas da Raiz Profunda, enfrentados ao longo de três fases consecutivas. O grupo inclui NPCs como o Feiticeiro Rogier e Lionel, o Coração de Leão, ao lado de campeões criados por jogadores entre aqueles que foram abraçados por Fia.",
+      "mainOrder": 2
     },
     {
       "id": "lichdragon_fortissax",
@@ -7781,7 +7787,8 @@
           "name": "Lembrança do Dragão Morto-Vivo"
         }
       ],
-      "lore": "Depois que Godwyn, o Dourado, foi morto em alma mas não em corpo, tornando-se o Príncipe da Morte, o antigo dragão relâmpago Fortissax combateu a praga mortal que consumia seu amigo Godwyn, mas acabou sendo dominado e corrompido por ela."
+      "lore": "Depois que Godwyn, o Dourado, foi morto em alma mas não em corpo, tornando-se o Príncipe da Morte, o antigo dragão relâmpago Fortissax combateu a praga mortal que consumia seu amigo Godwyn, mas acabou sendo dominado e corrompido por ela.",
+      "mainOrder": 1
     },
     {
       "id": "astel_naturalborn_of_the_void_lake_of_rot",
@@ -7815,7 +7822,8 @@
           "name": "Lembrança do Nascido da Natureza"
         }
       ],
-      "lore": "Astel é uma estrela malformada, um ser celestial nascido no vazio que caiu sobre a Cidade Eterna de Nokstella e a devastou, destruindo seu céu. Um horror cósmico que deve ser derrotado para avançar na missão de Ranni (no Grande Claustro) rumo ao final da Era das Estrelas."
+      "lore": "Astel é uma estrela malformada, um ser celestial nascido no vazio que caiu sobre a Cidade Eterna de Nokstella e a devastou, destruindo seu céu. Um horror cósmico que deve ser derrotado para avançar na missão de Ranni (no Grande Claustro) rumo ao final da Era das Estrelas.",
+      "mainOrder": 1
     },
     {
       "id": "astel_naturalborn_of_the_void_consecrated_snowfield",
@@ -7880,7 +7888,8 @@
           "name": "Lembrança de Hoarah Loux"
         }
       ],
-      "lore": "Godfrey foi o primeiro consorte da Rainha Marika e o Lorde Anelar original, outrora um feroz chefe das terras inóspitas chamado Hoarah Loux, que adotou o Regente Bestial Serosh para subjugar sua natureza violenta. Após o fim de sua utilidade, foi despojado da graça e exilado como o primeiro dos Maculados, retornando para desafiar o jogador como o guardião final da Árvore Áurea, libertando-se de Serosh para lutar como Hoarah Loux, o Guerreiro."
+      "lore": "Godfrey foi o primeiro consorte da Rainha Marika e o Lorde Anelar original, outrora um feroz chefe das terras inóspitas chamado Hoarah Loux, que adotou o Regente Bestial Serosh para subjugar sua natureza violenta. Após o fim de sua utilidade, foi despojado da graça e exilado como o primeiro dos Maculados, retornando para desafiar o jogador como o guardião final da Árvore Áurea, libertando-se de Serosh para lutar como Hoarah Loux, o Guerreiro.",
+      "mainOrder": 1
     },
     {
       "id": "sir_gideon_ofnir_the_all_knowing",
@@ -7915,13 +7924,14 @@
           "name": "Cetro do Onisciente"
         }
       ],
-      "lore": "Gideon Ofnir foi o líder Maculado do Forte da Távola Redonda e um renomado erudito onisciente que ensinava feitiços ao jogador. Após descobrir a verdade oculta na Árvore Áurea, convenceu-se de que ninguém poderia se tornar Lorde Áureo e passou a se opor à ascensão do jogador."
+      "lore": "Gideon Ofnir foi o líder Maculado do Forte da Távola Redonda e um renomado erudito onisciente que ensinava feitiços ao jogador. Após descobrir a verdade oculta na Árvore Áurea, convenceu-se de que ninguém poderia se tornar Lorde Áureo e passou a se opor à ascensão do jogador.",
+      "mainOrder": 2
     },
     {
       "id": "radagon_of_the_golden_order",
       "name": "Radagon da Ordem Áurea",
       "subtitle": null,
-      "region": "ashen_capital",
+      "region": "elden_throne",
       "art": "images/malenia.webp",
       "locationName": "Plataforma de Pedra (Trono Élder, Leyndell, Capital Cinzenta)",
       "mapCoord": {
@@ -7936,7 +7946,8 @@
         "fire"
       ],
       "loot": [],
-      "lore": "Radagon era o consorte ruivo da Rainha Marika e revela-se ser a sua outra metade, compartilhando um único corpo. Ao contrário de Marika, que estilhaçou o Anel Prístino, Radagon buscava repará-lo, encarnando as vontades conflitantes dentro de um único ser."
+      "lore": "Radagon era o consorte ruivo da Rainha Marika e revela-se ser a sua outra metade, compartilhando um único corpo. Ao contrário de Marika, que estilhaçou o Anel Prístino, Radagon buscava repará-lo, encarnando as vontades conflitantes dentro de um único ser.",
+      "mainOrder": 2
     },
     {
       "id": "elden_beast",
@@ -7964,7 +7975,8 @@
           "name": "Lembrança Élden"
         }
       ],
-      "lore": "A Besta Prístina é a besta vassala da Vontade Maior e a encarnação viva do conceito de Ordem, enviada às Terras Intermédias há muito tempo como uma estrela dourada. É a verdadeira forma do Elden Ring e o chefe final do jogo."
+      "lore": "A Besta Prístina é a besta vassala da Vontade Maior e a encarnação viva do conceito de Ordem, enviada às Terras Intermédias há muito tempo como uma estrela dourada. É a verdadeira forma do Elden Ring e o chefe final do jogo.",
+      "mainOrder": 1
     }
   ]
 }
