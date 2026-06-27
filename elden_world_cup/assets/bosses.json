@@ -2017,7 +2017,7 @@
       "name": "Homem-Fera de Farum Azula",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/beastman_of_farum_azula.jpg",
       "locationName": "Caverna à Beira do Bosque",
       "mapCoord": {
         "x": 0,
@@ -2047,7 +2047,7 @@
       "name": "Homem-Fera de Farum Azula",
       "subtitle": null,
       "region": "dragonbarrow",
-      "art": "images/malenia.webp",
+      "art": "images/beastman_of_farum_azula.jpg",
       "locationName": "Caverna de Dragonbarrow",
       "mapCoord": {
         "x": 0,
@@ -2706,7 +2706,7 @@
       "name": "Cão de Guarda Sepulcral da Árvore Áurea",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_burial_watchdog.jpg",
       "locationName": "Catacumbas do Pé da Tempestade",
       "mapCoord": {
         "x": 0,
@@ -2732,7 +2732,7 @@
       "name": "Cão de Guarda Sepulcral da Árvore Áurea",
       "subtitle": null,
       "region": "weeping_peninsula",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_burial_watchdog.jpg",
       "locationName": "Catacumbas do Empalador",
       "mapCoord": {
         "x": 0,
@@ -2758,7 +2758,7 @@
       "name": "Cão de Guarda Sepulcral da Árvore Áurea",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_burial_watchdog.jpg",
       "locationName": "Catacumbas do Sopé do Penhasco",
       "mapCoord": {
         "x": 0,
@@ -2784,7 +2784,7 @@
       "name": "Cão de Guarda Sepulcral da Árvore Áurea",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_burial_watchdog.jpg",
       "locationName": "Catacumbas da Árvore Áurea Menor",
       "mapCoord": {
         "x": 0,
@@ -2810,7 +2810,7 @@
       "name": "Cão de Guarda Sepulcral da Árvore Áurea",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_burial_watchdog.jpg",
       "locationName": "Catacumbas de Wyndham",
       "mapCoord": {
         "x": 0,
