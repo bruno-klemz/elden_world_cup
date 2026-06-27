@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'album/presenter/album/album_screen.dart';
+import 'app/mobile_frame.dart';
 import 'service_locator.dart';
 import 'theme/app_theme.dart';
 
@@ -23,6 +24,7 @@ class EldenAlbumApp extends StatelessWidget {
             seedColor: AppColors.gold, brightness: Brightness.dark),
         useMaterial3: true,
       ),
+      builder: (context, child) => MobileFrame(child: child!),
       home: const AlbumScreen(),
     );
   }
