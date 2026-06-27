@@ -11,9 +11,6 @@ class AppColors {
   static const textBody = Color(0xFFA89876);
   static const strong = Color(0xFF7FB38A);
   static const weak = Color(0xFFCF8A6A);
-
-  /// Warm accent for defeated main bosses (border, name, pulse glow).
-  static const mainAccent = Color(0xFFE2483D);
 }
 
 class AppText {

@@ -92,13 +92,14 @@ class _StickerSlotState extends State<StickerSlot>
   Widget build(BuildContext context) {
     final showColored = widget.defeated;
     final isMainDone = widget.isMain && showColored;
-    final accent = isMainDone ? AppColors.mainAccent : AppColors.gold;
-    final borderColor = showColored ? accent : AppColors.border;
-    final borderWidth = isMainDone
-        ? 2.5
+    // Gold is reserved for main bosses — so they stand out. Regular defeated
+    // slots use a discreet border (the colored art already signals "done").
+    final borderColor = isMainDone
+        ? AppColors.gold
         : showColored
-            ? 2.0
-            : 1.0;
+            ? const Color(0xFF4A3C2A)
+            : AppColors.border;
+    final borderWidth = isMainDone ? 2.5 : 1.0;
 
     Widget card = ClipRRect(
       borderRadius: BorderRadius.circular(10),
@@ -132,7 +133,7 @@ class _StickerSlotState extends State<StickerSlot>
                   borderColor: borderColor,
                   borderWidth: borderWidth,
                   glow: _pulse!.value, // 0..1
-                  glowColor: accent,
+                  glowColor: AppColors.gold,
                   child: child!,
                 ),
                 child: card,
@@ -141,7 +142,7 @@ class _StickerSlotState extends State<StickerSlot>
                 borderColor: borderColor,
                 borderWidth: borderWidth,
                 glow: 0,
-                glowColor: accent,
+                glowColor: AppColors.gold,
                 child: card,
               ),
       ),
@@ -227,9 +228,9 @@ class _StickerSlotState extends State<StickerSlot>
               textAlign: TextAlign.center,
               style: AppText.slotName.copyWith(
                   color: isMainDone
-                      ? AppColors.mainAccent
+                      ? AppColors.goldLight
                       : showColored
-                          ? AppColors.goldLight
+                          ? const Color(0xFFCBB88A) // muted gold for regulars
                           : const Color(0xFF9A8A66))),
         ),
       );
