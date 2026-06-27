@@ -2897,7 +2897,7 @@
       "name": "Herdeiro Enxertado",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/grafted_scion.png",
+      "art": "images/grafted_scion_2.jpg",
       "locationName": "Capela da Expectativa",
       "mapCoord": {
         "x": 0,
@@ -3576,7 +3576,7 @@
       "name": "Soldado de Godrick",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/soldier_of_godrick.jpg",
       "locationName": "Cemitério Encalhado",
       "mapCoord": {
         "x": 0,
@@ -3672,7 +3672,7 @@
       "name": "Espírito Ulcerado da Árvore",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/ulcerated_tree_spirit.jpg",
       "locationName": "Túmulo do Herói do Povo da Periferia",
       "mapCoord": {
         "x": 0,
@@ -3707,7 +3707,7 @@
       "name": "Espírito Ulcerado da Árvore",
       "subtitle": null,
       "region": "gelmir",
-      "art": "images/malenia.webp",
+      "art": "images/ulcerated_tree_spirit.jpg",
       "locationName": "Árvore Áurea Menor (Mte. Gelmir)",
       "mapCoord": {
         "x": 0,
@@ -3742,7 +3742,7 @@
       "name": "Espírito Ulcerado da Árvore",
       "subtitle": null,
       "region": "mountaintops",
-      "art": "images/malenia.webp",
+      "art": "images/ulcerated_tree_spirit.jpg",
       "locationName": "Catacumbas do Cume das Montanhas dos Gigantes",
       "mapCoord": {
         "x": 0,
