@@ -3878,7 +3878,7 @@
       "id": "cemetery_shade_limgrave",
       "name": "Sombra do Cemitério",
       "subtitle": null,
-      "region": "limgrave",
+      "region": "weeping_peninsula",
       "art": "images/malenia.webp",
       "locationName": "Catacumbas de Beira-Túmulo",
       "mapCoord": {
@@ -4184,7 +4184,7 @@
       "id": "miranda_the_blighted_bloom",
       "name": "Miranda, a Flor Crestada",
       "subtitle": "A Flor Pestilenta",
-      "region": "limgrave",
+      "region": "weeping_peninsula",
       "art": "images/malenia.webp",
       "locationName": "Caverna de Beira-Túmulo",
       "mapCoord": {
