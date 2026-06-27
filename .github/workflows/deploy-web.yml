@@ -16,6 +16,11 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+# O projeto Flutter vive na subpasta elden_world_cup/, não na raiz do repo
+defaults:
+  run:
+    working-directory: elden_world_cup
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,7 +39,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: build/web
+          path: elden_world_cup/build/web
 
   deploy:
     needs: build
