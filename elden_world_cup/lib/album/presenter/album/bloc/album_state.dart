@@ -34,9 +34,10 @@ class AlbumState extends Equatable {
       bossesIn(regionId).where((b) => b.isMainBoss).toList()
         ..sort((a, b) => a.mainOrder.compareTo(b.mainOrder));
 
-  /// Non-headline bosses of a region, in their natural order.
+  /// Non-headline bosses of a region, sorted alphabetically (case-insensitive).
   List<Boss> otherBossesIn(String regionId) =>
-      bossesIn(regionId).where((b) => !b.isMainBoss).toList();
+      bossesIn(regionId).where((b) => !b.isMainBoss).toList()
+        ..sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
 
   bool isDefeated(String id) => progress.isDefeated(id);
 
