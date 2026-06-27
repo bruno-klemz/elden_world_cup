@@ -2046,7 +2046,7 @@
       "id": "beastman_of_farum_azula_caelid",
       "name": "Homem-Fera de Farum Azula",
       "subtitle": null,
-      "region": "caelid",
+      "region": "dragonbarrow",
       "art": "images/malenia.webp",
       "locationName": "Caverna de Dragonbarrow",
       "mapCoord": {
@@ -2166,7 +2166,7 @@
       "id": "bell_bearing_hunter_caelid",
       "name": "Caçador de Sinetas",
       "subtitle": null,
-      "region": "caelid",
+      "region": "dragonbarrow",
       "art": "images/bell_bearing_hunter.jpg",
       "locationName": "Cabana do Mercador Isolado (Dragonbarrow)",
       "mapCoord": {
@@ -2676,7 +2676,7 @@
       "name": "Chefe Semi-Humano",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/demi_human_chief.jpg",
       "locationName": "Caverna Costeira",
       "mapCoord": {
         "x": 0,
@@ -2963,7 +2963,7 @@
       "name": "Herdeiro Enxertado",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/grafted_scion.png",
+      "art": "images/grafted_scion_3.jpg",
       "locationName": "Castelo Stormveil",
       "mapCoord": {
         "x": 0,
@@ -3468,7 +3468,7 @@
       "id": "nights_cavalry_caelid_dragonbarrow",
       "name": "Cavalaria Noturna",
       "subtitle": null,
-      "region": "caelid",
+      "region": "dragonbarrow",
       "art": "images/nights_cavalry.jpg",
       "locationName": "Dragonbarrow",
       "mapCoord": {
@@ -4062,7 +4062,7 @@
       "id": "erdtree_avatar_altus",
       "name": "Avatar da Árvore Áurea",
       "subtitle": null,
-      "region": "altus",
+      "region": "capital",
       "art": "images/malenia.webp",
       "locationName": "Leyndell, Capital Real",
       "mapCoord": {
@@ -5317,7 +5317,7 @@
       "id": "putrid_avatar_caelid_minor_erdtree_dragonbarrow",
       "name": "Avatar Pútrido",
       "subtitle": "Guardião da Árvore Áurea Menor",
-      "region": "caelid",
+      "region": "dragonbarrow",
       "art": "images/malenia.webp",
       "locationName": "Árvore Áurea Menor (Dragonbarrow)",
       "mapCoord": {
@@ -5766,7 +5766,7 @@
       "id": "putrid_tree_spirit_mountaintops",
       "name": "Espírito da Árvore Pútrido",
       "subtitle": null,
-      "region": "mountaintops",
+      "region": "haligtree",
       "art": "images/malenia.webp",
       "locationName": "Elphael, Bastião da Árvore Sagrada",
       "mapCoord": {
@@ -6247,7 +6247,7 @@
       "id": "full_grown_fallingstar_beast",
       "name": "Besta Estrela-Cadente Adulta",
       "subtitle": null,
-      "region": "altus",
+      "region": "gelmir",
       "art": "images/malenia.webp",
       "locationName": "Mte. Gelmir",
       "mapCoord": {
@@ -6425,7 +6425,7 @@
       "id": "red_wolf_of_the_champion",
       "name": "Lobo Vermelho do Campeão",
       "subtitle": null,
-      "region": "altus",
+      "region": "gelmir",
       "art": "images/malenia.webp",
       "locationName": "Túmulo do Herói de Gelmir",
       "mapCoord": {
