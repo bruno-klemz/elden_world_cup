@@ -2556,7 +2556,7 @@
       "name": "Ave da Morte",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/deathbird.jpg",
       "locationName": "Cabana do Mestre de Guerra",
       "mapCoord": {
         "x": 0,
@@ -2585,8 +2585,8 @@
       "id": "deathbird_limgrave_weeping_peninsula",
       "name": "Ave da Morte",
       "subtitle": null,
-      "region": "limgrave",
-      "art": "images/malenia.webp",
+      "region": "weeping_peninsula",
+      "art": "images/deathbird.jpg",
       "locationName": "Península do Pranto",
       "mapCoord": {
         "x": 0,
