@@ -1263,7 +1263,7 @@
       "name": "Marinheiro de Tíbia",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/tibia_mariner.jpg",
       "locationName": "Vila de Summonwater",
       "mapCoord": {
         "x": 0,
@@ -1296,7 +1296,7 @@
       "name": "Marinheiro de Tíbia",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/tibia_mariner.jpg",
       "locationName": "Liurnia dos Lagos",
       "mapCoord": {
         "x": 0,
@@ -1329,7 +1329,7 @@
       "name": "Marinheiro de Tíbia",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/tibia_mariner.jpg",
       "locationName": "Ruínas de Wyndham",
       "mapCoord": {
         "x": 0,
@@ -1362,7 +1362,7 @@
       "name": "Marinheiro de Tíbia",
       "subtitle": null,
       "region": "mountaintops",
-      "art": "images/malenia.webp",
+      "art": "images/tibia_mariner.jpg",
       "locationName": "Cumes dos Gigantes",
       "mapCoord": {
         "x": 0,
@@ -1395,7 +1395,7 @@
       "name": "Marinheiro de Tíbia",
       "subtitle": null,
       "region": "mohgwyn",
-      "art": "images/malenia.webp",
+      "art": "images/tibia_mariner.jpg",
       "locationName": "Túmulo Oculto de Charo",
       "mapCoord": {
         "x": 0,
