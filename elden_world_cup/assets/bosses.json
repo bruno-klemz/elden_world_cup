@@ -2862,7 +2862,7 @@
       "name": "Godrick, o Enxertado",
       "subtitle": "Godrick, o Áureo",
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/godrick.jpg",
       "locationName": "Castelo Stormveil",
       "mapCoord": {
         "x": 0,
@@ -2897,7 +2897,7 @@
       "name": "Herdeiro Enxertado",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/grafted_scion.png",
       "locationName": "Capela da Expectativa",
       "mapCoord": {
         "x": 0,
@@ -2933,7 +2933,7 @@
       "name": "Herdeiro Enxertado",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/grafted_scion.png",
       "locationName": "Túmulo do Herói do Povo da Periferia",
       "mapCoord": {
         "x": 0,
@@ -2963,7 +2963,7 @@
       "name": "Herdeiro Enxertado",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/grafted_scion.png",
       "locationName": "Castelo Stormveil",
       "mapCoord": {
         "x": 0,
@@ -2993,7 +2993,7 @@
       "name": "Herdeiro Enxertado",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/grafted_scion.png",
       "locationName": "Liurnia dos Lagos",
       "mapCoord": {
         "x": 0,
@@ -3026,7 +3026,7 @@
       "name": "Herdeiro Enxertado",
       "subtitle": null,
       "region": "gelmir",
-      "art": "images/malenia.webp",
+      "art": "images/grafted_scion.png",
       "locationName": "Mte. Gelmir",
       "mapCoord": {
         "x": 0,
