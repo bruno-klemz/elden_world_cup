@@ -92,7 +92,8 @@ class _StickerSlotState extends State<StickerSlot>
   Widget build(BuildContext context) {
     final showColored = widget.defeated;
     final isMainDone = widget.isMain && showColored;
-    final borderColor = showColored ? AppColors.gold : AppColors.border;
+    final accent = isMainDone ? AppColors.mainAccent : AppColors.gold;
+    final borderColor = showColored ? accent : AppColors.border;
     final borderWidth = isMainDone
         ? 2.5
         : showColored
@@ -105,7 +106,7 @@ class _StickerSlotState extends State<StickerSlot>
         fit: StackFit.expand,
         children: [
           _artLayer(showColored),
-          _nameStrip(showColored),
+          _nameStrip(showColored, isMainDone),
           if (isMainDone)
             const Positioned(
               top: 5,
@@ -131,6 +132,7 @@ class _StickerSlotState extends State<StickerSlot>
                   borderColor: borderColor,
                   borderWidth: borderWidth,
                   glow: _pulse!.value, // 0..1
+                  glowColor: accent,
                   child: child!,
                 ),
                 child: card,
@@ -139,6 +141,7 @@ class _StickerSlotState extends State<StickerSlot>
                 borderColor: borderColor,
                 borderWidth: borderWidth,
                 glow: 0,
+                glowColor: accent,
                 child: card,
               ),
       ),
@@ -149,6 +152,7 @@ class _StickerSlotState extends State<StickerSlot>
     required Color borderColor,
     required double borderWidth,
     required double glow,
+    required Color glowColor,
     required Widget child,
   }) {
     return Container(
@@ -158,7 +162,7 @@ class _StickerSlotState extends State<StickerSlot>
         boxShadow: glow > 0
             ? [
                 BoxShadow(
-                  color: AppColors.goldLight.withValues(alpha: 0.15 + glow * 0.4),
+                  color: glowColor.withValues(alpha: 0.15 + glow * 0.4),
                   blurRadius: 6 + glow * 12,
                   spreadRadius: glow * 2,
                 ),
@@ -206,7 +210,7 @@ class _StickerSlotState extends State<StickerSlot>
         ),
       );
 
-  Widget _nameStrip(bool showColored) => Positioned(
+  Widget _nameStrip(bool showColored, bool isMainDone) => Positioned(
         bottom: 0,
         left: 0,
         right: 0,
@@ -222,9 +226,11 @@ class _StickerSlotState extends State<StickerSlot>
           child: Text(widget.boss.name.toUpperCase(),
               textAlign: TextAlign.center,
               style: AppText.slotName.copyWith(
-                  color: showColored
-                      ? AppColors.goldLight
-                      : const Color(0xFF9A8A66))),
+                  color: isMainDone
+                      ? AppColors.mainAccent
+                      : showColored
+                          ? AppColors.goldLight
+                          : const Color(0xFF9A8A66))),
         ),
       );
 
