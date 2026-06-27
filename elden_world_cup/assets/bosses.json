@@ -1791,7 +1791,7 @@
       "name": "Sentinela da Árvore",
       "subtitle": "A muralha viva da Árvore Áurea",
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/tree_sentinel.jpg",
       "locationName": "Limgrave (perto do início, Ruínas de Gatefront)",
       "mapCoord": {
         "x": 0,
@@ -1823,7 +1823,7 @@
       "name": "Sentinela da Árvore",
       "subtitle": "A muralha viva da Árvore Áurea",
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/tree_sentinel.jpg",
       "locationName": "Planalto de Altus",
       "mapCoord": {
         "x": 0,
@@ -1858,7 +1858,7 @@
       "name": "Sentinela da Árvore",
       "subtitle": "A muralha viva da Árvore Áurea",
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/tree_sentinel.jpg",
       "locationName": "Interior",
       "mapCoord": {
         "x": 0,
@@ -3056,7 +3056,7 @@
       "name": "Duelista Guardião dos Túmulos",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/grave_warden_duelist.jpg",
       "locationName": "Catacumbas de Águas Turvas",
       "mapCoord": {
         "x": 0,
@@ -3083,7 +3083,7 @@
       "name": "Duelista Guardião dos Túmulos",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/grave_warden_duelist.jpg",
       "locationName": "Tumba Lateral de Auriza",
       "mapCoord": {
         "x": 0,
@@ -3110,7 +3110,7 @@
       "name": "Golem Guardião",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/guardian_golem.jpg",
       "locationName": "Caverna da Estrada Alta",
       "mapCoord": {
         "x": 0,
@@ -3140,7 +3140,7 @@
       "name": "Cabeça de Abóbora Louca",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/mad_pumpkin_head.jpg",
       "locationName": "Ruínas do Marco",
       "mapCoord": {
         "x": 0,
@@ -3168,7 +3168,7 @@
       "name": "Cabeça de Abóbora Louca",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/mad_pumpkin_head.jpg",
       "locationName": "Ruínas de Caelem",
       "mapCoord": {
         "x": 0,
@@ -3196,7 +3196,7 @@
       "name": "Margit, o Presságio Funesto",
       "subtitle": "O Mau Augúrio",
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/margit.jpg",
       "locationName": "Colina da Tempestade (acesso ao Castelo Stormveil)",
       "mapCoord": {
         "x": 0,
@@ -3225,7 +3225,7 @@
       "name": "Margit, o Presságio Funesto",
       "subtitle": "O Mau Augúrio",
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/margit.jpg",
       "locationName": "Arredores da Capital",
       "mapCoord": {
         "x": 0,
@@ -3253,7 +3253,7 @@
       "name": "Cavalaria Noturna",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/nights_cavalry.jpg",
       "locationName": "Limgrave",
       "mapCoord": {
         "x": 0,
@@ -3283,7 +3283,7 @@
       "name": "Cavalaria Noturna",
       "subtitle": null,
       "region": "weeping_peninsula",
-      "art": "images/malenia.webp",
+      "art": "images/nights_cavalry.jpg",
       "locationName": "Península do Pranto",
       "mapCoord": {
         "x": 0,
@@ -3316,7 +3316,7 @@
       "name": "Cavalaria Noturna",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/nights_cavalry.jpg",
       "locationName": "Liurnia Sul",
       "mapCoord": {
         "x": 0,
@@ -3346,7 +3346,7 @@
       "name": "Cavalaria Noturna",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/nights_cavalry.jpg",
       "locationName": "Liurnia Norte",
       "mapCoord": {
         "x": 0,
@@ -3379,7 +3379,7 @@
       "name": "Cavalaria Noturna",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/nights_cavalry.jpg",
       "locationName": "Caelid",
       "mapCoord": {
         "x": 0,
@@ -3409,7 +3409,7 @@
       "name": "Cavalaria Noturna",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/nights_cavalry.jpg",
       "locationName": "Planalto de Altus",
       "mapCoord": {
         "x": 0,
@@ -3439,7 +3439,7 @@
       "name": "Cavalaria Noturna",
       "subtitle": null,
       "region": "mountaintops",
-      "art": "images/malenia.webp",
+      "art": "images/nights_cavalry.jpg",
       "locationName": "Terras Proibidas",
       "mapCoord": {
         "x": 0,
@@ -3469,7 +3469,7 @@
       "name": "Cavalaria Noturna",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/nights_cavalry.jpg",
       "locationName": "Dragonbarrow",
       "mapCoord": {
         "x": 0,
@@ -3499,7 +3499,7 @@
       "name": "Cavalaria Noturna",
       "subtitle": null,
       "region": "consecrated_snowfield",
-      "art": "images/malenia.webp",
+      "art": "images/nights_cavalry.jpg",
       "locationName": "Campo Nevado Consagrado",
       "mapCoord": {
         "x": 0,
@@ -3532,7 +3532,7 @@
       "name": "Patches",
       "subtitle": "Patches, o Desatado",
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/patches.jpg",
       "locationName": "Caverna de Águas Turvas",
       "mapCoord": {
         "x": 0,
@@ -3604,7 +3604,7 @@
       "name": "Troll Escavador de Pedra",
       "subtitle": null,
       "region": "limgrave",
-      "art": "images/malenia.webp",
+      "art": "images/stonedigger_troll.jpg",
       "locationName": "Túneis de Limgrave",
       "mapCoord": {
         "x": 0,
@@ -3638,7 +3638,7 @@
       "name": "Troll Escavador de Pedra",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/stonedigger_troll.jpg",
       "locationName": "Túnel Antigo de Altus",
       "mapCoord": {
         "x": 0,
