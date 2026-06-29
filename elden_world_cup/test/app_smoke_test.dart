@@ -12,6 +12,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'support/settings_bloc_harness.dart';
+
 const _json = '''
 {"regions":[{"id":"limgrave","name":"Limgrave","order":1}],
  "bosses":[{"id":"margit","name":"Margit","region":"limgrave","art":"a.webp",
@@ -41,7 +43,8 @@ void main() {
   tearDown(() => locator.reset());
 
   testWidgets('app boots into album with content', (tester) async {
-    await tester.pumpWidget(const MaterialApp(home: AlbumScreen()));
+    await tester
+        .pumpWidget(MaterialApp(home: withSettings(const AlbumScreen())));
     await tester.pumpAndSettle();
 
     // first region page shows the region name and its bosses

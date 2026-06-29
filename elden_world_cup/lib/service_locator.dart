@@ -7,6 +7,10 @@ import 'boss/domain/repository/progress_repository.dart';
 import 'boss/domain/usecase/load_progress_usecase.dart';
 import 'boss/domain/usecase/set_map_revealed_usecase.dart';
 import 'boss/domain/usecase/toggle_defeated_usecase.dart';
+import 'settings/data/repository/settings_repository_impl.dart';
+import 'settings/domain/repository/settings_repository.dart';
+import 'settings/domain/usecase/load_settings_usecase.dart';
+import 'settings/domain/usecase/set_blur_pending_usecase.dart';
 
 final locator = GetIt.instance;
 
@@ -17,6 +21,8 @@ void setupLocator() {
   locator.registerLazySingleton<BossRepository>(() => BossRepositoryImpl());
   locator.registerLazySingleton<ProgressRepository>(
       () => ProgressRepositoryImpl());
+  locator.registerLazySingleton<SettingsRepository>(
+      () => SettingsRepositoryImpl());
 
   // Use cases (factories)
   locator.registerFactory<LoadAlbumUsecase>(
@@ -27,4 +33,8 @@ void setupLocator() {
       ToggleDefeatedUsecaseImpl(repository: locator<ProgressRepository>()));
   locator.registerFactory<SetMapRevealedUsecase>(() =>
       SetMapRevealedUsecaseImpl(repository: locator<ProgressRepository>()));
+  locator.registerFactory<LoadSettingsUsecase>(
+      () => LoadSettingsUsecaseImpl(repository: locator<SettingsRepository>()));
+  locator.registerFactory<SetBlurPendingUsecase>(() =>
+      SetBlurPendingUsecaseImpl(repository: locator<SettingsRepository>()));
 }

@@ -5,13 +5,16 @@ import 'package:elden_world_cup/album/domain/entity/map_coord.dart';
 import 'package:elden_world_cup/album/presenter/album/widgets/reveal_overlay.dart';
 import 'package:elden_world_cup/album/presenter/album/widgets/sticker_slot.dart';
 
+import '../../support/settings_bloc_harness.dart';
+
 const _boss = Boss(
   id: 'malenia', name: 'Malenia', region: 'haligtree',
   art: 'images/malenia.webp', locationName: 'loc',
   mapCoord: MapCoord(0.6, 0.4), lore: 'l',
 );
 
-Widget _host(Widget child) => MaterialApp(home: Scaffold(body: child));
+Widget _host(Widget child) =>
+    MaterialApp(home: Scaffold(body: withSettings(child)));
 
 void main() {
   testWidgets('shows name in both states', (tester) async {

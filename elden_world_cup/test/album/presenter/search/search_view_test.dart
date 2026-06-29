@@ -13,6 +13,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
+import '../../../support/settings_bloc_harness.dart';
+
 class _MockLoadAlbum extends Mock implements LoadAlbumUsecase {}
 
 class _MockLoadProgress extends Mock implements LoadProgressUsecase {}
@@ -45,7 +47,8 @@ void main() {
       (tester) async {
     final bloc = _makeBloc();
     await tester.pumpWidget(MaterialApp(
-        home: BlocProvider.value(value: bloc, child: const SearchView())));
+        home: BlocProvider.value(
+            value: bloc, child: withSettings(const SearchView()))));
     await tester.pumpAndSettle();
 
     expect(find.text('Limgrave'), findsWidgets);
@@ -59,7 +62,8 @@ void main() {
   testWidgets('pending main boss shows no crown in search', (tester) async {
     final bloc = _makeBloc(); // empty progress -> Godrick pending
     await tester.pumpWidget(MaterialApp(
-        home: BlocProvider.value(value: bloc, child: const SearchView())));
+        home: BlocProvider.value(
+          value: bloc, child: withSettings(const SearchView()))));
     await tester.pumpAndSettle();
     await tester.tap(find.textContaining('Bosses'));
     await tester.pumpAndSettle();
@@ -80,7 +84,7 @@ void main() {
                 popped = await Navigator.of(context).push<SearchResult>(
                   MaterialPageRoute(
                     builder: (_) => BlocProvider.value(
-                        value: bloc, child: const SearchView()),
+                        value: bloc, child: withSettings(const SearchView())),
                   ),
                 );
               },

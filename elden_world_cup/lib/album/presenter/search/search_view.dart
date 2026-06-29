@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../theme/app_theme.dart';
+import '../../../shared/widgets/pending_art.dart';
 import '../../domain/entity/boss.dart';
 import '../../domain/entity/region.dart';
 import 'bloc/search_bloc.dart';
@@ -159,17 +160,11 @@ class SearchView extends StatelessWidget {
         child: SizedBox(
           width: 34,
           height: 34,
+          // Search thumbs are grayscale-only while pending (never blurred);
+          // blurSigma 0 keeps the global blur toggle a no-op here.
           child: defeated
               ? thumb
-              : ColorFiltered(
-                  colorFilter: const ColorFilter.matrix(<double>[
-                    0.2126, 0.7152, 0.0722, 0, 0,
-                    0.2126, 0.7152, 0.0722, 0, 0,
-                    0.2126, 0.7152, 0.0722, 0, 0,
-                    0, 0, 0, 1, 0,
-                  ]),
-                  child: thumb,
-                ),
+              : PendingArt(art: boss.art, blurSigma: 0, grayscale: true),
         ),
       ),
       // crown only once defeated (reward), name muted while pending

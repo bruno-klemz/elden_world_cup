@@ -1,16 +1,8 @@
-import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import '../../../domain/entity/boss.dart';
+import '../../../../shared/widgets/pending_art.dart';
 import '../../../../theme/app_theme.dart';
 import 'reveal_overlay.dart';
-
-// Standard luminance grayscale matrix for ColorFilter.matrix.
-const List<double> _grayscaleMatrix = <double>[
-  0.2126, 0.7152, 0.0722, 0, 0,
-  0.2126, 0.7152, 0.0722, 0, 0,
-  0.2126, 0.7152, 0.0722, 0, 0,
-  0, 0, 0, 1, 0,
-];
 
 class StickerSlot extends StatefulWidget {
   const StickerSlot({
@@ -199,16 +191,11 @@ class _StickerSlotState extends State<StickerSlot>
       errorBuilder: (context, error, stack) =>
           Container(color: AppColors.surfaceAlt));
 
-  Widget _pendingArt() => ColorFiltered(
-        colorFilter: const ColorFilter.matrix(_grayscaleMatrix),
-        child: ImageFiltered(
-          imageFilter: ui.ImageFilter.blur(sigmaX: 6, sigmaY: 6),
-          child: ColorFiltered(
-            colorFilter: ColorFilter.mode(
-                Colors.black.withValues(alpha: 0.45), BlendMode.darken),
-            child: _coloredArt(),
-          ),
-        ),
+  Widget _pendingArt() => PendingArt(
+        art: widget.boss.art,
+        blurSigma: 6,
+        grayscale: true,
+        darken: 0.45,
       );
 
   Widget _nameStrip(bool showColored, bool isMainDone) => Positioned(

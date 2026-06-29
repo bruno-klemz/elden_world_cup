@@ -7,6 +7,7 @@ import '../search/search_result.dart';
 import '../search/search_screen.dart';
 import 'bloc/album_bloc.dart';
 import 'widgets/album_page_indicator.dart';
+import 'widgets/blur_toggle_button.dart';
 import 'widgets/region_page.dart';
 
 /// Pure UI for the album. Reads [AlbumBloc] from context.
@@ -150,8 +151,15 @@ class _AlbumViewState extends State<AlbumView> {
                 child: SafeArea(
                   child: Padding(
                     padding: const EdgeInsets.all(12),
-                    child: _SearchButton(
-                        onTap: () => _openSearch(context, state)),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const BlurToggleButton(),
+                        const SizedBox(width: 10),
+                        _SearchButton(
+                            onTap: () => _openSearch(context, state)),
+                      ],
+                    ),
                   ),
                 ),
               ),

@@ -5,6 +5,8 @@ import 'package:elden_world_cup/album/presenter/album/widgets/region_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import '../../support/settings_bloc_harness.dart';
+
 const _region = Region(id: 'limgrave', name: 'Limgrave', order: 1);
 
 Boss _boss(String id, String name, {int mainOrder = 0}) => Boss(
@@ -18,7 +20,8 @@ Boss _boss(String id, String name, {int mainOrder = 0}) => Boss(
       mainOrder: mainOrder,
     );
 
-Widget _host(Widget child) => MaterialApp(home: Scaffold(body: child));
+Widget _host(Widget child) =>
+    MaterialApp(home: Scaffold(body: withSettings(child)));
 
 void main() {
   testWidgets('shows region name, progress and bosses', (tester) async {

@@ -1,6 +1,6 @@
-import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import '../../../../album/domain/entity/boss.dart';
+import '../../../../shared/widgets/pending_art.dart';
 import '../../../../theme/app_theme.dart';
 
 class BossHero extends StatelessWidget {
@@ -40,20 +40,15 @@ class BossHero extends StatelessWidget {
   }
 
   Widget _art() {
-    final img = Image.asset('assets/${boss.art}',
-        fit: BoxFit.cover,
-        alignment: const Alignment(0, -0.6),
-        errorBuilder: (context, error, stack) =>
-            Container(color: AppColors.surfaceAlt));
-    if (defeated) return img;
-    return ImageFiltered(
-      imageFilter: ui.ImageFilter.blur(sigmaX: 9, sigmaY: 9),
-      child: ColorFiltered(
-        colorFilter: ColorFilter.mode(
-            Colors.black.withValues(alpha: 0.5), BlendMode.darken),
-        child: img,
-      ),
-    );
+    if (defeated) {
+      return Image.asset('assets/${boss.art}',
+          fit: BoxFit.cover,
+          alignment: const Alignment(0, -0.6),
+          errorBuilder: (context, error, stack) =>
+              Container(color: AppColors.surfaceAlt));
+    }
+    // Pending: blur (toggleable) + darken, no grayscale.
+    return PendingArt(art: boss.art, blurSigma: 9, darken: 0.5);
   }
 }
 
