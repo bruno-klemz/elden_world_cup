@@ -179,7 +179,7 @@
       "name": "Chefe Demônio de Sangue",
       "subtitle": null,
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/chief_bloodfiend.png",
       "locationName": "Caverna da Foz do Rio",
       "mapCoord": {
         "x": 0,
@@ -211,7 +211,7 @@
       "name": "Mestre Espadachim Semi-Humano Onze",
       "subtitle": null,
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/demi_human_swordmaster_onze.png",
       "locationName": "Cárcere de Belurat",
       "mapCoord": {
         "x": 0,
@@ -240,7 +240,7 @@
       "name": "Besta Divina Leão Dançante",
       "subtitle": null,
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/divine_beast_dancing_lion_scadu_altus.jpg",
       "locationName": "Belurat, Povoado da Torre",
       "mapCoord": {
         "x": 0,
@@ -278,7 +278,7 @@
       "name": "Besta Divina Leão Dançante",
       "subtitle": null,
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/divine_beast_dancing_lion_scadu_altus.jpg",
       "locationName": "Ruínas Antigas de Rauh",
       "mapCoord": {
         "x": 0,
@@ -312,7 +312,7 @@
       "name": "Dragão da Chama Espectral",
       "subtitle": null,
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/ghostflame_dragon_gravesite_plain_cerulean_coast.png",
       "locationName": "Planície dos Túmulos",
       "mapCoord": {
         "x": 0,
@@ -344,7 +344,7 @@
       "name": "Dragão da Chama Espectral",
       "subtitle": null,
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/ghostflame_dragon_gravesite_plain_cerulean_coast.png",
       "locationName": "Costa Cerúlea",
       "mapCoord": {
         "x": 0,
@@ -376,7 +376,7 @@
       "name": "Dragão da Chama Espectral",
       "subtitle": null,
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/ghostflame_dragon_gravesite_plain_cerulean_coast.png",
       "locationName": "Estrada de Moorth",
       "mapCoord": {
         "x": 0,
@@ -408,7 +408,7 @@
       "name": "Rellana, Cavaleira das Luas Gêmeas",
       "subtitle": "Espada de Messmer",
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/rellana_twin_moon_knight.png",
       "locationName": "Castelo Ensis",
       "mapCoord": {
         "x": 0,
@@ -475,7 +475,7 @@
       "name": "Cavaleiro Negro Edredd",
       "subtitle": null,
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/black_knight_edredd.png",
       "locationName": "Forte da Repreensão",
       "mapCoord": {
         "x": 0,
@@ -504,7 +504,7 @@
       "name": "Cavaleiro Negro Garrew",
       "subtitle": null,
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/black_knight_garrew.png",
       "locationName": "Forte da Fenda de Névoa",
       "mapCoord": {
         "x": 0,
@@ -535,7 +535,7 @@
       "name": "Conde Ymir, Mãe dos Dedos",
       "subtitle": "Mãe dos Dedos",
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/count_ymir_mother_of_fingers.png",
       "locationName": "Catedral de Manus Metyr",
       "mapCoord": {
         "x": 0,
@@ -567,7 +567,7 @@
       "name": "Lâmina Maldita Labirith",
       "subtitle": null,
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/curseblade_labirith.jpg",
       "locationName": "Cárcere de Bonny",
       "mapCoord": {
         "x": 0,
@@ -594,7 +594,7 @@
       "name": "Cavaleiro da Morte",
       "subtitle": null,
       "region": "rauh_base",
-      "art": "images/malenia.webp",
+      "art": "images/death_knight_rauh_base_fog_rift_catacombs.webp",
       "locationName": "Catacumbas da Fenda de Névoa",
       "mapCoord": {
         "x": 0,
@@ -623,7 +623,7 @@
       "name": "Cavaleiro da Morte",
       "subtitle": null,
       "region": "rauh_base",
-      "art": "images/malenia.webp",
+      "art": "images/death_knight_rauh_base_fog_rift_catacombs.webp",
       "locationName": "Catacumbas do Rio Escorpião",
       "mapCoord": {
         "x": 0,
@@ -652,7 +652,7 @@
       "name": "Dane da Folha Seca",
       "subtitle": null,
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/dryleaf_dane.png",
       "locationName": "Ruínas de Moorth",
       "mapCoord": {
         "x": 0,
@@ -684,7 +684,7 @@
       "name": "Hipopótamo Dourado",
       "subtitle": null,
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/golden_hippopotamus_scadu_altus.png",
       "locationName": "Fortaleza das Sombras",
       "mapCoord": {
         "x": 0,
@@ -717,7 +717,7 @@
       "name": "Hipopótamo Dourado",
       "subtitle": null,
       "region": "cerulean_coast",
-      "art": "images/malenia.webp",
+      "art": "images/golden_hippopotamus_scadu_altus.png",
       "locationName": "Túmulo Oculto de Charo",
       "mapCoord": {
         "x": 0,
@@ -747,7 +747,7 @@
       "name": "Hipopótamo Dourado",
       "subtitle": null,
       "region": "cerulean_coast",
-      "art": "images/malenia.webp",
+      "art": "images/golden_hippopotamus_scadu_altus.png",
       "locationName": "Rio dos Reclusos",
       "mapCoord": {
         "x": 0,
@@ -777,7 +777,7 @@
       "name": "Hipopótamo Dourado",
       "subtitle": null,
       "region": "ancient_ruins_rauh",
-      "art": "images/malenia.webp",
+      "art": "images/golden_hippopotamus_scadu_altus.png",
       "locationName": "Ruínas Antigas de Rauh",
       "mapCoord": {
         "x": 0,
@@ -807,7 +807,7 @@
       "name": "Messmer, o Empalador",
       "subtitle": "O Empalador",
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/messmer_the_impaler_2.jpg",
       "locationName": "Fortaleza das Sombras",
       "mapCoord": {
         "x": 0,
@@ -841,7 +841,7 @@
       "name": "Metyr, Mãe dos Dedos",
       "subtitle": "Mãe dos Dedos",
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/metyr_mother_of_fingers.png",
       "locationName": "Ruínas dos Dedos de Miyr",
       "mapCoord": {
         "x": 0,
@@ -872,7 +872,7 @@
       "name": "Rakshasa",
       "subtitle": null,
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/rakshasa.png",
       "locationName": "Mausoléu Sem Nome do Leste",
       "mapCoord": {
         "x": 0,
@@ -903,7 +903,7 @@
       "name": "Jori, Anciã Inquisidora",
       "subtitle": "Inquisidor Ancião",
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/jori_elder_inquisitor.png",
       "locationName": "Catacumbas da Luz Sombria",
       "mapCoord": {
         "x": 0,
@@ -930,7 +930,7 @@
       "name": "Ralva, o Grande Urso Vermelho",
       "subtitle": null,
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/ralva_the_great_red_bear.webp",
       "locationName": "Scadu Altus (lago a nordeste de Highroad Cross)",
       "mapCoord": {
         "x": 0,
@@ -960,7 +960,7 @@
       "name": "Rugalea, o Grande Urso Vermelho",
       "subtitle": "O Grande Urso Vermelho",
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/ralva_the_great_red_bear.webp",
       "locationName": "Base de Rauh",
       "mapCoord": {
         "x": 0,
@@ -990,7 +990,7 @@
       "name": "Dançarina de Ranah",
       "subtitle": null,
       "region": "cerulean_coast",
-      "art": "images/malenia.webp",
+      "art": "images/dancer_of_ranah.png",
       "locationName": "Mausoléu Sem Nome do Sul",
       "mapCoord": {
         "x": 0,
@@ -1022,7 +1022,7 @@
       "name": "Rainha Semi-Humana Marigga",
       "subtitle": null,
       "region": "cerulean_coast",
-      "art": "images/malenia.webp",
+      "art": "images/demi_human_queen_marigga.png",
       "locationName": "Costa Cerúlea",
       "mapCoord": {
         "x": 0,
@@ -1051,7 +1051,7 @@
       "name": "Cavaleiro Putrescente",
       "subtitle": null,
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/putrescent_knight.jpg",
       "locationName": "Fenda do Caixão de Pedra",
       "mapCoord": {
         "x": 0,
@@ -1081,7 +1081,7 @@
       "name": "Ave do Rito da Morte",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/death_rite_bird_caelid.png",
       "locationName": "Vila do Portão da Academia",
       "mapCoord": {
         "x": 0,
@@ -1111,7 +1111,7 @@
       "name": "Ave do Rito da Morte",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/death_rite_bird_caelid.png",
       "locationName": "Caelid",
       "mapCoord": {
         "x": 0,
@@ -1141,7 +1141,7 @@
       "name": "Ave do Rito da Morte",
       "subtitle": null,
       "region": "mountaintops",
-      "art": "images/malenia.webp",
+      "art": "images/death_rite_bird_caelid.png",
       "locationName": "Cumes dos Gigantes",
       "mapCoord": {
         "x": 0,
@@ -1171,7 +1171,7 @@
       "name": "Ave do Rito da Morte",
       "subtitle": null,
       "region": "consecrated_snowfield",
-      "art": "images/malenia.webp",
+      "art": "images/death_rite_bird_caelid.png",
       "locationName": "Renegado Apóstata",
       "mapCoord": {
         "x": 0,
@@ -1201,7 +1201,7 @@
       "name": "Ave do Rito da Morte",
       "subtitle": null,
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/death_rite_bird_caelid.png",
       "locationName": "Túmulo Oculto de Charo",
       "mapCoord": {
         "x": 0,
@@ -1231,7 +1231,7 @@
       "name": "Lamentador",
       "subtitle": null,
       "region": "charos_hidden_grave",
-      "art": "images/malenia.webp",
+      "art": "images/lamenter.png",
       "locationName": "Cárcere do Lamentador",
       "mapCoord": {
         "x": 0,
@@ -1425,7 +1425,7 @@
       "name": "Homem-Dragão Antigo",
       "subtitle": null,
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/ancient_dragon_man.png",
       "locationName": "Fosso do Dragão",
       "mapCoord": {
         "x": 0,
@@ -1455,7 +1455,7 @@
       "name": "Dragão Antigo Senessax",
       "subtitle": null,
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/ancient_dragon_senessax.png",
       "locationName": "Pico Recortado (a oeste do Sítio da Graça do Cume do Pico Recortado)",
       "mapCoord": {
         "x": 0,
@@ -1486,7 +1486,7 @@
       "name": "Bayle, o Pavoroso",
       "subtitle": null,
       "region": "jagged_peak",
-      "art": "images/malenia.webp",
+      "art": "images/bayle_the_dread.png",
       "locationName": "Cume do Pico Recortado",
       "mapCoord": {
         "x": 0,
@@ -1518,7 +1518,7 @@
       "name": "Dragão do Pico Recortado",
       "subtitle": null,
       "region": "jagged_peak",
-      "art": "images/malenia.webp",
+      "art": "images/jagged_peak_drake_jagged_peak_jagged_peak.png",
       "locationName": "Sopé do Pico Recortado",
       "mapCoord": {
         "x": 0,
@@ -1547,7 +1547,7 @@
       "name": "Dragão do Pico Recortado",
       "subtitle": null,
       "region": "jagged_peak",
-      "art": "images/malenia.webp",
+      "art": "images/jagged_peak_drake_jagged_peak_jagged_peak.png",
       "locationName": "Pico Recortado",
       "mapCoord": {
         "x": 0,
@@ -1576,7 +1576,7 @@
       "name": "Midra, Senhor da Chama Frenética",
       "subtitle": "Senhor da Chama Frenética",
       "region": "abyssal_woods",
-      "art": "images/malenia.webp",
+      "art": "images/midra_lord_of_frenzied_flame.jpg",
       "locationName": "Solar de Midra",
       "mapCoord": {
         "x": 0,
@@ -1607,7 +1607,7 @@
       "name": "Besta da Estrela Cadente",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/fallingstar_beast_altus.png",
       "locationName": "Túnel de Cristal de Sellia",
       "mapCoord": {
         "x": 0,
@@ -1650,7 +1650,7 @@
       "name": "Besta da Estrela Cadente",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/fallingstar_beast_altus.png",
       "locationName": "Planalto de Altus (cratera ao sul da entrada oeste dos Arredores da Capital)",
       "mapCoord": {
         "x": 0,
@@ -1693,7 +1693,7 @@
       "name": "Besta da Estrela Cadente",
       "subtitle": null,
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/fallingstar_beast_altus.png",
       "locationName": "Scaduview (Ruínas dos Dedos de Dheo)",
       "mapCoord": {
         "x": 0,
@@ -1761,7 +1761,7 @@
       "name": "Comandante Gaius",
       "subtitle": "o Cavaleiro do Javali Selvagem",
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/commander_gaius.png",
       "locationName": "Scaduview",
       "mapCoord": {
         "x": 0,
@@ -1890,7 +1890,7 @@
       "name": "Romina, Santa do Broto",
       "subtitle": "Santa do Broto",
       "region": "ancient_ruins_rauh",
-      "art": "images/malenia.webp",
+      "art": "images/romina_saint_of_the_bud.png",
       "locationName": "Igreja do Broto",
       "mapCoord": {
         "x": 0,
@@ -1920,7 +1920,7 @@
       "name": "Leda e Aliados",
       "subtitle": null,
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/leda_and_allies.png",
       "locationName": "Enir-Ilim (Antecâmara da Câmara de Purificação)",
       "mapCoord": {
         "x": 0,
@@ -1944,7 +1944,7 @@
       "name": "Consorte Prometido Radahn",
       "subtitle": "Radahn, Consorte de Miquella",
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/starscourge_radahn.jpg",
       "locationName": "Enir-Ilim",
       "mapCoord": {
         "x": 0,
@@ -1981,7 +1981,7 @@
       "name": "Consorte Prometido Radahn",
       "subtitle": "Radahn, Consorte de Miquella",
       "region": "scadu_altus",
-      "art": "images/malenia.webp",
+      "art": "images/starscourge_radahn.jpg",
       "locationName": "Enir-Ilim",
       "mapCoord": {
         "x": 0,
@@ -2426,7 +2426,7 @@
       "name": "Cavaleiro do Crisol",
       "subtitle": null,
       "region": "siofra",
-      "art": "images/malenia.webp",
+      "art": "images/crucible_knight_capital.jpg",
       "locationName": "Rio Siofra",
       "mapCoord": {
         "x": 0,
@@ -2457,7 +2457,7 @@
       "name": "Cavaleiro do Crisol",
       "subtitle": null,
       "region": "siofra",
-      "art": "images/malenia.webp",
+      "art": "images/crucible_knight_capital.jpg",
       "locationName": "Aqueduto de Siofra (Terras do Chifre Sagrado)",
       "mapCoord": {
         "x": 0,
@@ -2494,7 +2494,7 @@
       "name": "Cavaleiro do Crisol",
       "subtitle": null,
       "region": "capital",
-      "art": "images/malenia.webp",
+      "art": "images/crucible_knight_capital.jpg",
       "locationName": "Leyndell, Capital Real",
       "mapCoord": {
         "x": 0,
@@ -2525,7 +2525,7 @@
       "name": "Cavaleiro do Crisol",
       "subtitle": null,
       "region": "farum_azula",
-      "art": "images/malenia.webp",
+      "art": "images/crucible_knight_capital.jpg",
       "locationName": "Farum Azula em Ruínas",
       "mapCoord": {
         "x": 0,
@@ -2616,7 +2616,7 @@
       "name": "Ave da Morte",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/deathbird_altus.png",
       "locationName": "Ilha Cênica",
       "mapCoord": {
         "x": 0,
@@ -2646,7 +2646,7 @@
       "name": "Ave da Morte",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/deathbird_altus.png",
       "locationName": "Arredores da Capital",
       "mapCoord": {
         "x": 0,
@@ -3777,7 +3777,7 @@
       "name": "Herói Antigo de Zamor",
       "subtitle": null,
       "region": "weeping_peninsula",
-      "art": "images/malenia.webp",
+      "art": "images/ancient_hero_of_zamor_altus.jpeg",
       "locationName": "Cárcere Eterno do Pranto",
       "mapCoord": {
         "x": 0,
@@ -3807,7 +3807,7 @@
       "name": "Herói Antigo de Zamor",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/ancient_hero_of_zamor_altus.jpeg",
       "locationName": "Túmulo do Herói Santificado",
       "mapCoord": {
         "x": 0,
@@ -3837,7 +3837,7 @@
       "name": "Herói Antigo de Zamor",
       "subtitle": null,
       "region": "mountaintops",
-      "art": "images/malenia.webp",
+      "art": "images/ancient_hero_of_zamor_altus.jpeg",
       "locationName": "Túmulo do Herói Conquistador de Gigantes",
       "mapCoord": {
         "x": 0,
@@ -3879,7 +3879,7 @@
       "name": "Sombra do Cemitério",
       "subtitle": null,
       "region": "weeping_peninsula",
-      "art": "images/malenia.webp",
+      "art": "images/cemetery_shade_caelid.jpeg",
       "locationName": "Catacumbas de Beira-Túmulo",
       "mapCoord": {
         "x": 0,
@@ -3907,7 +3907,7 @@
       "name": "Sombra do Cemitério",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/cemetery_shade_caelid.jpeg",
       "locationName": "Catacumbas da Faca Negra",
       "mapCoord": {
         "x": 0,
@@ -3935,7 +3935,7 @@
       "name": "Sombra do Cemitério",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/cemetery_shade_caelid.jpeg",
       "locationName": "Catacumbas de Caelid",
       "mapCoord": {
         "x": 0,
@@ -3963,7 +3963,7 @@
       "name": "Avatar da Árvore Áurea",
       "subtitle": null,
       "region": "weeping_peninsula",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_avatar_altus.jpg",
       "locationName": "Árvore Áurea Menor (Península Lacrimosa)",
       "mapCoord": {
         "x": 0,
@@ -3996,7 +3996,7 @@
       "name": "Avatar da Árvore Áurea",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_avatar_altus.jpg",
       "locationName": "Árvore Áurea Menor (Liurnia Sudoeste)",
       "mapCoord": {
         "x": 0,
@@ -4028,7 +4028,7 @@
       "name": "Avatar da Árvore Áurea",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_avatar_altus.jpg",
       "locationName": "Árvore Áurea Menor (Liurnia Nordeste)",
       "mapCoord": {
         "x": 0,
@@ -4063,7 +4063,7 @@
       "name": "Avatar da Árvore Áurea",
       "subtitle": null,
       "region": "capital",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_avatar_altus.jpg",
       "locationName": "Leyndell, Capital Real",
       "mapCoord": {
         "x": 0,
@@ -4092,7 +4092,7 @@
       "name": "Avatar da Árvore Áurea",
       "subtitle": null,
       "region": "deeproot_depths",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_avatar_altus.jpg",
       "locationName": "Profundezas das Raízes Profundas",
       "mapCoord": {
         "x": 0,
@@ -4121,7 +4121,7 @@
       "name": "Avatar da Árvore Áurea",
       "subtitle": null,
       "region": "mountaintops",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_avatar_altus.jpg",
       "locationName": "Árvore Áurea Menor (Cumes Leste)",
       "mapCoord": {
         "x": 0,
@@ -4153,7 +4153,7 @@
       "name": "Malnascido Leonino",
       "subtitle": null,
       "region": "weeping_peninsula",
-      "art": "images/malenia.webp",
+      "art": "images/leonine_misbegotten.png",
       "locationName": "Castelo Morne",
       "mapCoord": {
         "x": 0,
@@ -4185,7 +4185,7 @@
       "name": "Miranda, a Flor Crestada",
       "subtitle": "A Flor Pestilenta",
       "region": "weeping_peninsula",
-      "art": "images/malenia.webp",
+      "art": "images/miranda_the_blighted_bloom.png",
       "locationName": "Caverna de Beira-Túmulo",
       "mapCoord": {
         "x": 0,
@@ -4218,7 +4218,7 @@
       "name": "Urso Rúnico",
       "subtitle": null,
       "region": "weeping_peninsula",
-      "art": "images/malenia.webp",
+      "art": "images/runebear.png",
       "locationName": "Caverna do Veio Terrestre",
       "mapCoord": {
         "x": 0,
@@ -4279,7 +4279,7 @@
       "name": "Adan, Ladrão do Fogo",
       "subtitle": "Ladrão do Fogo",
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/adan_thief_of_fire.png",
       "locationName": "Cárcere Eterno do Malfeitor",
       "mapCoord": {
         "x": 0,
@@ -4308,7 +4308,7 @@
       "name": "Alecto, Líder da Faca Negra",
       "subtitle": "Líder da Faca Negra",
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/alecto_black_knife_ringleader.jpeg",
       "locationName": "Cárcere Eterno do Líder",
       "mapCoord": {
         "x": 0,
@@ -4340,7 +4340,7 @@
       "name": "Cavaleiro Sabujo",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/bloodhound_knight.jpg",
       "locationName": "Caverna de Cristal à Beira do Lago",
       "mapCoord": {
         "x": 0,
@@ -4370,7 +4370,7 @@
       "name": "Bols, Cavaleiro Cariano",
       "subtitle": "Cavaleiro Cariano",
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/bols_carian_knight.png",
       "locationName": "Cárcere Eterno do Cuco",
       "mapCoord": {
         "x": 0,
@@ -4402,7 +4402,7 @@
       "name": "Cavaleiro da Podridão Limpa",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/cleanrot_knight_caelid.jpg",
       "locationName": "Caverna das Águas Calmas",
       "mapCoord": {
         "x": 0,
@@ -4439,7 +4439,7 @@
       "name": "Cavaleiro da Podridão Limpa",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/cleanrot_knight_caelid.jpg",
       "locationName": "Caverna Abandonada",
       "mapCoord": {
         "x": 0,
@@ -4473,7 +4473,7 @@
       "name": "Cristaliano",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/crystalian_altus.jpeg",
       "locationName": "Túnel de Cristal de Raya Lucaria",
       "mapCoord": {
         "x": 0,
@@ -4500,7 +4500,7 @@
       "name": "Cristaliano",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/crystalian_altus.jpeg",
       "locationName": "Caverna de Cristal da Academia",
       "mapCoord": {
         "x": 0,
@@ -4527,7 +4527,7 @@
       "name": "Cristaliano",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/crystalian_altus.jpeg",
       "locationName": "Túnel de Altus",
       "mapCoord": {
         "x": 0,
@@ -4554,7 +4554,7 @@
       "name": "Dragão de Pedra Cintilante Adula",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/glintstone_dragon_adula_liurnia_three_sisters.png",
       "locationName": "Três Irmãs",
       "mapCoord": {
         "x": 0,
@@ -4574,7 +4574,7 @@
       "name": "Dragão de Pedra Cintilante Adula",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/glintstone_dragon_adula_liurnia_three_sisters.png",
       "locationName": "Catedral de Manus Celes",
       "mapCoord": {
         "x": 0,
@@ -4605,7 +4605,7 @@
       "name": "Dragão de Pedra Cintilante Smarag",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/glintstone_dragon_smarag.png",
       "locationName": "Bosque Cristalino",
       "mapCoord": {
         "x": 0,
@@ -4633,7 +4633,7 @@
       "name": "Serpe de Magma Makar",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/magma_wyrm_makar.png",
       "locationName": "Precipício Coberto de Ruínas",
       "mapCoord": {
         "x": 0,
@@ -4668,7 +4668,7 @@
       "name": "Matador de Presságios",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/omenkiller_altus.png",
       "locationName": "Vila dos Albináuricos",
       "mapCoord": {
         "x": 0,
@@ -4702,7 +4702,7 @@
       "name": "Matador de Presságios",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/omenkiller_altus.png",
       "locationName": "Gruta da Perfumista",
       "mapCoord": {
         "x": 0,
@@ -4741,7 +4741,7 @@
       "name": "Senhor de Ônix",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/onyx_lord_altus.png",
       "locationName": "Cárcere Eterno do Túmulo Real",
       "mapCoord": {
         "x": 0,
@@ -4775,7 +4775,7 @@
       "name": "Senhor de Ônix",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/onyx_lord_altus.png",
       "locationName": "Túnel Selado",
       "mapCoord": {
         "x": 0,
@@ -4809,7 +4809,7 @@
       "name": "Lobo Vermelho de Radagon",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/red_wolf_of_radagon.png",
       "locationName": "Academia de Raya Lucaria",
       "mapCoord": {
         "x": 0,
@@ -4840,7 +4840,7 @@
       "name": "Rennala, Rainha da Lua Cheia",
       "subtitle": "Rainha Cariana da Lua Cheia",
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/rennala_queen_of_the_full_moon.webp",
       "locationName": "Academia de Raya Lucaria",
       "mapCoord": {
         "x": 0,
@@ -4880,7 +4880,7 @@
       "name": "Loretta, Cavaleira Real",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/royal_knight_loretta.png",
       "locationName": "Mirante da Lua, Solar de Caria",
       "mapCoord": {
         "x": 0,
@@ -4912,7 +4912,7 @@
       "name": "Espectro Real",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/royal_revenant.png",
       "locationName": "Ruínas do Reino do Rei",
       "mapCoord": {
         "x": 0,
@@ -4937,7 +4937,7 @@
       "name": "Caracol Invocador de Espíritos",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/spirit_caller_snail_liurnia.jpeg",
       "locationName": "Catacumbas do Fim da Estrada",
       "mapCoord": {
         "x": 0,
@@ -4965,7 +4965,7 @@
       "name": "Caracol Invocador de Espíritos",
       "subtitle": null,
       "region": "mountaintops",
-      "art": "images/malenia.webp",
+      "art": "images/spirit_caller_snail_liurnia.jpeg",
       "locationName": "Caverna do Invocador de Espíritos",
       "mapCoord": {
         "x": 0,
@@ -4996,7 +4996,7 @@
       "name": "Comandante O'Neil",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/commander_oneil.png",
       "locationName": "Pântano de Aeonia",
       "mapCoord": {
         "x": 0,
@@ -5065,7 +5065,7 @@
       "name": "Ekzykes em Decomposição",
       "subtitle": "Vingador da Comunhão Dracônica",
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/decaying_ekzykes.png",
       "locationName": "Estrada Sul de Caelid (ao longo da estrada principal, a sudeste do Local de Graça)",
       "mapCoord": {
         "x": 0,
@@ -5096,7 +5096,7 @@
       "name": "Duelista Frenético",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/frenzied_duelist.png",
       "locationName": "Caverna do Cárcere",
       "mapCoord": {
         "x": 0,
@@ -5123,7 +5123,7 @@
       "name": "Serpe de Magma",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/magma_wyrm_makar.png",
       "locationName": "Túnel de Gael",
       "mapCoord": {
         "x": 0,
@@ -5158,7 +5158,7 @@
       "name": "Serpe de Magma",
       "subtitle": null,
       "region": "gelmir",
-      "art": "images/malenia.webp",
+      "art": "images/magma_wyrm_makar.png",
       "locationName": "Forte Laiedd",
       "mapCoord": {
         "x": 0,
@@ -5190,7 +5190,7 @@
       "name": "Serpe de Magma",
       "subtitle": null,
       "region": "gelmir",
-      "art": "images/malenia.webp",
+      "art": "images/magma_wyrm_makar.png",
       "locationName": "Mansão do Vulcão",
       "mapCoord": {
         "x": 0,
@@ -5222,7 +5222,7 @@
       "name": "Serpe de Magma",
       "subtitle": null,
       "region": "gravesite_plain",
-      "art": "images/malenia.webp",
+      "art": "images/magma_wyrm_makar.png",
       "locationName": "Fosso do Dragão",
       "mapCoord": {
         "x": 0,
@@ -5257,7 +5257,7 @@
       "name": "Espadachim Nox e Monge Nox",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/nox_swordstress_nox_monk.png",
       "locationName": "Sellia, Cidade da Feitiçaria",
       "mapCoord": {
         "x": 0,
@@ -5286,7 +5286,7 @@
       "name": "Avatar Pútrido",
       "subtitle": "Guardião da Árvore Áurea Menor",
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_avatar_altus.jpg",
       "locationName": "Árvore Áurea Menor (Caelid)",
       "mapCoord": {
         "x": 0,
@@ -5318,7 +5318,7 @@
       "name": "Avatar Pútrido",
       "subtitle": "Guardião da Árvore Áurea Menor",
       "region": "dragonbarrow",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_avatar_altus.jpg",
       "locationName": "Árvore Áurea Menor (Dragonbarrow)",
       "mapCoord": {
         "x": 0,
@@ -5350,7 +5350,7 @@
       "name": "Avatar Pútrido",
       "subtitle": "Guardião da Árvore Áurea Menor",
       "region": "consecrated_snowfield",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_avatar_altus.jpg",
       "locationName": "Árvore Áurea Menor (Campo Nevado Consagrado)",
       "mapCoord": {
         "x": 0,
@@ -5382,7 +5382,7 @@
       "name": "Avatar Pútrido",
       "subtitle": "Guardião da Árvore Áurea Menor",
       "region": "haligtree",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_avatar_altus.jpg",
       "locationName": "Elphael, Bastião da Árvore Sagrada (Passarela)",
       "mapCoord": {
         "x": 0,
@@ -5411,7 +5411,7 @@
       "name": "Avatar Pútrido",
       "subtitle": "Guardião da Árvore Áurea Menor",
       "region": "haligtree",
-      "art": "images/malenia.webp",
+      "art": "images/erdtree_avatar_altus.jpg",
       "locationName": "Elphael, Bastião da Árvore Sagrada (Portão)",
       "mapCoord": {
         "x": 0,
@@ -5440,7 +5440,7 @@
       "name": "Radahn, Flagelo das Estrelas",
       "subtitle": "O General Leão Vermelho",
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/starscourge_radahn.jpg",
       "locationName": "Castelo Crina Vermelha",
       "mapCoord": {
         "x": 0,
@@ -5474,7 +5474,7 @@
       "name": "Hugues, o Mago de Batalha",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/battlemage_hugues.png",
       "locationName": "Cárcere Eterno de Sellia",
       "mapCoord": {
         "x": 0,
@@ -5507,7 +5507,7 @@
       "name": "Parente da Lâmina Negra",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/black_blade_kindred_caelid.png",
       "locationName": "Santuário Bestial",
       "mapCoord": {
         "x": 0,
@@ -5542,7 +5542,7 @@
       "name": "Parente da Lâmina Negra",
       "subtitle": null,
       "region": "forbidden_lands",
-      "art": "images/malenia.webp",
+      "art": "images/black_blade_kindred_caelid.png",
       "locationName": "Terras Proibidas",
       "mapCoord": {
         "x": 0,
@@ -5578,7 +5578,7 @@
       "name": "Dragão Voador Greyll",
       "subtitle": "Inimigo Maior",
       "region": "dragonbarrow",
-      "art": "images/malenia.webp",
+      "art": "images/flying_dragon_greyll.png",
       "locationName": "Poleiro de Greyll, Dragonbarrow (perto da Grande Ponte de Farum)",
       "mapCoord": {
         "x": 0,
@@ -5605,7 +5605,7 @@
       "name": "Apóstolo Pele-Divina",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/godskin_apostle_altus.png",
       "locationName": "Dominula, Vila dos Moinhos de Vento",
       "mapCoord": {
         "x": 0,
@@ -5640,7 +5640,7 @@
       "name": "Apóstolo Pele-Divina",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/godskin_apostle_altus.png",
       "locationName": "Torre Divina de Caelid",
       "mapCoord": {
         "x": 0,
@@ -5677,7 +5677,7 @@
       "name": "Cristalianos Pútridos",
       "subtitle": "Trio de Cristalianos Pútridos",
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/crystalian_altus.jpeg",
       "locationName": "Esconderijo de Sellia",
       "mapCoord": {
         "x": 0,
@@ -5706,7 +5706,7 @@
       "name": "Espírito da Árvore Pútrido",
       "subtitle": null,
       "region": "caelid",
-      "art": "images/malenia.webp",
+      "art": "images/putrid_tree_spirit_caelid.png",
       "locationName": "Catacumbas dos Mortos de Guerra",
       "mapCoord": {
         "x": 0,
@@ -5738,7 +5738,7 @@
       "name": "Espírito da Árvore Pútrido",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/putrid_tree_spirit_caelid.png",
       "locationName": "Grande Claustro",
       "mapCoord": {
         "x": 0,
@@ -5767,7 +5767,7 @@
       "name": "Espírito da Árvore Pútrido",
       "subtitle": null,
       "region": "haligtree",
-      "art": "images/malenia.webp",
+      "art": "images/putrid_tree_spirit_caelid.png",
       "locationName": "Elphael, Bastião da Árvore Sagrada",
       "mapCoord": {
         "x": 0,
@@ -5796,7 +5796,7 @@
       "name": "Dragão Antigo Lansseax",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/ancient_dragon_lansseax_altus_rampartside_path.png",
       "locationName": "Caminho à Beira da Muralha",
       "mapCoord": {
         "x": 0,
@@ -5824,7 +5824,7 @@
       "name": "Dragão Antigo Lansseax",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/ancient_dragon_lansseax_altus_rampartside_path.png",
       "locationName": "Caixão Abandonado",
       "mapCoord": {
         "x": 0,
@@ -5852,7 +5852,7 @@
       "name": "Rainha Semi-Humana Gilika",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/demi_human_queen_gilika.png",
       "locationName": "Ruínas de Lux",
       "mapCoord": {
         "x": 0,
@@ -5880,7 +5880,7 @@
       "name": "Elemer do Espinhaço",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/elemer_of_the_briar.png",
       "locationName": "O Castelo Sombreado",
       "mapCoord": {
         "x": 0,
@@ -5913,7 +5913,7 @@
       "name": "Godefroy, o Enxertado",
       "subtitle": "o Enxertado",
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/godefroy_the_grafted.png",
       "locationName": "Cárcere Eterno da Linhagem Áurea",
       "mapCoord": {
         "x": 0,
@@ -5944,7 +5944,7 @@
       "name": "Necromante Garris",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/necromancer_garris.png",
       "locationName": "Caverna do Sábio",
       "mapCoord": {
         "x": 0,
@@ -6049,7 +6049,7 @@
       "name": "Nobre Sanguíneo",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/sanguine_noble.png",
       "locationName": "Ruínas do Sangue Contorcido",
       "mapCoord": {
         "x": 0,
@@ -6075,7 +6075,7 @@
       "name": "Cara de Verme",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/wormface_altus.png",
       "locationName": "Árvore Áurea Menor (Planalto de Altus)",
       "mapCoord": {
         "x": 0,
@@ -6107,7 +6107,7 @@
       "name": "Cara de Verme",
       "subtitle": null,
       "region": "gelmir",
-      "art": "images/malenia.webp",
+      "art": "images/wormface_altus.png",
       "locationName": "Árvore Áurea Menor (Mte. Gelmir)",
       "mapCoord": {
         "x": 0,
@@ -6135,7 +6135,7 @@
       "name": "Cara de Verme",
       "subtitle": null,
       "region": "farum_azula",
-      "art": "images/malenia.webp",
+      "art": "images/wormface_altus.png",
       "locationName": "Farum Azula em Ruínas",
       "mapCoord": {
         "x": 0,
@@ -6160,7 +6160,7 @@
       "name": "Virgens Sequestradoras",
       "subtitle": null,
       "region": "gelmir",
-      "art": "images/malenia.webp",
+      "art": "images/abductor_virgins.jpg",
       "locationName": "Mansão do Vulcão (Câmara Subterrânea da Inquisição)",
       "mapCoord": {
         "x": 0,
@@ -6189,7 +6189,7 @@
       "name": "Rainha Semi-Humana Maggie",
       "subtitle": null,
       "region": "gelmir",
-      "art": "images/malenia.webp",
+      "art": "images/demi_human_queen_maggie.png",
       "locationName": "Vila dos Eremitas",
       "mapCoord": {
         "x": 0,
@@ -6220,7 +6220,7 @@
       "name": "Rainha Semi-Humana Margot",
       "subtitle": null,
       "region": "gelmir",
-      "art": "images/malenia.webp",
+      "art": "images/demi_human_queen_margot.png",
       "locationName": "Caverna do Vulcão",
       "mapCoord": {
         "x": 0,
@@ -6248,7 +6248,7 @@
       "name": "Besta Estrela-Cadente Adulta",
       "subtitle": null,
       "region": "gelmir",
-      "art": "images/malenia.webp",
+      "art": "images/fallingstar_beast_altus.png",
       "locationName": "Mte. Gelmir",
       "mapCoord": {
         "x": 0,
@@ -6288,7 +6288,7 @@
       "name": "Serpente Devoradora de Deuses / Rykard, Lorde da Blasfêmia",
       "subtitle": "Senhor da Blasfêmia",
       "region": "gelmir",
-      "art": "images/malenia.webp",
+      "art": "images/rykard.jpg",
       "locationName": "Mansão do Vulcão",
       "mapCoord": {
         "x": 0,
@@ -6323,7 +6323,7 @@
       "name": "Nobre Pele-Divina",
       "subtitle": null,
       "region": "gelmir",
-      "art": "images/malenia.webp",
+      "art": "images/godskin_noble_gelmir.jpeg",
       "locationName": "Mansão do Vulcão",
       "mapCoord": {
         "x": 0,
@@ -6362,7 +6362,7 @@
       "name": "Nobre Pele-Divina",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/godskin_noble_gelmir.jpeg",
       "locationName": "Torre Divina de Liurnia",
       "mapCoord": {
         "x": 0,
@@ -6394,7 +6394,7 @@
       "name": "Parente da Podridão",
       "subtitle": null,
       "region": "gelmir",
-      "art": "images/malenia.webp",
+      "art": "images/kindred_of_rot.png",
       "locationName": "Caverna das Águas Ferventes",
       "mapCoord": {
         "x": 0,
@@ -6426,7 +6426,7 @@
       "name": "Lobo Vermelho do Campeão",
       "subtitle": null,
       "region": "gelmir",
-      "art": "images/malenia.webp",
+      "art": "images/red_wolf_of_the_champion.png",
       "locationName": "Túmulo do Herói de Gelmir",
       "mapCoord": {
         "x": 0,
@@ -6456,7 +6456,7 @@
       "name": "Cavaleiro do Crisol Ordovis",
       "subtitle": "Um dos dois honrados como os principais entre os Cavaleiros do Crisol",
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/crucible_knight_ordovis.jpg",
       "locationName": "Túmulo do Herói de Auriza",
       "mapCoord": {
         "x": 0,
@@ -6498,7 +6498,7 @@
       "name": "Sentinela da Árvore Dracônico",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/draconic_tree_sentinel_altus.png",
       "locationName": "Arredores da Capital",
       "mapCoord": {
         "x": 0,
@@ -6535,7 +6535,7 @@
       "name": "Sentinela da Árvore Dracônico",
       "subtitle": null,
       "region": "farum_azula",
-      "art": "images/malenia.webp",
+      "art": "images/draconic_tree_sentinel_altus.png",
       "locationName": "Farum Azula em Ruínas",
       "mapCoord": {
         "x": 0,
@@ -6569,7 +6569,7 @@
       "name": "Gêmeos Malignos",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/fell_twins.jpg",
       "locationName": "Arredores da Capital (ponte para a Torre Divina de Altus Leste)",
       "mapCoord": {
         "x": 0,
@@ -6602,7 +6602,7 @@
       "name": "Esgar, Sacerdote do Sangue",
       "subtitle": "Sacerdote do Sangue",
       "region": "capital",
-      "art": "images/malenia.webp",
+      "art": "images/esgar_priest_of_blood.png",
       "locationName": "Catacumbas de Leyndell",
       "mapCoord": {
         "x": 0,
@@ -6634,7 +6634,7 @@
       "name": "Godfrey, Primeiro Lorde Anelar",
       "subtitle": "Sombra Dourada",
       "region": "capital",
-      "art": "images/malenia.webp",
+      "art": "images/godfrey_first_elden_lord.png",
       "locationName": "Leyndell, Capital Real (Muralha Ocidental da Capital)",
       "mapCoord": {
         "x": 0,
@@ -6661,7 +6661,7 @@
       "name": "Mohg, o Presságio",
       "subtitle": null,
       "region": "capital",
-      "art": "images/malenia.webp",
+      "art": "images/mohg_the_omen_1.jpg",
       "locationName": "Catedral dos Renegados, Solo Banido Subterrâneo",
       "mapCoord": {
         "x": 0,
@@ -6690,7 +6690,7 @@
       "name": "Morgott, o Rei Presságio",
       "subtitle": "O Senhor Agraciado pela Graça",
       "region": "capital",
-      "art": "images/malenia.webp",
+      "art": "images/morgott_the_omen_king.jpg",
       "locationName": "Leyndell, Capital Real",
       "mapCoord": {
         "x": 0,
@@ -6753,7 +6753,7 @@
       "name": "Comandante Niall",
       "subtitle": null,
       "region": "mountaintops",
-      "art": "images/malenia.webp",
+      "art": "images/commander_niall.jpg",
       "locationName": "Castelo Sol",
       "mapCoord": {
         "x": 0,
@@ -6782,7 +6782,7 @@
       "name": "Gigante de Fogo",
       "subtitle": null,
       "region": "mountaintops",
-      "art": "images/malenia.webp",
+      "art": "images/fire_giant.png",
       "locationName": "Pico das Chamas",
       "mapCoord": {
         "x": 0,
@@ -6848,7 +6848,7 @@
       "name": "Vyke, Cavaleiro da Távola",
       "subtitle": "Vyke, Cavaleiro da Távola Redonda",
       "region": "mountaintops",
-      "art": "images/malenia.webp",
+      "art": "images/roundtable_knight_vyke.jpg",
       "locationName": "Cárcere Eterno do Aspirante a Senhor",
       "mapCoord": {
         "x": 0,
@@ -6879,7 +6879,7 @@
       "name": "Clérigo Bestial / Maliketh, a Lâmina Negra",
       "subtitle": "a Lâmina Negra",
       "region": "farum_azula",
-      "art": "images/malenia.webp",
+      "art": "images/beast_clergyman_maliketh_the_black_blade.png",
       "locationName": "Farum Azula em Ruínas",
       "mapCoord": {
         "x": 0,
@@ -6912,7 +6912,7 @@
       "name": "Senhor Dragão Placidusax",
       "subtitle": null,
       "region": "farum_azula",
-      "art": "images/malenia.webp",
+      "art": "images/dragonlord_placidusax.jpg",
       "locationName": "Farum Azula em Ruínas",
       "mapCoord": {
         "x": 0,
@@ -6946,7 +6946,7 @@
       "name": "Dupla Pele-Divina",
       "subtitle": null,
       "region": "farum_azula",
-      "art": "images/malenia.webp",
+      "art": "images/godskin_duo.jpg",
       "locationName": "Farum Azula em Ruínas",
       "mapCoord": {
         "x": 0,
@@ -6981,7 +6981,7 @@
       "name": "Lágrima Imitadora Perdida",
       "subtitle": null,
       "region": "consecrated_snowfield",
-      "art": "images/malenia.webp",
+      "art": "images/stray_mimic_tear.png",
       "locationName": "Caminho Oculto para a Haligtree",
       "mapCoord": {
         "x": 0,
@@ -7009,7 +7009,7 @@
       "name": "Astel, Estrelas das Trevas",
       "subtitle": "Estrelas da Escuridão",
       "region": "consecrated_snowfield",
-      "art": "images/malenia.webp",
+      "art": "images/astel_stars_of_darkness.png",
       "locationName": "Túnel de Yelough Anix",
       "mapCoord": {
         "x": 0,
@@ -7044,7 +7044,7 @@
       "name": "Grande Serpe Theodorix",
       "subtitle": null,
       "region": "consecrated_snowfield",
-      "art": "images/malenia.webp",
+      "art": "images/magma_wyrm_makar.png",
       "locationName": "Campo Nevado Consagrado",
       "mapCoord": {
         "x": 0,
@@ -7077,7 +7077,7 @@
       "name": "Cruzado Malnascido",
       "subtitle": null,
       "region": "consecrated_snowfield",
-      "art": "images/malenia.webp",
+      "art": "images/misbegotten_crusader_cerulean_coast.png",
       "locationName": "Caverna dos Desolados",
       "mapCoord": {
         "x": 0,
@@ -7106,7 +7106,7 @@
       "name": "Cruzado Malnascido",
       "subtitle": null,
       "region": "cerulean_coast",
-      "art": "images/malenia.webp",
+      "art": "images/misbegotten_crusader_cerulean_coast.png",
       "locationName": "Fenda do Caixão de Pedra",
       "mapCoord": {
         "x": 0,
@@ -7131,7 +7131,7 @@
       "name": "Duelista Guardião do Túmulo Pútrido",
       "subtitle": null,
       "region": "consecrated_snowfield",
-      "art": "images/malenia.webp",
+      "art": "images/frenzied_duelist.png",
       "locationName": "Catacumbas do Campo Nevado Consagrado",
       "mapCoord": {
         "x": 0,
@@ -7164,7 +7164,7 @@
       "name": "Loretta, Cavaleira da Árvore Sacra",
       "subtitle": "Cavaleiro da Haligtree",
       "region": "haligtree",
-      "art": "images/malenia.webp",
+      "art": "images/royal_knight_loretta.png",
       "locationName": "Haligtree de Miquella",
       "mapCoord": {
         "x": 0,
@@ -7199,7 +7199,7 @@
       "name": "Malenia, Lâmina de Miquella",
       "subtitle": "Deusa da Podridão",
       "region": "haligtree",
-      "art": "images/malenia.webp",
+      "art": "images/malenia_blade_of_miquella.jpg",
       "locationName": "Elphael, Bastião da Árvore Sagrada",
       "mapCoord": {
         "x": 0,
@@ -7235,7 +7235,7 @@
       "name": "Espírito Ancestral",
       "subtitle": null,
       "region": "siofra",
-      "art": "images/malenia.webp",
+      "art": "images/ancestor_spirit.png",
       "locationName": "Terras do Chifre Sagrado, Rio Siofra",
       "mapCoord": {
         "x": 0,
@@ -7271,7 +7271,7 @@
       "name": "Soldado Dracônido",
       "subtitle": null,
       "region": "siofra",
-      "art": "images/malenia.webp",
+      "art": "images/dragonkin_soldier_siofra.png",
       "locationName": "Rio Siofra",
       "mapCoord": {
         "x": 0,
@@ -7300,7 +7300,7 @@
       "name": "Soldado Dracônido",
       "subtitle": null,
       "region": "lake_of_rot",
-      "art": "images/malenia.webp",
+      "art": "images/dragonkin_soldier_siofra.png",
       "locationName": "Lago da Podridão",
       "mapCoord": {
         "x": 0,
@@ -7329,7 +7329,7 @@
       "name": "Mohg, Senhor do Sangue",
       "subtitle": "Senhor do Sangue",
       "region": "mohgwyn",
-      "art": "images/malenia.webp",
+      "art": "images/mohg_the_omen_1.jpg",
       "locationName": "Palácio Mohgwyn",
       "mapCoord": {
         "x": 0,
@@ -7365,7 +7365,7 @@
       "name": "Soldado Dracônido de Nokstella",
       "subtitle": null,
       "region": "liurnia",
-      "art": "images/malenia.webp",
+      "art": "images/dragonkin_soldier_siofra.png",
       "locationName": "Rio Ainsel",
       "mapCoord": {
         "x": 0,
@@ -7394,7 +7394,7 @@
       "name": "Espírito Ancestral Régio",
       "subtitle": null,
       "region": "siofra",
-      "art": "images/malenia.webp",
+      "art": "images/regal_ancestor_spirit.png",
       "locationName": "Terras do Chifre Sagrado, Nokron, a Cidade Eterna",
       "mapCoord": {
         "x": 0,
@@ -7430,7 +7430,7 @@
       "name": "Gárgula Valente",
       "subtitle": null,
       "region": "siofra",
-      "art": "images/malenia.webp",
+      "art": "images/valiant_gargoyle_siofra.jpg",
       "locationName": "Aqueduto de Siofra",
       "mapCoord": {
         "x": 0,
@@ -7465,7 +7465,7 @@
       "name": "Gárgula Valente",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/valiant_gargoyle_siofra.jpg",
       "locationName": "Arredores da Capital",
       "mapCoord": {
         "x": 0,
@@ -7497,7 +7497,7 @@
       "name": "Gárgula Valente",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/valiant_gargoyle_siofra.jpg",
       "locationName": "Leyndell, Capital Real",
       "mapCoord": {
         "x": 0,
@@ -7529,7 +7529,7 @@
       "name": "Gárgula Valente",
       "subtitle": null,
       "region": "altus",
-      "art": "images/malenia.webp",
+      "art": "images/valiant_gargoyle_siofra.jpg",
       "locationName": "Leyndell, Capital das Cinzas",
       "mapCoord": {
         "x": 0,
@@ -7558,7 +7558,7 @@
       "name": "Gárgula Valente (Lâmina Gêmea)",
       "subtitle": null,
       "region": "siofra",
-      "art": "images/malenia.webp",
+      "art": "images/valiant_gargoyle_siofra.jpg",
       "locationName": "Aqueduto de Siofra",
       "mapCoord": {
         "x": 0,
@@ -7593,7 +7593,7 @@
       "name": "Gárgula Valente (Lâmina Gêmea)",
       "subtitle": null,
       "region": "capital_outskirts",
-      "art": "images/malenia.webp",
+      "art": "images/valiant_gargoyle_siofra.jpg",
       "locationName": "Arredores da Capital",
       "mapCoord": {
         "x": 0,
@@ -7626,7 +7626,7 @@
       "name": "Gárgula Valente (Lâmina Gêmea)",
       "subtitle": null,
       "region": "capital",
-      "art": "images/malenia.webp",
+      "art": "images/valiant_gargoyle_siofra.jpg",
       "locationName": "Leyndell, Capital Real",
       "mapCoord": {
         "x": 0,
@@ -7658,7 +7658,7 @@
       "name": "Gárgula Valente (Lâmina Gêmea)",
       "subtitle": null,
       "region": "ashen_capital",
-      "art": "images/malenia.webp",
+      "art": "images/valiant_gargoyle_siofra.jpg",
       "locationName": "Leyndell, Capital das Cinzas",
       "mapCoord": {
         "x": 0,
@@ -7687,7 +7687,7 @@
       "name": "Cavaleira do Crisol Siluria",
       "subtitle": null,
       "region": "deeproot_depths",
-      "art": "images/malenia.webp",
+      "art": "images/crucible_knight_siluria.jpg",
       "locationName": "Profundezas das Raízes Profundas",
       "mapCoord": {
         "x": 0,
@@ -7746,7 +7746,7 @@
       "name": "Dragão-Lich Fortissax",
       "subtitle": null,
       "region": "deeproot_depths",
-      "art": "images/malenia.webp",
+      "art": "images/lichdragon_fortissax.png",
       "locationName": "Profundezas das Raízes Profundas",
       "mapCoord": {
         "x": 0,
@@ -7776,7 +7776,7 @@
       "name": "Astel, Nascido Natural do Vazio",
       "subtitle": "Nascido Natural do Vazio",
       "region": "lake_of_rot",
-      "art": "images/malenia.webp",
+      "art": "images/astel_naturalborn_of_the_void_lake_of_rot.png",
       "locationName": "Grande Claustro",
       "mapCoord": {
         "x": 0,
@@ -7811,7 +7811,7 @@
       "name": "Godfrey, Primeiro Lorde Anelar (Hoarah Loux)",
       "subtitle": "Hoarah Loux, Guerreiro",
       "region": "ashen_capital",
-      "art": "images/malenia.webp",
+      "art": "images/godfrey_first_elden_lord.png",
       "locationName": "Leyndell, Capital das Cinzas",
       "mapCoord": {
         "x": 0,
@@ -7843,7 +7843,7 @@
       "name": "Sir Gideon Ofnir, o Onisciente",
       "subtitle": "o Onisciente",
       "region": "ashen_capital",
-      "art": "images/malenia.webp",
+      "art": "images/sir_gideon_ofnir_the_all_knowing.png",
       "locationName": "Leyndell, Capital das Cinzas",
       "mapCoord": {
         "x": 0,
@@ -7879,7 +7879,7 @@
       "name": "Radagon da Ordem Áurea",
       "subtitle": null,
       "region": "elden_throne",
-      "art": "images/malenia.webp",
+      "art": "images/radagon.jpg",
       "locationName": "Plataforma de Pedra (Trono Élder, Leyndell, Capital Cinzenta)",
       "mapCoord": {
         "x": 0,
@@ -7901,7 +7901,7 @@
       "name": "Besta Élden",
       "subtitle": "A verdadeira forma do Anel Prístino",
       "region": "elden_throne",
-      "art": "images/malenia.webp",
+      "art": "images/elden_beast.jpg",
       "locationName": "Trono Élden",
       "mapCoord": {
         "x": 0,
